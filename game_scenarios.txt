@@ -1,0 +1,899 @@
+#1
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 1, next: 1
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 1, next: 2
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 1, next: 3
+
+#2
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 2, next: 4
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 2, next: 5
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 2, next: 6
+
+#3
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 3, next: 7
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 3, next: 8
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 3, next: 9
+
+#4
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 4, next: 10
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 4, next: 11
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 4, next: 12
+
+#5
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 5, next: 13
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 5, next: 14
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 5, next: 15
+
+#6
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 6, next: 16
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 6, next: 17
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 6, next: 18
+
+#7
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 7, next: 19
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 7, next: 20
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 7, next: 21
+
+#8
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 8, next: 22
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 8, next: 23
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 8, next: 24
+
+#9
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 9, next: 25
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 9, next: 26
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 9, next: 27
+
+#10
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 10, next: 28
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 10, next: 29
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 10, next: 30
+
+#11
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 11, next: 31
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 11, next: 32
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 11, next: 33
+
+#12
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 12, next: 34
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 12, next: 35
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 12, next: 36
+
+#13
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 13, next: 37
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 13, next: 38
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 13, next: 39
+
+#14
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 14, next: 40
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 14, next: 41
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 14, next: 42
+
+#15
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 15, next: 43
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 15, next: 44
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 15, next: 45
+
+#16
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 16, next: 46
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 16, next: 47
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 16, next: 48
+
+#17
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 17, next: 49
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 17, next: 50
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 17, next: 51
+
+#18
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 18, next: 52
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 18, next: 53
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 18, next: 54
+
+#19
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 19, next: 55
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 19, next: 56
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 19, next: 57
+
+#20
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 20, next: 58
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 20, next: 59
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 20, next: 60
+
+#21
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 21, next: 61
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 21, next: 62
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 21, next: 63
+
+#22
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 22, next: 64
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 22, next: 65
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 22, next: 66
+
+#23
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 23, next: 67
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 23, next: 68
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 23, next: 69
+
+#24
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 24, next: 70
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 24, next: 71
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 24, next: 72
+
+#25
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 25, next: 73
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 25, next: 74
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 25, next: 75
+
+#26
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 26, next: 76
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 26, next: 77
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 26, next: 78
+
+#27
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 27, next: 79
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 27, next: 80
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 27, next: 81
+
+#28
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 28, next: 82
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 28, next: 83
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 28, next: 84
+
+#29
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 29, next: 85
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 29, next: 86
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 29, next: 87
+
+#30
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 30, next: 88
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 30, next: 89
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 30, next: 90
+
+#31
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 31, next: 91
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 31, next: 92
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 31, next: 93
+
+#32
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 32, next: 94
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 32, next: 95
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 32, next: 96
+
+#33
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 33, next: 97
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 33, next: 98
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 33, next: 99
+
+#34
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 34, next: 100
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 34, next: 101
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 34, next: 102
+
+#35
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 35, next: 103
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 35, next: 104
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 35, next: 105
+
+#36
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 36, next: 106
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 36, next: 107
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 36, next: 108
+
+#37
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 37, next: 109
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 37, next: 110
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 37, next: 111
+
+#38
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 38, next: 112
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 38, next: 113
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 38, next: 114
+
+#39
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 39, next: 115
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 39, next: 116
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 39, next: 117
+
+#40
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 40, next: 118
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 40, next: 119
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 40, next: 120
+
+#41
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 41, next: 121
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 41, next: 122
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 41, next: 123
+
+#42
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 42, next: 124
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 42, next: 125
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 42, next: 126
+
+#43
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 43, next: 127
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 43, next: 128
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 43, next: 129
+
+#44
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 44, next: 130
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 44, next: 131
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 44, next: 132
+
+#45
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 45, next: 133
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 45, next: 134
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 45, next: 135
+
+#46
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 46, next: 136
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 46, next: 137
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 46, next: 138
+
+#47
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 47, next: 139
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 47, next: 140
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 47, next: 141
+
+#48
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 48, next: 142
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 48, next: 143
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 48, next: 144
+
+#49
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 49, next: 145
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 49, next: 146
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 49, next: 147
+
+#50
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 50, next: 148
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 50, next: 149
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 50, next: 150
+
+#51
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 51, next: 151
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 51, next: 152
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 51, next: 153
+
+#52
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 52, next: 154
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 52, next: 155
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 52, next: 156
+
+#53
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 53, next: 157
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 53, next: 158
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 53, next: 159
+
+#54
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 54, next: 160
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 54, next: 161
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 54, next: 162
+
+#55
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 55, next: 163
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 55, next: 164
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 55, next: 165
+
+#56
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 56, next: 166
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 56, next: 167
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 56, next: 168
+
+#57
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 57, next: 169
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 57, next: 170
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 57, next: 171
+
+#58
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 58, next: 172
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 58, next: 173
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 58, next: 174
+
+#59
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 59, next: 175
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 59, next: 176
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 59, next: 177
+
+#60
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 60, next: 178
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 60, next: 179
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 60, next: 180
+
+#61
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 61, next: 181
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 61, next: 182
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 61, next: 183
+
+#62
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 62, next: 184
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 62, next: 185
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 62, next: 186
+
+#63
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 63, next: 187
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 63, next: 188
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 63, next: 189
+
+#64
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 64, next: 190
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 64, next: 191
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 64, next: 192
+
+#65
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 65, next: 193
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 65, next: 194
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 65, next: 195
+
+#66
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 66, next: 196
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 66, next: 197
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 66, next: 198
+
+#67
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 67, next: 199
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 67, next: 200
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 67, next: 201
+
+#68
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 68, next: 202
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 68, next: 203
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 68, next: 204
+
+#69
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 69, next: 205
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 69, next: 206
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 69, next: 207
+
+#70
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 70, next: 208
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 70, next: 209
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 70, next: 210
+
+#71
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 71, next: 211
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 71, next: 212
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 71, next: 213
+
+#72
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 72, next: 214
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 72, next: 215
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 72, next: 216
+
+#73
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 73, next: 217
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 73, next: 218
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 73, next: 219
+
+#74
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 74, next: 220
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 74, next: 221
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 74, next: 222
+
+#75
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 75, next: 223
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 75, next: 224
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 75, next: 225
+
+#76
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 76, next: 226
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 76, next: 227
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 76, next: 228
+
+#77
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 77, next: 229
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 77, next: 230
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 77, next: 231
+
+#78
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 78, next: 232
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 78, next: 233
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 78, next: 234
+
+#79
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 79, next: 235
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 79, next: 236
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 79, next: 237
+
+#80
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 80, next: 238
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 80, next: 239
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 80, next: 240
+
+#81
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 81, next: 241
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 81, next: 242
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 81, next: 243
+
+#82
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 82, next: 244
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 82, next: 245
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 82, next: 246
+
+#83
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 83, next: 247
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 83, next: 248
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 83, next: 249
+
+#84
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 84, next: 250
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 84, next: 251
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 84, next: 252
+
+#85
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 85, next: 253
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 85, next: 254
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 85, next: 255
+
+#86
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 86, next: 256
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 86, next: 257
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 86, next: 258
+
+#87
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 87, next: 259
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 87, next: 260
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 87, next: 261
+
+#88
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 88, next: 262
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 88, next: 263
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 88, next: 264
+
+#89
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 89, next: 265
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 89, next: 266
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 89, next: 267
+
+#90
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 90, next: 268
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 90, next: 269
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 90, next: 270
+
+#91
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 91, next: 271
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 91, next: 272
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 91, next: 273
+
+#92
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 92, next: 274
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 92, next: 275
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 92, next: 276
+
+#93
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 93, next: 277
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 93, next: 278
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 93, next: 279
+
+#94
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 94, next: 280
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 94, next: 281
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 94, next: 282
+
+#95
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 95, next: 283
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 95, next: 284
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 95, next: 285
+
+#96
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 96, next: 286
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 96, next: 287
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 96, next: 288
+
+#97
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 97, next: 289
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 97, next: 290
+모험을 시작한다.
+gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 97, next: 291
+
+#98
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 7, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 98, next: 292
+여관에 들른다.
+gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 98, next: 293
+모험을 시작한다.
+gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 98, next: 294
+
+#99
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 5, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 99, next: 295
+여관에 들른다.
+gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 99, next: 296
+모험을 시작한다.
+gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 99, next: 297
+
+#100
+당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
+시장으로 간다.
+gold: 6, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 100, next: 298
+여관에 들른다.
+gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 100, next: 299
+모험을 시작한다.
+gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 100, next: 300
