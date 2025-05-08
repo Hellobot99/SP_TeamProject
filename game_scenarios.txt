@@ -1,899 +1,1345 @@
 #1
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 1, next: 1
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 1, next: 2
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 1, next: 3
+당신은 고립된 병원 옥상에 있습니다. 무엇을 하시겠습니까?
+헬기를 기다린다.
+당신은 구조 신호를 반복해 송신하며, 먼 하늘을 바라봅니다. 어딘가에서 날카로운 프로펠러 소리가 희미하게 울려옵니다.
+gold: 0, exp: 10, defense: 2, health: 5, level: 0, attack: 0, stage: 1, next: 2
+
+도시로 탈출을 시도한다.
+당신은 병원의 화재 출입문을 열고 폐허가 된 거리로 몸을 던집니다. 잿빛 공기 속에서 꺾인 신음이 들려옵니다.
+gold: 0, exp: 15, defense: 1, health: -2, level: 0, attack: 1, stage: 1, next: 3
+
+군 기지로 향한다.
+당신은 희미한 표지판을 따라 도심 외곽을 향해 달립니다. 폐허 속, 군 시설의 철문이 보이기 시작합니다.
+gold: 1, exp: 12, defense: 1, health: -3, level: 0, attack: 2, stage: 1, next: 4
 
 #2
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 2, next: 4
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 2, next: 5
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 2, next: 6
+좀비가 옥상으로 올라오기 시작합니다. 어떻게 하시겠습니까?
+끝까지 버틴다.
+당신은 벽을 등지고 선 채, 한 손엔 무기, 다른 손엔 마지막 희망을 움켜쥡니다. 계단 아래서 울부짖는 소리가 가까워집니다.
+gold: 0, exp: 14, defense: 3, health: -5, level: 0, attack: 0, stage: 2, next: 5
+
+지하로 도망친다.
+당신은 계단을 따라 아래층으로 내려갑니다. 먼지 낀 형광등 아래, 그림자가 꿈틀거립니다.
+gold: -1, exp: 12, defense: 1, health: -2, level: 0, attack: 1, stage: 2, next: 6
+
+다른 생존자와 함께 싸운다.
+당신은 옥상에 남은 생존자들과 등을 맞대고 싸움을 준비합니다. 서로의 호흡 속에 절박함이 스며듭니다.
+gold: 0, exp: 16, defense: 2, health: -4, level: 0, attack: 2, stage: 2, next: 7
 
 #3
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 3, next: 7
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 3, next: 8
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 3, next: 9
+도시는 좀비로 가득 차 있습니다. 어디로 향하시겠습니까?
+지하철역으로 간다.
+당신은 인근 지하철역으로 몸을 숨깁니다. 낡은 터널 벽엔 피가 말라붙어 있고, 고요함이 불안하게 감돕니다.
+gold: 0, exp: 13, defense: 1, health: -2, level: 0, attack: 1, stage: 3, next: 6
+
+인근 상점에서 물자를 구한다.
+당신은 깨진 유리창을 넘고, 선반을 뒤지며 식량을 모읍니다. 낡은 경보기는 간신히 침묵을 지킵니다.
+gold: 2, exp: 10, defense: 0, health: -3, level: 0, attack: 1, stage: 3, next: 9
+
+숨을 곳을 찾는다.
+당신은 쓰러진 간판 아래로 몸을 숨깁니다. 소리는 멀어지지만, 심장은 여전히 빠르게 뜁니다.
+gold: 0, exp: 9, defense: 2, health: 0, level: 0, attack: 0, stage: 3, next: 10
 
 #4
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 4, next: 10
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 4, next: 11
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 4, next: 12
+당신은 군 기지 외부에 도착했습니다. 안쪽은 조용하지만 위협이 도사립니다.
+출입구를 강제로 연다.
+잠긴 철문을 부수고 들어갑니다. 경보가 울리며 안쪽에서 무언가 움직입니다.
+gold: 0, exp: 13, defense: 1, health: -3, level: 0, attack: 2, stage: 4, next: 11
+
+다른 진입로를 찾는다.
+기지를 돌며 틈새를 탐색합니다. 작은 환기구 하나를 발견하고 진입합니다.
+gold: 0, exp: 12, defense: 2, health: -1, level: 0, attack: 1, stage: 4, next: 12
+
+기다린다.
+당신은 위험을 감수하지 않고 주변을 관찰하며 시간을 보냅니다. 어둠 속에서 희미한 불빛이 깜빡입니다.
+gold: 0, exp: 9, defense: 2, health: 0, level: 0, attack: 0, stage: 4, next: 10
 
 #5
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 5, next: 13
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 5, next: 14
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 5, next: 15
+옥상 끝까지 버틴 끝에, 헬기가 접근합니다. 그러나 착륙할 공간이 부족합니다.
+착륙 지점을 확보한다.
+당신은 좀비 무리를 분산시키며 안전 구역을 확보합니다. 헬기는 흔들리며 내려옵니다.
+gold: 1, exp: 15, defense: 2, health: -3, level: 0, attack: 2, stage: 5, next: 14
+
+헬기를 포기하고 옥상에서 뛰어내린다.
+생존을 위해 마지막 선택을 합니다. 밧줄을 이용해 아래 건물로 강하합니다.
+gold: 0, exp: 12, defense: 1, health: -2, level: 0, attack: 1, stage: 5, next: 15
+
+옥상에서 신호탄을 쏜다.  
+당신은 헬기 시야 확보를 위해 마지막 신호탄을 발사합니다. 구조대가 방향을 수정합니다.  
+gold: 0, exp: 13, defense: 2, health: -1, level: 0, attack: 1, stage: 5, next: 17
 
 #6
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 6, next: 16
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 6, next: 17
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 6, next: 18
+지하 공간은 어둡고 습기 찬 공포로 가득합니다. 당신은 조심스레 앞으로 나아갑니다.
+통로 끝까지 이동한다.
+폐쇄된 벽 너머 희미한 빛이 보입니다. 당신은 조용히 접근합니다.
+gold: 0, exp: 11, defense: 2, health: -1, level: 0, attack: 1, stage: 6, next: 16
+
+숨을 곳을 찾는다.
+당신은 케이블 뒤에 몸을 숨깁니다. 지나가는 발소리와 숨소리가 교차합니다.
+gold: 0, exp: 10, defense: 3, health: 1, level: 0, attack: 0, stage: 6, next: 10
+
+함정을 설치한다.  
+당신은 주운 금속과 배관으로 급조한 덫을 설치합니다. 위험을 조금이나마 분산시킬 수 있습니다.  
+gold: 0, exp: 12, defense: 3, health: 0, level: 0, attack: 1, stage: 6, next: 23
 
 #7
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 7, next: 19
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 7, next: 20
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 7, next: 21
+옥상에서 함께 싸웠던 생존자들과 다시 조우합니다. 생존자들은 이동을 준비 중입니다.
+그들과 동행한다.
+당신은 생존자들과 함께 이동하기로 합니다. 협력이 유일한 희망입니다.
+gold: 1, exp: 13, defense: 2, health: 0, level: 0, attack: 1, stage: 7, next: 17
+
+혼자서 움직인다.
+신뢰보다 생존이 먼저입니다. 당신은 다른 길을 선택합니다.
+gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 1, stage: 7, next: 18
+
+지도에 표시된 낯선 지점을 따라간다.
+생존자 중 한 명이 넘겨준 지도 조각을 참고해 다른 위치를 탐색합니다.
+gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 7, next: 30
 
 #8
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 8, next: 22
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 8, next: 23
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 8, next: 24
+지하철역 깊숙한 구간, 좀비 무리가 모여 있습니다. 선택의 순간입니다.
+조용히 돌아간다.
+당신은 발소리를 죽이며 다른 경로를 탐색합니다. 불 꺼진 통로가 보입니다.
+gold: 0, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 8, next: 10
+
+기습 공격을 감행한다.
+먼저 공격하여 틈을 만듭니다. 격렬한 교전 후 간신히 빠져나옵니다.
+gold: 1, exp: 14, defense: 1, health: -4, level: 0, attack: 3, stage: 8, next: 19
+
+지하철 차량을 수색한다.
+버려진 차량 안에서 유용한 도구를 발견합니다. 감염자는 없습니다.
+gold: 1, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 8, next: 36
 
 #9
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 9, next: 25
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 9, next: 26
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 9, next: 27
+상점 내부에서 물자를 챙기던 당신, 돌연 좀비가 들이닥칩니다.
+뒤편 문으로 도망친다.
+당신은 문을 열고 좁은 골목으로 도주합니다. 추격은 계속됩니다.
+gold: 0, exp: 11, defense: 1, health: -2, level: 0, attack: 1, stage: 9, next: 20
+
+싸운다.
+진열대를 넘어 좀비와 격투를 벌입니다. 팔에 상처를 입지만 물자는 챙깁니다.
+gold: 2, exp: 13, defense: 0, health: -3, level: 0, attack: 2, stage: 9, next: 21
+
+선반 위로 올라가 숨는다.
+높은 곳에서 주변을 관찰하며 숨을 돌립니다. 위험은 일시적으로 피했습니다.
+gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 9, next: 10
 
 #10
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 10, next: 28
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 10, next: 29
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 10, next: 30
+숨은 곳에서 상황을 지켜보던 당신. 위협은 조금씩 사라집니다.
+바깥으로 이동한다.
+당신은 조심스럽게 길로 나옵니다. 거리에는 몇몇 시체가 널려 있습니다.
+gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 10, next: 22
 
-#11
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 11, next: 31
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 11, next: 32
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 11, next: 33
+더 기다린다.
+아무도 없는 틈을 노리기 위해 더 기다립니다. 피로가 쌓이지만 안전은 확보됩니다.
+gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
+
+무전기를 이용해 신호를 보낸다.  
+주변의 무선 장비를 이용해 구조 요청을 시도합니다. 응답은 없지만 주파수가 열려 있습니다.  
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 30
 
 #12
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 12, next: 34
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 12, next: 35
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 12, next: 36
+환기구를 통해 기지 내부로 진입한 당신, 어둠 속에서 기계음이 울립니다.
+전력을 복구한다.
+당신은 차단기를 찾아 전원을 연결합니다. 형광등이 깜빡이며 다시 켜집니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 1, stage: 12, next: 27
+
+폐쇄 구역을 조사한다.
+경고문이 붙은 구역 안으로 들어섭니다. 거기엔 오래된 연구기록과 특수 장비가 있습니다.
+gold: 2, exp: 14, defense: 1, health: -2, level: 0, attack: 2, stage: 12, next: 28
+
+숨는다.
+기계음이 가까워지자, 당신은 공구함 뒤에 몸을 숨깁니다. 인기척은 점점 멀어집니다.
+gold: 0, exp: 10, defense: 3, health: 0, level: 0, attack: 0, stage: 12, next: 10
 
 #13
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 13, next: 37
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 13, next: 38
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 13, next: 39
+생존자들과 함께하는 여정 중, 낯선 신호가 잡힙니다.
+무전을 분석한다.
+기기에서 반복되는 코드가 들립니다. 당신은 그것이 좌표라는 걸 알아냅니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 13, next: 18
+
+신호를 따라간다.
+숲 속 깊은 곳, 오래된 중계탑 근처에서 기지 흔적을 발견합니다.
+gold: 1, exp: 14, defense: 1, health: -2, level: 0, attack: 2, stage: 13, next: 19
+
+무시하고 경로를 유지한다.
+당신은 계획된 루트를 따라 이동합니다. 주변은 점점 조용해집니다.
+gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 13, next: 20
 
 #14
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 14, next: 40
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 14, next: 41
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 14, next: 42
+착륙한 헬기 안, 조종사는 당신에게 갈림길을 제시합니다.
+도심 상공으로 향한다.
+조종사는 도심을 상공에서 순찰합니다. 아래에 살아있는 신호들이 감지됩니다.
+gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 14, next: 19
+
+산악 지대로 간다.
+격오지의 은신처로 향합니다. 연료는 아슬아슬하지만 도착에 성공합니다.
+gold: 0, exp: 13, defense: 1, health: 1, level: 0, attack: 0, stage: 14, next: 20
+
+조종사를 남기고 낙하한다.
+당신은 낙하산을 착용하고 외곽 기지 상공에서 낙하합니다. 바람이 거셉니다.
+gold: -1, exp: 14, defense: 0, health: -3, level: 0, attack: 2, stage: 14, next: 21
 
 #15
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 15, next: 43
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 15, next: 44
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 15, next: 45
+옥상에서의 도약 이후, 당신은 도심의 폐허 속으로 떨어집니다.
+근처 건물로 숨어든다.
+피투성이가 된 몸으로 당신은 근처 건물로 들어가 숨을 고릅니다.
+gold: 0, exp: 11, defense: 2, health: -1, level: 0, attack: 1, stage: 15, next: 20
+
+거리를 달려 탈출한다.
+당신은 마지막 힘을 짜내 달립니다. 뒤에서는 좀비의 울음소리가 멀어집니다.
+gold: 1, exp: 13, defense: 1, health: -2, level: 0, attack: 1, stage: 15, next: 21
+
+버려진 차를 사용한다.
+차 안으로 들어가 시동을 걸어보지만, 배터리가 방전되어 있습니다. 경적이 울립니다.
+gold: -1, exp: 10, defense: 0, health: -3, level: 0, attack: 2, stage: 15, next: 18
 
 #16
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 16, next: 46
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 16, next: 47
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 16, next: 48
+지하 통로에서 발견한 문은 열쇠가 필요합니다.
+열쇠를 찾는다.
+당신은 다시 어둠 속을 거슬러 올라갑니다. 이전 경로에서 단서를 찾습니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 1, stage: 16, next: 13
+
+문을 부순다.
+당신은 무기로 철문을 강타합니다. 결국 문은 열리지만 큰 소음을 남깁니다.
+gold: 0, exp: 14, defense: 1, health: -3, level: 0, attack: 2, stage: 16, next: 21
+
+다른 길을 찾는다.
+좌측 배관 통로를 따라갑니다. 당신은 좁은 배수구를 지나 외부로 나옵니다.
+gold: 0, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 16, next: 10
 
 #17
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 17, next: 49
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 17, next: 50
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 17, next: 51
+생존자 무리와 동행 중, 식량이 바닥납니다.
+사냥에 나선다.
+숲가에서 동물의 흔적을 따라갑니다. 작은 짐승 하나를 잡는 데 성공합니다.
+gold: 1, exp: 13, defense: 2, health: 1, level: 0, attack: 1, stage: 17, next: 22
+
+무전기로 도움을 청한다.
+당신은 구조 신호를 다시 보냅니다. 멀리서 반응이 감지됩니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 17, next: 14
+
+식량을 나눠준다.
+당신은 마지막 비상식량을 건넵니다. 팀의 사기는 높아지지만, 당신은 허기지기 시작합니다.
+gold: -1, exp: 11, defense: 3, health: -2, level: 0, attack: 0, stage: 17, next: 20
 
 #18
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 18, next: 52
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 18, next: 53
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 18, next: 54
+낯선 통신 신호를 추적한 끝에, 방공호 입구를 발견합니다.
+진입을 시도한다.
+입구는 무너져 있었지만, 한쪽에 손전등 불빛이 흔들립니다. 당신은 천천히 다가갑니다.
+gold: 0, exp: 14, defense: 2, health: -1, level: 0, attack: 1, stage: 18, next: 44
+
+위에서 감시한다.
+당신은 건물 옥상에서 방공호를 관찰합니다. 안쪽에서 사람 그림자가 오갑니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 18, next: 45
+
+지나친다.
+위험을 감지한 당신은 더 이상 접근하지 않고 다른 방향으로 이동합니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 18, next: 46
 
 #19
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 19, next: 55
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 19, next: 56
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 19, next: 57
+폭우 속, 고립된 통신탑에 신호가 잡힙니다.
+탑 안으로 들어간다.
+내부에는 망가진 장비와 전단지들이 흩어져 있습니다. 그러나 한 구역은 아직 작동합니다.
+gold: 1, exp: 13, defense: 1, health: -2, level: 0, attack: 1, stage: 19, next: 47
+
+지붕 위에 올라가 신호를 강화한다.
+위험을 무릅쓰고 안테나를 수동 조정합니다. 더 강한 신호가 퍼져나갑니다.
+gold: 0, exp: 15, defense: 1, health: -3, level: 0, attack: 2, stage: 19, next: 48
+
+탑을 떠난다.
+그저 신호만 기록하고 당신은 떠납니다. 어둠이 더 짙어집니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 19, next: 49
 
 #20
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 20, next: 58
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 20, next: 59
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 20, next: 60
+이동 도중 폐허 도시의 중심지에 도착합니다. 밤은 깊어지고 있습니다.
+야영지를 마련한다.
+버려진 빌딩에 자리를 잡고 휴식을 취합니다. 당신은 짧은 꿈을 꿉니다.
+gold: 0, exp: 11, defense: 2, health: 2, level: 0, attack: 0, stage: 20, next: 50
+
+도시 지도를 그린다.
+고지대에서 시야를 확보하고 손전등으로 지형을 기록합니다. 내일을 위한 준비입니다.
+gold: 1, exp: 13, defense: 1, health: 1, level: 0, attack: 1, stage: 20, next: 51
+
+기습을 대비해 감시를 선다.
+밤새 감시를 맡으며 피곤함을 견딥니다. 아침이 오기 전, 무언가 스쳐 지나갑니다.
+gold: 0, exp: 14, defense: 2, health: -1, level: 0, attack: 1, stage: 20, next: 52
 
 #21
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 21, next: 61
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 21, next: 62
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 21, next: 63
+당신은 도시에서 본 거대한 연기 기둥을 따라 움직입니다. 가까이 갈수록 매캐한 냄새가 짙어집니다.
+화재 현장을 조사한다.
+소방차와 불타버린 구조물이 어지럽게 널려 있습니다. 무전기 하나가 아직 작동합니다.
+gold: 0, exp: 13, defense: 2, health: -2, level: 0, attack: 1, stage: 21, next: 53
 
-#22
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 22, next: 64
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 22, next: 65
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 22, next: 66
+잔불을 끄고 길을 확보한다.
+화재는 거의 꺼졌습니다. 당신은 주변을 정리하며 새로운 경로를 만듭니다.
+gold: 1, exp: 14, defense: 1, health: -1, level: 0, attack: 0, stage: 21, next: 54
 
-#23
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 23, next: 67
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 23, next: 68
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 23, next: 69
-
-#24
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 24, next: 70
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 24, next: 71
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 24, next: 72
+위험을 감지하고 돌아간다.
+당신은 불길한 느낌에 발걸음을 돌립니다. 불길은 여전히 거세게 타오릅니다.
+gold: 0, exp: 11, defense: 3, health: 1, level: 0, attack: 0, stage: 21, next: 10
 
 #25
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 25, next: 73
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 25, next: 74
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 25, next: 75
+창고는 텅 비어 있었지만, 한쪽 벽면에 새로운 지도가 붙어 있습니다.
+지도에 따라 이동한다.
+당신은 공장지대 북쪽의 폐터널로 향합니다. 지하로 이어지는 입구가 보입니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 25, next: 6
+
+기록을 분석한다.
+지도의 메모와 기호를 해석합니다. 이전에 지나쳤던 구역의 비밀 통로를 알아냅니다.
+gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 0, stage: 25, next: 10
+
+지도 일부를 훼손한다.
+당신은 우발적으로 지도의 일부를 찢습니다. 방향은 불확실하지만 길을 떠납니다.
+gold: 0, exp: 11, defense: 2, health: -1, level: 0, attack: 1, stage: 25, next: 20
 
 #26
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 26, next: 76
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 26, next: 77
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 26, next: 78
+공장을 지나친 뒤, 황폐한 거리 끝에서 의외의 생존 신호를 감지합니다.
+신호를 추적한다.
+멀지 않은 폐차장 쪽에서 단파 신호가 잡힙니다. 고장 난 드론도 발견됩니다.
+gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 26, next: 14
+
+신호를 무시한다.
+정체불명의 신호에 휘둘리지 않기로 합니다. 대신 도시 남쪽 벙커로 향합니다.
+gold: 0, exp: 13, defense: 1, health: -1, level: 0, attack: 0, stage: 26, next: 19
+
+신호 발신지를 파괴한다.
+위험 요소 제거를 위해 간단한 EMP 장치를 가동합니다. 근처에 잠들어 있던 좀비들이 움직입니다.
+gold: 1, exp: 15, defense: 1, health: -3, level: 0, attack: 2, stage: 26, next: 18
 
 #27
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 27, next: 79
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 27, next: 80
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 27, next: 81
+당신은 이른 새벽, 도시 외곽의 버려진 초소에 도착합니다.
+초소 내부를 수색한다.
+보급품 일부와 낙서가 남아 있습니다. “남쪽으로 가라”는 문구가 반복됩니다.
+gold: 1, exp: 13, defense: 1, health: 1, level: 0, attack: 0, stage: 27, next: 22
+
+경비로봇을 재가동한다.
+낡은 보안 시스템에 전력을 공급합니다. 로봇은 느릿하게 움직이며 경로를 안내합니다.
+gold: 0, exp: 14, defense: 2, health: -2, level: 0, attack: 1, stage: 27, next: 28
+
+건물을 벗어난다.
+더 머물 이유는 없습니다. 당신은 길을 따라 계속 이동합니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 27, next: 10
 
 #28
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 28, next: 82
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 28, next: 83
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 28, next: 84
+당신은 산산이 부서진 가로등 근처에서 생존자 무리를 만납니다.
+동행을 제안한다.
+서로 상황을 공유하고 물자를 나눕니다. 무리는 곧 하나의 팀이 됩니다.
+gold: 1, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 28, next: 17
+
+무리를 따로 조사한다.
+그들의 동선을 추적합니다. 일부는 수상한 행동을 보입니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 28, next: 31
+
+무시하고 떠난다.
+불신은 생존의 기술입니다. 당신은 홀로 길을 떠납니다.
+gold: 0, exp: 11, defense: 2, health: 0, level: 0, attack: 1, stage: 28, next: 20
 
 #29
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 29, next: 85
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 29, next: 86
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 29, next: 87
+도시 깊은 곳, 당신은 숨겨진 입구를 발견합니다. 문은 약간 열려 있습니다.
+안으로 들어간다.
+지하 대피소였습니다. 여기엔 식량과 의료품이 남아 있습니다.
+gold: 2, exp: 15, defense: 2, health: 2, level: 0, attack: 0, stage: 29, next: 40
+
+문을 닫고 떠난다.
+들어가기엔 너무 불안합니다. 당신은 조용히 자리를 떴습니다.
+gold: 0, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 29, next: 19
+
+입구를 덮어 숨긴다.
+자원을 확보한 뒤 출입 흔적을 지웁니다. 이곳은 당신의 비밀 피난처입니다.
+gold: 0, exp: 14, defense: 3, health: 0, level: 0, attack: 0, stage: 29, next: 10
 
 #30
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 30, next: 88
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 30, next: 89
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 30, next: 90
+당신은 실험 데이터를 들고 외부 네트워크와 접속을 시도합니다.
+송신에 성공한다.
+누군가 응답합니다. “기록을 확보했다. 위치를 보내라.” 구조의 가능성이 생깁니다.
+gold: 0, exp: 16, defense: 2, health: 1, level: 0, attack: 1, stage: 30, next: 33
+
+송신에 실패한다.
+전력 불안정으로 실패합니다. 당신은 더 높은 위치를 찾기로 합니다.
+gold: 0, exp: 12, defense: 1, health: -2, level: 0, attack: 1, stage: 30, next: 19
+
+장비를 숨긴다.
+당장은 위험하다 판단한 당신은 데이터를 보관한 채 이동합니다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 30, next: 10
 
 #31
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 31, next: 91
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 31, next: 92
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 31, next: 93
+당신은 생존자 무리의 수상한 행동을 끝까지 지켜봅니다. 결국 그들은 분열합니다.
+무리를 설득한다.
+갈등 중간에서 중재를 시도합니다. 일부는 당신을 따르기로 합니다.
+gold: 1, exp: 14, defense: 2, health: 1, level: 0, attack: 1, stage: 31, next: 17
+
+혼란을 틈타 떠난다.
+혼란을 이용해 무리를 빠져나옵니다. 시야에서 벗어나자 숨이 가빠옵니다.
+gold: 0, exp: 11, defense: 1, health: -1, level: 0, attack: 0, stage: 31, next: 10
+
+무리를 따로 추적한다.
+분열된 이들 중 한 명을 따라갑니다. 그가 들른 장소는 예전에 본 폐건물이었습니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 1, stage: 31, next: 29
 
 #32
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 32, next: 94
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 32, next: 95
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 32, next: 96
+당신은 무전으로 구조 요청을 받습니다. 좌표는 폐허가 된 교회입니다.
+바로 출발한다.
+교회 내부는 불길하게 조용합니다. 벽면에는 메시지가 남아 있습니다.
+gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 1, stage: 32, next: 10
+
+잠시 대기 후 출발한다.
+정찰을 마치고 교회로 향합니다. 외곽에 누군가가 숨어 있는 듯합니다.
+gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 32, next: 28
+
+무시한다.
+신뢰할 수 없는 신호는 무시합니다. 당신은 동쪽 언덕으로 향합니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 32, next: 22
 
 #33
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 33, next: 97
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 33, next: 98
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 33, next: 99
+구조팀은 당신에게 생존 지역으로 향하라 지시합니다. 하지만 경로는 위험합니다.
+지시에 따른다.
+낮은 고개를 넘어 산지로 진입합니다. 도중에 좀비 떼를 마주칩니다.
+gold: 0, exp: 16, defense: 2, health: -4, level: 0, attack: 2, stage: 33, next: 34
+
+지시를 무시한다.
+지시가 함정일 수도 있다는 불신에 당신은 방향을 바꿉니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 33, next: 20
+
+일행과 상의한다.
+당신은 무선으로 생존자들과 논의합니다. 더 안전한 대안이 제시됩니다.
+gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 33, next: 30
 
 #34
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 34, next: 100
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 34, next: 101
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 34, next: 102
+산지 초입에서 안개가 짙게 깔립니다. 시야는 제한되고, 발소리만 울립니다.
+잠복한다.
+당신은 바위 뒤에 몸을 숨깁니다. 누군가 지나갑니다. 좀비는 아닙니다.
+gold: 0, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 34, next: 31
+
+경로를 우회한다.
+짙은 안개를 피해 다른 능선을 따라갑니다. 오르막이 가팔라집니다.
+gold: 0, exp: 12, defense: 2, health: -1, level: 0, attack: 1, stage: 34, next: 29
+
+등산 장비를 쓴다.
+로프와 아이젠을 꺼내 경사면을 오릅니다. 아래에서 짐승 소리가 들려옵니다.
+gold: 1, exp: 15, defense: 1, health: -2, level: 0, attack: 2, stage: 34, next: 36
 
 #35
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 35, next: 103
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 35, next: 104
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 35, next: 105
+당신은 외곽 거점에 도착합니다. 입구는 폐쇄되어 있고, 내부는 정전 상태입니다.
+돌입한다.
+문을 부수고 진입합니다. 내부는 폐쇄되어 있었고, 무언가 들끓고 있습니다.
+gold: 0, exp: 13, defense: 1, health: -3, level: 0, attack: 2, stage: 35, next: 18
+
+기다린다.
+주위를 정찰하며 적당한 틈을 찾습니다. 주변은 매우 조용합니다.
+gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 35, next: 10
+
+우회한다.
+다른 생존자가 개방한 후문을 발견합니다. 당신은 그 길로 들어갑니다.
+gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 35, next: 22
 
 #36
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 36, next: 106
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 36, next: 107
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 36, next: 108
+능선 끝자락, 당신은 오래된 감시탑에 도달합니다. 구조물은 기울어져 있습니다.
+탑을 조사한다.
+위에서 망원경과 통신기기 잔해를 발견합니다. 신호가 잡힙니다.
+gold: 0, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 36, next: 33
+
+탑을 지나친다.
+감시탑은 위험해 보입니다. 당신은 아래 오솔길을 따라갑니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 36, next: 19
+
+기초 보수를 한다.
+탑의 구조를 보완해 다시 사용할 수 있게 만듭니다. 안정적인 구조 지점 확보.
+gold: 1, exp: 16, defense: 3, health: 1, level: 0, attack: 0, stage: 36, next: 40
 
 #37
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 37, next: 109
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 37, next: 110
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 37, next: 111
+당신은 숲 속 낡은 수로를 발견합니다. 내부는 습하고 좁지만 이동 가능합니다.
+진입한다.
+수로를 통해 이동합니다. 외부 소음은 들리지 않고, 내부는 습합니다.
+gold: 0, exp: 13, defense: 2, health: -1, level: 0, attack: 0, stage: 37, next: 6
+
+우회한다.
+좁은 공간을 피하고 외곽 산책로를 선택합니다. 그 끝에 작은 창고가 보입니다.
+gold: 0, exp: 12, defense: 1, health: 1, level: 0, attack: 0, stage: 37, next: 20
+
+탐사 포기를 고민한다.
+지금은 쉬는 게 먼저입니다. 당신은 가까운 바위 아래에 잠시 몸을 누입니다.
+gold: 0, exp: 10, defense: 2, health: 2, level: 0, attack: 0, stage: 37, next: 10
 
 #38
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 38, next: 112
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 38, next: 113
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 38, next: 114
+무너진 아파트 단지, 구조 신호가 간헐적으로 잡힙니다. 생존 가능성은 낮습니다.
+구조를 시도한다.
+위험을 무릅쓰고 무너진 콘크리트를 헤칩니다. 인명은 없지만 기록 장비 확보.
+gold: 1, exp: 15, defense: 2, health: -2, level: 0, attack: 1, stage: 38, next: 30
+
+포기한다.
+정찰만 하고 떠납니다. 아파트 뒤편으로 열린 길이 보입니다.
+gold: 0, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 38, next: 22
+
+함정을 설치한다.
+이곳은 적의 통로일 수 있습니다. 간단한 함정을 설치하고 떠납니다.
+gold: 1, exp: 14, defense: 3, health: 0, level: 0, attack: 0, stage: 38, next: 10
 
 #39
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 39, next: 115
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 39, next: 116
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 39, next: 117
+안개 낀 도심 한복판, 오래된 방송국 건물에 도달합니다. 내부는 침묵뿐입니다.
+방송 장비를 재가동한다.
+주파수를 맞추고 송신을 시도합니다. 멀리서 희미한 응답이 돌아옵니다.
+gold: 0, exp: 16, defense: 2, health: 0, level: 0, attack: 1, stage: 39, next: 30
+
+장비를 회수한다.
+유용한 부품을 챙깁니다. 그러나 일부 좀비가 따라옵니다.
+gold: 2, exp: 13, defense: 1, health: -3, level: 0, attack: 1, stage: 39, next: 10
+
+방송국을 봉쇄한다.
+입구를 폐쇄하고 주변을 경계합니다. 이곳을 임시 거점으로 삼습니다.
+gold: 0, exp: 14, defense: 3, health: 1, level: 0, attack: 0, stage: 39, next: 40
 
 #40
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 40, next: 118
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 40, next: 119
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 40, next: 120
+당신은 다시 거점으로 돌아옵니다. 여기엔 익숙한 얼굴들과 새로운 계획이 기다립니다.
+무전을 보낸다.
+생존자들에게 다음 이동 위치를 알립니다. 협력이 시작됩니다.
+gold: 0, exp: 15, defense: 2, health: 1, level: 0, attack: 1, stage: 40, next: 10
+
+거점을 강화한다.
+기존 방어선을 보수하고 감시망을 구축합니다. 점점 안전해집니다.
+gold: 1, exp: 16, defense: 3, health: 2, level: 0, attack: 0, stage: 40, next: 22
+
+임무를 떠난다.
+더 많은 생존자와 자원을 찾아 또 다른 여정을 시작합니다.
+gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 40, next: 41
 
 #41
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 41, next: 121
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 41, next: 122
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 41, next: 123
+임무를 떠난 당신은 도심 외곽의 무너진 다리 근처에 도달합니다. 수색은 더딥니다.
+다리 밑을 수색한다.
+폐차와 쓰레기로 가득한 다리 아래서 신선한 피 냄새를 감지합니다.
+gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 1, stage: 41, next: 18
+
+다리를 넘는다.
+낙석 위험이 있지만 강을 건너는 길을 선택합니다. 중간에서 짐승이 포효합니다.
+gold: 0, exp: 13, defense: 1, health: -3, level: 0, attack: 1, stage: 41, next: 36
+
+탐색을 중단하고 돌아간다.
+위험이 감지되자 탐색을 중단하고 기지로 향합니다.
+gold: 0, exp: 11, defense: 3, health: 1, level: 0, attack: 0, stage: 41, next: 40
 
 #42
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 42, next: 124
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 42, next: 125
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 42, next: 126
+탐색 도중 당신은 누군가의 은신처로 보이는 천막을 발견합니다.
+안으로 들어가 본다.
+먹다 남은 식량과 사진, 마지막 기록이 남아 있습니다.
+gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 42, next: 29
+
+지나친다.
+개입하지 않기로 하고 조용히 이동합니다. 등 뒤에서 낡은 무전기 소리가 들립니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 42, next: 19
+
+은신처를 봉쇄한다.
+좀비의 소굴이 될 위험을 막기 위해 입구를 막습니다. 무언가 안에서 움직입니다.
+gold: 0, exp: 13, defense: 3, health: -1, level: 0, attack: 1, stage: 42, next: 10
 
 #43
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 43, next: 127
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 43, next: 128
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 43, next: 129
+폐건물 옥상에서 구조 신호가 보입니다. 연기가 하늘로 솟구칩니다.
+옥상으로 올라간다.
+낙하산 흔적과 응급 장비를 발견합니다. 이미 구조는 끝난 듯합니다.
+gold: 0, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 43, next: 30
+
+지하로 진입한다.
+연기의 발원은 아닙니다. 하지만 지하엔 누군가 머문 흔적이 있습니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 43, next: 6
+
+건물 밖에서 대기한다.
+상황을 파악할 수 없어 멀찍이서 기다립니다. 인근에서 소란이 일어납니다.
+gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 0, stage: 43, next: 22
 
 #44
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 44, next: 130
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 44, next: 131
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 44, next: 132
+방공호 진입 후 당신은 깊숙한 통로에서 묘한 기계음을 듣습니다.
+소리를 따라간다.
+실험 설비와 냉동 보관된 무언가를 발견합니다. 문서엔 '2차 변이'라는 단어가 적혀 있습니다.
+gold: 2, exp: 16, defense: 2, health: -1, level: 0, attack: 1, stage: 44, next: 30
+
+기계를 파괴한다.
+너무 위험하다고 판단한 당신은 설비를 손상시킵니다. 경보가 울리기 시작합니다.
+gold: 1, exp: 14, defense: 2, health: -3, level: 0, attack: 2, stage: 44, next: 45
+
+빠르게 철수한다.
+더 이상 머무를 수 없습니다. 당신은 가능한 빠르게 탈출합니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 44, next: 40
 
 #45
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 45, next: 133
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 45, next: 134
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 45, next: 135
+경보가 울리는 가운데 방공호 밖으로 나왔습니다. 주변은 이미 소란스럽습니다.
+기지를 향한다.
+당신은 빠르게 후퇴합니다. 뒤에서 무언가가 따라옵니다.
+gold: 0, exp: 14, defense: 2, health: -2, level: 0, attack: 1, stage: 45, next: 40
+
+근처 지붕으로 올라간다.
+옥상에서 상황을 관찰합니다. 드론 한 대가 하늘을 가로지릅니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 45, next: 36
+
+다른 생존자와 접촉을 시도한다.
+통신기를 꺼내 접속을 시도합니다. 잡음 속에서 “북쪽으로”라는 메시지가 들립니다.
+gold: 1, exp: 15, defense: 2, health: 1, level: 0, attack: 1, stage: 45, next: 41
 
 #46
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 46, next: 136
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 46, next: 137
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 46, next: 138
+도심 북쪽 외곽, 폐선 철도 위에 낡은 화물열차가 멈춰 있습니다.
+열차 내부를 탐색한다.
+잊힌 보급품과 마른 피가 남아 있습니다. 귀퉁이에 누군가의 흔적도 보입니다.
+gold: 1, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 46, next: 10
+
+지붕 위로 올라간다.
+열차 지붕은 시야가 넓지만, 흔들리며 균형을 잃기 쉽습니다.
+gold: 0, exp: 13, defense: 1, health: -2, level: 0, attack: 0, stage: 46, next: 33
+
+선로를 따라 이동한다.
+멀리 굴뚝이 보입니다. 당신은 선로를 따라 도보 이동을 시작합니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 46, next: 50
 
 #47
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 47, next: 139
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 47, next: 140
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 47, next: 141
+굴뚝 건물은 오래된 소각장이었습니다. 내부는 탄냄새와 검은 그을음으로 가득합니다.
+소각로를 조사한다.
+벽면에 암호화된 문장과 기계 부품이 숨겨져 있습니다.
+gold: 0, exp: 15, defense: 1, health: -1, level: 0, attack: 1, stage: 47, next: 30
+
+건물 뒤편을 확인한다.
+작은 컨테이너 하나가 반쯤 묻혀 있습니다. 안쪽엔 의료용 드론 잔해가 보입니다.
+gold: 1, exp: 13, defense: 1, health: 1, level: 0, attack: 0, stage: 47, next: 19
+
+불길해 떠난다.
+당신은 직감적으로 위험을 감지하고 빠르게 자리를 떠납니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 47, next: 40
 
 #48
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 48, next: 142
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 48, next: 143
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 48, next: 144
+도시의 오래된 지하철 노선 끝, 폐쇄된 정거장에 도착합니다.
+전력 시스템을 점검한다.
+약한 불빛이 돌아오고, 안내 방송이 잠시 켜집니다. 짧은 희망이 피어납니다.
+gold: 0, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 48, next: 30
+
+터널 깊숙이 들어간다.
+과거 피난민이 머문 흔적과 녹슨 무기들이 널려 있습니다.
+gold: 1, exp: 15, defense: 2, health: -2, level: 0, attack: 2, stage: 48, next: 6
+
+정거장에서 대기한다.
+더 나아갈 여력이 없습니다. 당신은 짧은 휴식을 취합니다.
+gold: 0, exp: 11, defense: 2, health: 2, level: 0, attack: 0, stage: 48, next: 10
 
 #49
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 49, next: 145
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 49, next: 146
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 49, next: 147
+도심 남쪽, 물이 고인 낡은 공원에 진입합니다. 고요함이 기묘하게 무겁습니다.
+호수를 수색한다.
+물속에서 자동차 잔해를 발견합니다. 트렁크엔 무기 상자가 있습니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 2, stage: 49, next: 18
+
+주변을 순찰한다.
+나무 뒤에 무언가 숨어 있습니다. 당신은 조심스럽게 다가갑니다.
+gold: 0, exp: 13, defense: 1, health: -1, level: 0, attack: 1, stage: 49, next: 22
+
+그늘에서 쉰다.
+도시의 소음이 잦아든 공원 그늘 아래서 당신은 눈을 감습니다.
+gold: 0, exp: 11, defense: 2, health: 2, level: 0, attack: 0, stage: 49, next: 10
 
 #50
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 50, next: 148
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 50, next: 149
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 50, next: 150
+당신은 폐광 입구 앞에 서 있습니다. 바람은 지하 깊은 곳에서 불어옵니다.
+광산 안으로 들어간다.
+예전 작업자들의 흔적과 무너진 장비들, 그리고 최근 흔적이 엿보입니다.
+gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 1, stage: 50, next: 44
+
+입구를 봉쇄한다.
+이곳은 더 이상 누구도 들어와선 안 될 공간처럼 느껴집니다.
+gold: 1, exp: 14, defense: 3, health: 0, level: 0, attack: 0, stage: 50, next: 10
+
+지도를 남기고 돌아간다.
+다른 생존자가 이곳을 발견하길 바라며, 당신은 기록을 남깁니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 50, next: 19
 
 #51
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 51, next: 151
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 51, next: 152
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 51, next: 153
+지하 벙커에서 나온 당신은 외부 통신 기지를 발견합니다. 신호는 약하지만 연결 가능성이 있습니다.
+신호를 증폭한다.
+임시 송신 장비를 조작해 신호 강도를 높입니다. 누군가 응답합니다.
+gold: 1, exp: 16, defense: 2, health: 0, level: 0, attack: 1, stage: 51, next: 33
+
+기지를 해킹한다.
+보안이 허술한 시스템을 뚫어 내부 정보를 확보합니다. 감지 알림이 울립니다.
+gold: 0, exp: 15, defense: 1, health: -2, level: 0, attack: 2, stage: 51, next: 45
+
+기지를 벗어난다.
+너무 오래 머물 순 없습니다. 당신은 다음 지역으로 이동합니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 51, next: 22
 
 #52
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 52, next: 154
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 52, next: 155
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 52, next: 156
+폐허가 된 방송탑 내부에서 끊어진 케이블과 음성 기록을 발견합니다.
+기록을 재생한다.
+불안정한 음성 데이터가 반복됩니다. '남은 자들, 북부 방벽'이라는 문장이 잡힙니다.
+gold: 0, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 52, next: 19
+
+탑을 수리한다.
+위험을 무릅쓰고 케이블을 연결합니다. 전원이 돌아오며 강한 전류가 흐릅니다.
+gold: 1, exp: 14, defense: 1, health: -3, level: 0, attack: 2, stage: 52, next: 30
+
+현장을 떠난다.
+이곳은 오래전에 버려졌습니다. 당신은 다음 거점을 향합니다.
+gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 52, next: 40
 
 #53
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 53, next: 157
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 53, next: 158
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 53, next: 159
+당신은 폐도심 고층 건물에 잠입합니다. 바닥엔 신선한 발자국이 있습니다.
+발자국을 추적한다.
+누군가 최근 이곳을 지나갔습니다. 옥상으로 향하는 문이 반쯤 열려 있습니다.
+gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 53, next: 43
+
+경비 시스템을 확인한다.
+출입 기록과 감시 카메라를 통해 과거 로그를 조회합니다. 생존자 무리가 확인됩니다.
+gold: 0, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 53, next: 29
+
+즉시 철수한다.
+위험하다고 판단한 당신은 빠르게 건물을 빠져나옵니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 53, next: 10
 
 #54
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 54, next: 160
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 54, next: 161
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 54, next: 162
+북부 외곽 숲길에서 당신은 쓰러진 수송 트럭을 발견합니다.
+화물칸을 연다.
+약품과 보급품이 발견되지만, 문틈에 감염자가 숨어 있습니다.
+gold: 2, exp: 14, defense: 1, health: -2, level: 0, attack: 2, stage: 54, next: 18
+
+주변을 수색한다.
+트럭에서 흘러나온 자취를 따라가 보니 숲 속에 또 다른 흔적이 있습니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 54, next: 19
+
+지나친다.
+무시하고 경로를 유지합니다. 짧은 거리 뒤에 더 큰 구조물이 보입니다.
+gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 54, next: 22
 
 #55
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 55, next: 163
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 55, next: 164
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 55, next: 165
+하천을 따라 난 길을 걷던 당신은 부서진 보트와 낙오자를 발견합니다.
+낙오자를 돕는다.
+그는 중상을 입었지만 정보를 제공합니다. 북동쪽 거점에 사람들의 흔적이 있다고 합니다.
+gold: 0, exp: 15, defense: 2, health: -1, level: 0, attack: 0, stage: 55, next: 41
+
+장비만 챙긴다.
+낙오자가 쓰러진 틈을 이용해 물자를 챙기고 자리를 뜹니다.
+gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 1, stage: 55, next: 10
+
+신호탄을 쏘고 떠난다.
+잠재적인 구조 신호로 오해를 유도하며, 당신은 빠르게 사라집니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 1, stage: 55, next: 33
 
 #56
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 56, next: 166
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 56, next: 167
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 56, next: 168
+폐허 아파트 단지의 붕괴된 주차장에서 기계 소리가 들립니다.
+소리를 추적한다.
+잠긴 셔터 뒤, 자율 드론이 정비 중입니다. 배터리를 일부 확보합니다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 56, next: 45
+
+기계실에 들어간다.
+방호복을 입은 인물이 장비를 조작 중입니다. 무언가를 숨깁니다.
+gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 2, stage: 56, next: 30
+
+도망친다.
+이상한 기운을 느낀 당신은 발걸음을 돌립니다. 무언가 쫓아옵니다.
+gold: 0, exp: 11, defense: 2, health: -1, level: 0, attack: 0, stage: 56, next: 10
 
 #57
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 57, next: 169
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 57, next: 170
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 57, next: 171
+숲속에서 당신은 오래된 산장 하나를 발견합니다. 연기가 피어오릅니다.
+안으로 들어간다.
+벽난로 옆엔 노인이 앉아 있습니다. 그는 당신에게 따뜻한 차를 건넵니다.
+gold: 0, exp: 14, defense: 2, health: 2, level: 0, attack: 0, stage: 57, next: 40
+
+뒤로 물러난다.
+산장은 비정상적으로 조용합니다. 뒤로 물러나며 정찰을 시작합니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 57, next: 22
+
+문을 두드린다.
+안에서 인기척이 있습니다. 잠시 후, 낯선 얼굴이 문을 엽니다.
+gold: 1, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 57, next: 58
 
 #58
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 58, next: 172
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 58, next: 173
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 58, next: 174
+산장에서 만난 낯선 이는 북쪽에 남은 생존자들의 거점을 알려줍니다.
+거점으로 향한다.
+숲길을 따라 이동합니다. 중간에 헬기 잔해가 보입니다.
+gold: 0, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 58, next: 43
+
+산장을 되돌아본다.
+의심이 남은 당신은 다시 산장을 바라봅니다. 불빛이 꺼져 있습니다.
+gold: 0, exp: 13, defense: 2, health: -1, level: 0, attack: 1, stage: 58, next: 10
+
+정보를 무시한다.
+그의 말을 신뢰하지 않고, 다른 방향으로 갑니다.
+gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 58, next: 22
 
 #59
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 59, next: 175
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 59, next: 176
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 59, next: 177
+북부 고속도로 진입로에 도착합니다. 버려진 차량들이 도로를 막고 있습니다.
+차량을 치운다.
+움직이는 데 어려움이 있지만 길을 확보합니다. 무전기가 작동합니다.
+gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 1, stage: 59, next: 30
+
+우회로를 찾는다.
+임시 도로로 진입합니다. 위험하지만 빠르게 통과할 수 있습니다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 59, next: 36
+
+현장을 사진으로 남긴다.
+정찰 기록을 위해 현장을 촬영합니다. 이후 분석을 위해 기지로 복귀합니다.
+gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 59, next: 40
 
 #60
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 60, next: 178
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 60, next: 179
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 60, next: 180
+강 서편에 위치한 폐유조선에 접근합니다. 내부는 어둡고 기름 냄새가 짙습니다.
+엔진실을 확인한다.
+장비 일부는 작동 가능해 보입니다. 배터리를 확보합니다.
+gold: 1, exp: 14, defense: 1, health: -1, level: 0, attack: 1, stage: 60, next: 33
+
+선실을 수색한다.
+기록 장치와 지도, 오래된 식량이 발견됩니다.
+gold: 0, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 60, next: 19
+
+선체를 벗어난다.
+지금은 머물 시간 없다 판단하고 당신은 선체 밖으로 빠르게 나옵니다.
+gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 60, next: 22
 
 #61
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 61, next: 181
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 61, next: 182
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 61, next: 183
+고립된 터널 입구에서 희미한 불빛이 깜빡입니다. 주변은 으스스하게 조용합니다.
+불빛을 향해 간다.
+좁은 입구를 통과하자 누군가 설치한 임시 거처가 보입니다.
+gold: 0, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 61, next: 29
+
+잠시 대기한다.
+무언가 함정일 수 있기에 주변을 살핍니다. 어두운 바닥에 발자국이 보입니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 61, next: 43
+
+다른 방향으로 이동한다.
+위험하다 판단한 당신은 강 건너편 도로를 따라 이동합니다.
+gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 61, next: 19
 
 #62
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 62, next: 184
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 62, next: 185
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 62, next: 186
+폐허화된 대형 마트 앞에 도착합니다. 안쪽은 어두우며 바람이 스칩니다.
+마트에 진입한다.
+유통기한이 지난 물품들 사이로 건전지와 응급약품을 찾습니다.
+gold: 1, exp: 13, defense: 2, health: 0, level: 0, attack: 1, stage: 62, next: 37
+
+뒷편 창고로 향한다.
+폐쇄된 철문을 열자 식량 저장고가 보입니다. 그러나 안쪽에서 인기척이 납니다.
+gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 2, stage: 62, next: 18
+
+정찰만 하고 떠난다.
+위험을 무릅쓰지 않기로 결정한 당신은 주변만 확인하고 이동합니다.
+gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 62, next: 22
 
 #63
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 63, next: 187
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 63, next: 188
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 63, next: 189
+고속도로 아래 낡은 쉼터에서 구조 요청 낙서가 보입니다. 희미한 피자국이 이어져 있습니다.
+피자국을 따라간다.
+수풀 사이에 쓰러진 인물을 발견합니다. 그는 미약하게 숨을 쉽니다.
+gold: 0, exp: 14, defense: 2, health: -1, level: 0, attack: 0, stage: 63, next: 41
+
+쉼터를 수색한다.
+버려진 짐가방 안에서 건전지와 방수포를 찾습니다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 63, next: 36
+
+낙서를 기록만 한다.
+당신은 낙서를 사진으로 남기고 빠르게 자리를 뜹니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 63, next: 20
 
 #64
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 64, next: 190
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 64, next: 191
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 64, next: 192
+지하 주차장 통로에서 엔진 소리가 들립니다. 누군가 차량을 사용 중입니다.
+접근한다.
+차량 내부엔 무장한 생존자가 있습니다. 그는 합류를 제안합니다.
+gold: 1, exp: 15, defense: 2, health: 1, level: 0, attack: 1, stage: 64, next: 17
+
+은신한다.
+당신은 기둥 뒤로 숨고 상황을 지켜봅니다. 차량은 곧 떠납니다.
+gold: 0, exp: 12, defense: 3, health: 0, level: 0, attack: 0, stage: 64, next: 39
+
+무시하고 빠져나간다.
+소음을 피해 조용히 반대 방향 출구로 향합니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 64, next: 22
 
 #65
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 65, next: 193
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 65, next: 194
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 65, next: 195
+도시 경계, 강변 방파제 아래 은신처 흔적이 보입니다. 짐은 오래된 듯합니다.
+짐을 조사한다.
+지도를 포함한 생존자의 일지가 보입니다. 귀중한 정보가 담겨 있습니다.
+gold: 1, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 65, next: 30
+
+은신처를 떠난다.
+잔해만 남아 있을 뿐입니다. 다른 길을 찾기로 합니다.
+gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 65, next: 22
+
+불을 피운다.
+몸을 녹이며 짧은 휴식을 취합니다. 어딘가에서 그림자가 움직입니다.
+gold: 0, exp: 13, defense: 1, health: 2, level: 0, attack: 0, stage: 65, next: 38
 
 #66
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 66, next: 196
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 66, next: 197
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 66, next: 198
+지하 고철 처리장, 기계 소음이 가끔 울려 퍼지는 어둠 속.
+전원을 꺼본다.
+기계가 멈추고 조용해진다. 누군가 숨겨둔 장비가 드러난다.
+gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 66, next: 30
+
+기계를 해체한다.
+내부 회로를 분리하고 일부 부품을 챙긴다. 갑작스런 굉음이 들려온다.
+gold: 0, exp: 14, defense: 2, health: -2, level: 0, attack: 1, stage: 66, next: 45
+
+출구를 찾는다.
+이곳은 위험하다. 당신은 빠르게 길을 벗어난다.
+gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 66, next: 44
 
 #67
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 67, next: 199
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 67, next: 200
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 67, next: 201
+수풀로 뒤덮인 송전탑 근처에서 기계 음성이 반복적으로 들려옵니다.
+기계를 확인한다.
+낡은 재난 송신 장치가 자동 반복 방송을 송출 중입니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 67, next: 51
+
+탑을 올라가 본다.
+전망이 트이지만 위태로운 구조입니다. 바람이 세차게 붑니다.
+gold: 0, exp: 13, defense: 2, health: -2, level: 0, attack: 1, stage: 67, next: 19
+
+무시하고 이동한다.
+탑 근처는 함정일 수 있습니다. 당신은 북쪽 경로로 향합니다.
+gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 67, next: 22
 
 #68
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 68, next: 202
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 68, next: 203
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 68, next: 204
+오래된 콘크리트 벙커 입구를 발견합니다. 문은 반쯤 열린 채 흔들립니다.
+안으로 들어간다.
+지하 통로는 깊고 어둡습니다. 벽면엔 낡은 피난 안내도가 보입니다.
+gold: 0, exp: 15, defense: 2, health: -1, level: 0, attack: 0, stage: 68, next: 30
+
+문을 닫고 주변을 정찰한다.
+벙커 주변엔 군번줄과 탄피가 흩어져 있습니다.
+gold: 0, exp: 13, defense: 1, health: 1, level: 0, attack: 1, stage: 68, next: 36
+
+입구를 봉쇄한다.
+당신은 위험을 감지하고 벽돌과 철근으로 출입을 막습니다.
+gold: 1, exp: 14, defense: 3, health: 0, level: 0, attack: 0, stage: 68, next: 40
 
 #69
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 69, next: 205
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 69, next: 206
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 69, next: 207
+기차역 폐허에서 소형 드론이 떨어진 흔적을 발견합니다.
+드론을 수리한다.
+배터리를 교체하자 드론이 잠시 작동하며 좌표를 보여줍니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 69, next: 33
+
+블랙박스를 회수한다.
+녹화된 영상에는 구조 실패와 무전 통신이 기록돼 있습니다.
+gold: 0, exp: 13, defense: 1, health: 1, level: 0, attack: 1, stage: 69, next: 30
+
+드론을 파괴한다.
+위험한 정보가 있을 수 있습니다. 당신은 드론을 부숩니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 69, next: 10
 
 #70
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 70, next: 208
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 70, next: 209
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 70, next: 210
+해안 절벽 위, 오래된 통신 중계소가 삐걱이며 버티고 있습니다.
+중계소 내부를 수색한다.
+생존자 무전과 관련된 낡은 장비가 발견됩니다. 일부는 작동합니다.
+gold: 1, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 70, next: 51
+
+위성 안테나를 조정한다.
+고도 조절 후 강한 신호가 잡힙니다. 구조 요청이 가능해집니다.
+gold: 0, exp: 14, defense: 1, health: 0, level: 0, attack: 1, stage: 70, next: 33
+
+절벽 아래로 이동한다.
+험한 길을 내려가다 미끄러지며 다리를 다칩니다.
+gold: 0, exp: 12, defense: 1, health: -2, level: 0, attack: 0, stage: 70, next: 18
 
 #71
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 71, next: 211
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 71, next: 212
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 71, next: 213
+도시 변두리의 쓰레기 처리장, 연기와 냄새가 짙습니다.
+더미를 뒤진다.
+버려진 무기와 탄약 일부를 찾습니다. 값진 수확입니다.
+gold: 2, exp: 15, defense: 1, health: 0, level: 0, attack: 2, stage: 71, next: 30
+
+지붕 위로 올라간다.
+멈춘 크레인을 이용해 주변을 정찰합니다. 멀리 구조물들이 보입니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 71, next: 43
+
+위험하다 판단하고 후퇴한다.
+냄새가 심상치 않습니다. 당신은 곧장 자리를 뜹니다.
+gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 71, next: 19
 
 #72
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 72, next: 214
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 72, next: 215
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 72, next: 216
+폐교 안 체육관, 천장은 무너졌고 바닥엔 유품이 흩어져 있습니다.
+기록을 수집한다.
+학교 기록과 유품 일부를 챙깁니다. 마지막까지 남은 흔적입니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 72, next: 36
+
+교문을 점검한다.
+문은 낡아 쉽게 열립니다. 출입 흔적은 없습니다.
+gold: 0, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 72, next: 22
+
+교내를 탐색한다.
+과학실에서 보존된 약품과 의료도구를 찾습니다.
+gold: 1, exp: 15, defense: 1, health: 2, level: 0, attack: 1, stage: 72, next: 10
 
 #73
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 73, next: 217
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 73, next: 218
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 73, next: 219
+지하 배수구 입구 앞, 누군가 만든 지도가 벽에 붙어 있습니다.
+지도를 따라간다.
+배수구를 지나 낡은 대피소 입구에 도달합니다.
+gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 73, next: 44
+
+입구를 정찰한다.
+출입 흔적이 보입니다. 발자국은 최근 것 같습니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 73, next: 43
+
+지도만 기록한다.
+사진을 찍고 빠르게 자리를 이동합니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 73, next: 20
 
 #74
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 74, next: 220
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 74, next: 221
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 74, next: 222
+고속도로 터널 내부, 가로등이 깜빡이고 정체불명의 피가 흩어져 있습니다.
+깊숙이 들어간다.
+중앙 벽면에 쓰러진 군인이 있습니다. 무전기와 장비가 남아 있습니다.
+gold: 1, exp: 14, defense: 2, health: -1, level: 0, attack: 1, stage: 74, next: 41
+
+피를 따라간다.
+터널 끝으로 갈수록 피가 선명해집니다. 어두운 그림자가 움직입니다.
+gold: 0, exp: 13, defense: 1, health: -2, level: 0, attack: 1, stage: 74, next: 18
+
+즉시 이탈한다.
+직감적으로 이곳은 위험합니다. 당신은 되돌아섭니다.
+gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 74, next: 22
 
 #75
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 75, next: 223
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 75, next: 224
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 75, next: 225
+산 정상의 작은 관측소에 도달합니다. 하늘은 어둡고 구름은 무겁습니다.
+기기를 작동시킨다.
+날씨 정보와 지역 전력망 상태가 표시됩니다.
+gold: 0, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 75, next: 51
+
+관측일지를 살펴본다.
+한 과학자의 생존 기록이 남아 있습니다. 좌표와 감염 초기 분석도 보입니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 1, stage: 75, next: 30
+
+즉시 철수한다.
+폭풍이 다가오는 걸 느끼고 빠르게 하산합니다.
+gold: 0, exp: 12, defense: 1, health: -2, level: 0, attack: 0, stage: 75, next: 36
 
 #76
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 76, next: 226
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 76, next: 227
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 76, next: 228
+항구의 폐쇄된 관리소, 문은 반쯤 열려 있고, 안은 깜깜합니다.
+무기를 들고 진입한다.
+작은 충돌이 발생했지만 내부는 비어 있습니다. 해상 루트 지도 발견.
+gold: 0, exp: 14, defense: 2, health: -1, level: 0, attack: 1, stage: 76, next: 33
+
+밖에서 관찰한다.
+멀리서 이상한 빛이 반짝입니다. 누군가가 있는 듯합니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 76, next: 43
+
+출입을 포기하고 돌아선다.
+항구는 이미 위험 지역일 수 있습니다. 당신은 되돌아섭니다.
+gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 76, next: 22
 
 #77
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 77, next: 229
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 77, next: 230
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 77, next: 231
+도심 중심의 고층 건물 잔해 위, 낙하산 흔적이 보입니다.
+옥상에 올라간다.
+하강 장비와 신호탄이 남아 있습니다. 누군가 탈출했을 수 있습니다.
+gold: 0, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 77, next: 43
+
+지하 주차장을 확인한다.
+감염자가 도사리고 있었지만 기민하게 빠져나옵니다.
+gold: 1, exp: 13, defense: 2, health: -2, level: 0, attack: 1, stage: 77, next: 18
+
+건물 밖을 순찰한다.
+주변에서 생존 흔적은 발견되지 않습니다. 단, 무선 전파는 감지됩니다.
+gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 77, next: 19
 
 #78
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 78, next: 232
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 78, next: 233
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 78, next: 234
+지상과 연결된 고가도로는 일부가 무너졌고 길은 끊겨 있습니다.
+줄을 타고 내려간다.
+높은 곳에서 하강은 위험하지만 다른 루트보다 빠릅니다.
+gold: 0, exp: 14, defense: 2, health: -2, level: 0, attack: 1, stage: 78, next: 6
+
+되돌아간다.
+시간은 들지만 안전한 길을 다시 이용합니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 78, next: 22
+
+무너진 부분을 뛰어넘는다.
+짧은 거리지만 실패 시 위험이 큽니다. 도전에 성공합니다.
+gold: 1, exp: 15, defense: 1, health: -1, level: 0, attack: 1, stage: 78, next: 41
 
 #79
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 79, next: 235
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 79, next: 236
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 79, next: 237
+작은 개울을 따라가던 중, 흙에 덮인 생존자 천막을 발견합니다.
+안으로 들어간다.
+안은 정리된 흔적이 보이며, 짧은 노트와 무전기가 남아 있습니다.
+gold: 0, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 79, next: 29
+
+물가에서 세수한다.
+정신이 맑아지며 체력이 일부 회복됩니다.
+gold: 0, exp: 11, defense: 1, health: 2, level: 0, attack: 0, stage: 79, next: 10
+
+천막을 지운다.
+감염자 흔적이 남아 있을 위험을 없애기 위해 소각합니다.
+gold: 1, exp: 14, defense: 2, health: -1, level: 0, attack: 1, stage: 79, next: 36
 
 #80
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 80, next: 238
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 80, next: 239
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 80, next: 240
+남쪽 외곽의 정수처리장, 내부는 거대한 파이프와 수조로 가득합니다.
+배관을 점검한다.
+일부 작동 중인 설비에서 깨끗한 물을 확보합니다.
+gold: 1, exp: 13, defense: 2, health: 2, level: 0, attack: 0, stage: 80, next: 40
+
+제어실을 확인한다.
+긴급 차단 장치가 눌린 상태입니다. 복구 시 일부 지역 전력이 회복됩니다.
+gold: 0, exp: 15, defense: 1, health: 0, level: 0, attack: 1, stage: 80, next: 30
+
+장소를 떠난다.
+더 조사할 필요는 없습니다. 안전을 위해 외부로 나옵니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 80, next: 44
 
 #81
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 81, next: 241
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 81, next: 242
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 81, next: 243
+지하 벙커 통로에서 사라진 생존자 흔적이 발견됩니다. 피와 탄피가 남아 있습니다.
+현장을 분석한다.
+무전 기록과 발자국이 방공호 방향을 가리킵니다.
+gold: 0, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 81, next: 30
+
+위험하다고 판단하고 철수한다.
+기분 나쁜 기운에 당신은 빠르게 후퇴합니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 81, next: 40
+
+통로를 더 깊이 들어간다.
+폭발 흔적 이후, 붕괴 직전의 좁은 공간이 나타납니다.
+gold: 0, exp: 13, defense: 1, health: -2, level: 0, attack: 1, stage: 81, next: 90
 
 #82
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 82, next: 244
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 82, next: 245
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 82, next: 246
+서쪽 해안 마을. 정박 중인 배가 하나 있고, 낡은 부두에는 발자국이 남아 있습니다.
+배를 점검한다.
+엔진은 고장났지만, 안에는 식량과 연료가 남아 있습니다.
+gold: 1, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 82, next: 19
+
+발자국을 따라간다.
+어린아이의 흔적이 근처 폐가로 이어집니다. 희미한 노랫소리가 들립니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 82, next: 29
+
+마을을 떠난다.
+감염의 흔적이 많아 보입니다. 당신은 먼 쪽 경로를 택합니다.
+gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 82, next: 22
 
 #83
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 83, next: 247
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 83, next: 248
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 83, next: 249
+고층 빌딩 옥상에 접근하자, 조난 신호 불빛이 깜빡입니다.
+신호 위치로 이동한다.
+연막탄과 낙하 장비가 있지만 생존자는 없습니다.
+gold: 1, exp: 15, defense: 1, health: 0, level: 0, attack: 1, stage: 83, next: 36
+
+주변을 정찰한다.
+다른 옥상에도 신호 흔적이 있습니다. 이동할 방법을 찾아야 합니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 83, next: 33
+
+지하로 내려간다.
+엘리베이터 샤프트를 이용합니다. 하강 중 장비가 손상됩니다.
+gold: 0, exp: 12, defense: 1, health: -2, level: 0, attack: 0, stage: 83, next: 18
 
 #84
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 84, next: 250
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 84, next: 251
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 84, next: 252
+철제 창고 내부. 안엔 비어있지만 경고 메시지가 벽에 새겨져 있습니다.
+메시지를 분석한다.
+“문을 열지 마라”는 반복된 문장. 근처에 감염체 흔적도 있습니다.
+gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 84, next: 41
+
+근처 방을 탐색한다.
+장비는 없지만 잠시 쉴 수 있는 안전한 공간입니다.
+gold: 0, exp: 13, defense: 1, health: 2, level: 0, attack: 0, stage: 84, next: 40
+
+창고를 떠난다.
+기분이 좋지 않습니다. 당신은 발길을 돌립니다.
+gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 84, next: 22
 
 #85
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 85, next: 253
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 85, next: 254
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 85, next: 255
+언덕 위 교회. 십자가는 부러졌고, 입구는 반쯤 열린 채 방치돼 있습니다.
+안으로 들어간다.
+성가대석 뒤에서 의료 키트와 일기장이 발견됩니다.
+gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 85, next: 29
+
+주변 묘지를 살핀다.
+무덤 일부가 파헤쳐져 있습니다. 누군가 최근에 다녀간 듯합니다.
+gold: 0, exp: 13, defense: 2, health: -1, level: 0, attack: 1, stage: 85, next: 18
+
+철수한다.
+불길함을 느낀 당신은 머물지 않고 곧장 떠납니다.
+gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 85, next: 10
 
 #86
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 86, next: 256
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 11, level: 0, attack: 0, stage: 86, next: 257
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 86, next: 258
+전망대 꼭대기에서 망원경을 조작할 수 있습니다. 사방의 지형이 한눈에 보입니다.
+조망 지점 저장.
+지형 정보를 기록합니다. 다음 경로 계획에 큰 도움이 됩니다.
+gold: 0, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 86, next: 30
+
+망원경을 분해한다.
+부품을 회수해 통신 장비 수리에 활용할 수 있습니다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 86, next: 51
+
+이탈한다.
+기억에만 남긴 채 당신은 이동을 시작합니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 86, next: 44
 
 #87
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 87, next: 259
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 12, level: 0, attack: 0, stage: 87, next: 260
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 87, next: 261
+지하 연구소 폐쇄 구역. 내부는 경고등과 경보음이 계속 울리고 있습니다.
+경고를 무시하고 들어간다.
+실험 샘플과 의문의 통조림이 보입니다. 일부는 가져옵니다.
+gold: 1, exp: 15, defense: 2, health: -1, level: 0, attack: 2, stage: 87, next: 45
+
+경보 해제를 시도한다.
+안정화에 성공하지만 일부 구역의 전원이 복구되며 함정이 작동합니다.
+gold: 0, exp: 14, defense: 1, health: -2, level: 0, attack: 1, stage: 87, next: 30
+
+후퇴한다.
+위험이 커지고 있습니다. 당신은 빠르게 복귀합니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 87, next: 40
 
 #88
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 88, next: 262
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 13, level: 0, attack: 0, stage: 88, next: 263
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 88, next: 264
+비 내리는 옥상. 낙뢰로 장비가 손상돼 있고, 송신기는 멈춘 상태입니다.
+장비를 수리한다.
+임시 전원을 연결해 메시지를 송출합니다. 신호는 약하지만 반응이 있습니다.
+gold: 1, exp: 15, defense: 1, health: 0, level: 0, attack: 1, stage: 88, next: 33
+
+방수천을 찾는다.
+인근 천막에서 천 조각을 확보해 옷과 장비를 보호합니다.
+gold: 0, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 88, next: 10
+
+빗속을 떠난다.
+기지로 귀환하며 빗속에서 열이 오릅니다.
+gold: 0, exp: 11, defense: 1, health: -1, level: 0, attack: 0, stage: 88, next: 19
 
 #89
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 89, next: 265
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 14, level: 0, attack: 0, stage: 89, next: 266
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 4, stage: 89, next: 267
+폐쇄된 식품 공장. 자동화 기계는 정지했고, 안엔 부패한 식재료가 널려 있습니다.
+설비를 점검한다.
+수리 가능한 기계 부품을 발견하고 일부 회수합니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 1, stage: 89, next: 51
+
+냉동고를 연다.
+강한 악취와 함께 비상 식량이 소량 남아 있습니다.
+gold: 0, exp: 13, defense: 2, health: -1, level: 0, attack: 0, stage: 89, next: 29
+
+떠난다.
+당신은 위험 징후에 반응하며 이곳을 벗어납니다.
+gold: 0, exp: 12, defense: 1, health: 1, level: 0, attack: 0, stage: 89, next: 22
 
 #90
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 90, next: 268
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 10, level: 0, attack: 0, stage: 90, next: 269
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 2, stage: 90, next: 270
+무너진 지하 구조물 끝에서 낡은 금고가 발견됩니다.
+금고를 연다.
+안엔 설계도와 비밀 명령 문서가 있습니다. 무언가 중요한 단서입니다.
+gold: 2, exp: 16, defense: 2, health: 0, level: 0, attack: 1, stage: 90, next: 33
+
+그대로 둔다.
+열기엔 너무 위험합니다. 당신은 신속히 이탈합니다.
+gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 90, next: 40
+
+금고를 파괴한다.
+소음과 진동이 주변을 자극합니다. 뭔가 접근해옵니다.
+gold: 0, exp: 14, defense: 2, health: -2, level: 0, attack: 1, stage: 90, next: 18
 
 #91
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 91, next: 271
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 11, level: 0, attack: 0, stage: 91, next: 272
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 3, stage: 91, next: 273
+동굴 안 수로에서 비상용 전기가 흐르고 있습니다.
+케이블을 재정비한다.
+빛이 돌아오고 안쪽 벽화가 드러납니다. 숨겨진 메시지가 보입니다.
+gold: 1, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 91, next: 30
+
+수로 끝을 따라간다.
+작은 보관소와 약간의 식수, 장비가 발견됩니다.
+gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 91, next: 22
+
+동굴을 빠져나간다.
+그 이상 더 깊이 가는 건 위험합니다. 당신은 퇴각합니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 91, next: 36
 
 #92
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 92, next: 274
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 12, level: 0, attack: 0, stage: 92, next: 275
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 4, stage: 92, next: 276
+무너진 철탑 근처에서 송신기 흔적이 보입니다.
+잔해를 수색한다.
+신호 기록과 좌표 데이터 일부를 복원합니다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 92, next: 33
+
+근처를 파본다.
+송신기의 뿌리 쪽에서 작은 전력기와 배터리가 나옵니다.
+gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 92, next: 30
+
+자리를 뜬다.
+주변 상황이 좋지 않습니다. 당신은 신속히 이동합니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 92, next: 44
 
 #93
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 93, next: 277
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 13, level: 0, attack: 0, stage: 93, next: 278
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 2, stage: 93, next: 279
+감염 통제소 폐허. 잔해 사이에 흔적이 남아 있습니다.
+기록을 찾는다.
+파일 일부는 훼손됐지만, 초기 감염 경로 데이터가 남아 있습니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 1, stage: 93, next: 30
+
+제독 장비를 챙긴다.
+생존에 유용한 보호 장비를 확보합니다.
+gold: 1, exp: 15, defense: 3, health: 1, level: 0, attack: 0, stage: 93, next: 40
+
+현장을 정리한다.
+남은 흔적을 불태우고 떠납니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 93, next: 10
 
 #94
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 94, next: 280
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 14, level: 0, attack: 0, stage: 94, next: 281
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 3, stage: 94, next: 282
+송전소 관제실. 대형 패널이 작동하지 않지만 전력선은 살아 있습니다.
+시스템을 재가동한다.
+패널이 일부 켜지고, 지도에 노란 점이 표시됩니다.
+gold: 1, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 94, next: 33
+
+출력을 낮춘다.
+잦은 전력 소모를 줄이기 위해 일부 회선을 차단합니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 94, next: 19
+
+즉시 떠난다.
+이 지역은 더 이상 안정적이지 않습니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 94, next: 22
 
 #95
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 95, next: 283
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 10, level: 0, attack: 0, stage: 95, next: 284
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 4, stage: 95, next: 285
+안개 낀 저수지. 부표가 떠 있고, 물 밑엔 뭔가 희미하게 보입니다.
+물속을 조사한다.
+잠수 후 낡은 상자에서 응급 키트를 회수합니다.
+gold: 1, exp: 14, defense: 1, health: -2, level: 0, attack: 1, stage: 95, next: 10
+
+부표를 끌어올린다.
+의외로 드론 신호기와 배터리가 들어 있습니다.
+gold: 1, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 95, next: 29
+
+떠난다.
+저수지 근처는 위험합니다. 당신은 바로 자리를 옮깁니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 95, next: 36
 
 #96
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 96, next: 286
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 11, level: 0, attack: 0, stage: 96, next: 287
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 2, stage: 96, next: 288
+우회로 끝, 작동 중인 경보기 근처에서 익숙한 장비가 떨어져 있습니다.
+장비를 챙긴다.
+구조 요청용 송신기와 마이크입니다. 이전 생존자의 흔적입니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 96, next: 51
+
+경보를 끈다.
+시끄러운 소리를 끄며 근처 동굴 입구를 엿봅니다.
+gold: 0, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 96, next: 44
+
+떠난다.
+당장은 시간 낭비입니다. 당신은 길을 바꿉니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 96, next: 22
 
 #97
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 97, next: 289
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 12, level: 0, attack: 0, stage: 97, next: 290
-모험을 시작한다.
-gold: 0, exp: 16, defense: 0, health: -4, level: 0, attack: 3, stage: 97, next: 291
+산사태 이후 끊긴 산길. 낙석과 나무가 길을 가로막고 있습니다.
+우회로를 찾는다.
+짧은 오솔길이 이어지며, 도중에 피난 흔적을 발견합니다.
+gold: 1, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 97, next: 19
+
+장비를 꺼내 정리한다.
+삽과 밧줄을 활용해 간신히 통로를 확보합니다.
+gold: 0, exp: 13, defense: 1, health: -1, level: 0, attack: 1, stage: 97, next: 22
+
+철수한다.
+지금은 이 구역을 건너는 것이 무리입니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 97, next: 40
 
 #98
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 7, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 98, next: 292
-여관에 들른다.
-gold: -2, exp: 7, defense: 0, health: 13, level: 0, attack: 0, stage: 98, next: 293
-모험을 시작한다.
-gold: 0, exp: 17, defense: 0, health: -5, level: 0, attack: 4, stage: 98, next: 294
+북동쪽 송신탑 잔해 위로 드론이 떠다니며 빛을 깜빡입니다.
+드론을 유도한다.
+신호를 강화해 근처의 송신소로 드론을 유도합니다.
+gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 98, next: 33
+
+신호기를 꺼낸다.
+우연히 다른 생존자의 송신기도 감지됩니다.
+gold: 0, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 98, next: 51
+
+드론을 회수한다.
+배터리와 데이터 모듈을 확보합니다. 일부는 해석 중입니다.
+gold: 1, exp: 13, defense: 1, health: 1, level: 0, attack: 1, stage: 98, next: 30
 
 #99
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 5, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 99, next: 295
-여관에 들른다.
-gold: -2, exp: 5, defense: 0, health: 14, level: 0, attack: 0, stage: 99, next: 296
-모험을 시작한다.
-gold: 0, exp: 18, defense: 0, health: -4, level: 0, attack: 2, stage: 99, next: 297
+가장자리에 위치한 낡은 오두막. 문은 잠겨 있고, 주변은 고요합니다.
+문을 연다.
+비상약과 통조림이 있습니다. 장판 밑에 보관함도 있습니다.
+gold: 1, exp: 13, defense: 1, health: 2, level: 0, attack: 0, stage: 99, next: 40
+
+창문을 들여다본다.
+실내는 정돈되어 있으며 누군가 최근까지 머문 듯합니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 99, next: 19
+
+떠난다.
+지금은 안에 들어갈 이유가 없습니다. 다른 경로로 이동합니다.
+gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 99, next: 22
 
 #100
-당신은 낯선 마을에 도착했습니다. 어디로 갈까요?
-시장으로 간다.
-gold: 6, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 100, next: 298
-여관에 들른다.
-gold: -2, exp: 6, defense: 0, health: 10, level: 0, attack: 0, stage: 100, next: 299
-모험을 시작한다.
-gold: 0, exp: 15, defense: 0, health: -5, level: 0, attack: 3, stage: 100, next: 300
+관측소 최상층. 다시 전원을 확보한 장비가 송신을 반복합니다.
+응답을 기다린다.
+반응이 오고 있습니다. 구조 신호가 전 세계로 송출됩니다.
+gold: 2, exp: 20, defense: 3, health: 2, level: 1, attack: 2, stage: 100, next: 1
+
+장비를 강화한다.
+전력을 조정하고 무전을 증폭합니다. 다른 생존자들과의 연결 가능성이 높아집니다.
+gold: 1, exp: 18, defense: 2, health: 1, level: 1, attack: 1, stage: 100, next: 33
+
+즉시 철수한다.
+관측소는 더 이상 안전하지 않습니다. 당신은 새로운 거점을 향해 출발합니다.
+gold: 0, exp: 16, defense: 2, health: 0, level: 1, attack: 0, stage: 100, next: 10
+
+

@@ -52,6 +52,7 @@ typedef struct {
 typedef struct {
     int number;
     char description[512];
+    char result_text[512];
     Choice choices[3];
 } Scenario;
 
@@ -61,7 +62,7 @@ void  get_scenario(Scenario *scenario, int scenario_number);
 void print_scenario(Scenario *scenario);
 void print_all_scenarios(Scenario *scenarios, int count);
 void save_log(const char *log);
-void change_status(user_status *status, int select);
+void change_status(user_status *status, Choice select);
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
@@ -198,13 +199,14 @@ int main(int argc, char *argv[]) {
                         save_log(log_message);
 
                         stocpacket.status = ctospacket.status; // 선택한 유저 상태 저장
-                        change_status(&stocpacket.status, ctospacket.select); // 선택에 따른 상태 변경
+                        change_status(&stocpacket.status, scenario[stocpacket.status.stage].choices[ctospacket.select - 1]); // 선택에 따른 상태 변경
                         stocpacket.status.stage = scenario[stocpacket.status.stage].choices[ctospacket.select - 1].next_scenario; // 다음 시나리오 번호 업데이트
 
-                        // 예시로 선택한 옵션에 따라 텍스트에서 결과 가져와서 stocpacket에 저장 후 전송 구현해야함
+                        // 다음 시나리오 번호에 따라 설명과 선택지 전송
                         int scenario_number = stocpacket.status.stage;
                         Scenario cur_scenario = scenario[scenario_number];
-                        sprintf(stocpacket.buffer, "#%d\n%s\n1. %s\n2. %s\n3. %s",
+                        sprintf(stocpacket.buffer, "%s\n\n#%d\n%s\n1. %s\n2. %s\n3. %s",
+                            cur_scenario.result_text,
                             cur_scenario.number,
                             cur_scenario.description,
                             cur_scenario.choices[0].text,
@@ -280,6 +282,11 @@ Scenario* file_read_scenario(const char *filename, int *scenario_count) {
                 line[strcspn(line, "\n")] = 0;
                 strncpy(scenarios[current].choices[i].text, line, sizeof(scenarios[current].choices[i].text) - 1);
 
+                // 결과 텍스트
+                fgets(line, sizeof(line), fp);
+                line[strcspn(line, "\n")] = 0;
+                strncpy(scenarios[current].result_text, line, sizeof(scenarios[current].result_text) - 1);
+
                 // 결과 파라미터
                 fgets(line, sizeof(line), fp);
                 sscanf(line,
@@ -293,6 +300,7 @@ Scenario* file_read_scenario(const char *filename, int *scenario_count) {
                     &scenarios[current].choices[i].stage,
                     &scenarios[current].choices[i].next_scenario
                 );
+                fgets(line, sizeof(line), fp);
             }
         }
     }
@@ -343,12 +351,12 @@ void save_log(const char *log) {
     fclose(fp);
 }
 
-void change_status(user_status *status, int select) {
-    status->health += status->health;
-    status->exp += status->exp;
-    status->gold += status->gold;
-    status->attack += status->attack;
-    status->defense += status->defense;
+void change_status(user_status *status, Choice select) {
+    status->health += select.health;
+    status->exp += select.exp;
+    status->gold += select.gold;
+    status->attack += select.attack;
+    status->defense += select.defense;
     if(status->exp >= 100) {
         status->level++;
         status->exp = status->exp - 100;

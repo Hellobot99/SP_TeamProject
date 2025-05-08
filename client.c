@@ -81,21 +81,26 @@ int main(int argc, char *argv[]) {
 
     printf("Press Enter to start the game...\n");
     getchar();
+    getchar();
 
     ctospacket.cmd = INIT;
     write(sock, &ctospacket, sizeof(ctospacket));
     ctospacket.cmd = SELECT;
 
     // 4. 메시지 보내고 받기
+
+    //TODO: termios로 유저인터페이스 구현
     while (1) {
         read(sock, &stocpacket, sizeof(stocpacket));
         if (stocpacket.cmd == SELECT) {
+            printf("----------------------\n");
             printf("%s\n", stocpacket.buffer);
             printf("Select an option: ");
             scanf("%d", &ctospacket.select);
             ctospacket.status = stocpacket.status; // 현재 유저 상태 저장
             ctospacket.cmd = SELECT;
             write(sock, &ctospacket, sizeof(ctospacket));
+            printf("----------------------\n");
         } 
         else if (stocpacket.cmd == END) {
             printf("Game Over!\n");
