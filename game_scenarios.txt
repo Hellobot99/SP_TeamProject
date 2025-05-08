@@ -94,7 +94,7 @@ gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 1, stage: 7, next: 18
 
 지도에 표시된 낯선 지점을 따라간다.
 생존자 중 한 명이 넘겨준 지도 조각을 참고해 다른 위치를 탐색합니다.
-gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 7, next: 30
+gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 7, next: 18
 
 #8
 지하철역 깊숙한 구간, 좀비 무리가 모여 있습니다. 선택의 순간입니다.
@@ -108,13 +108,13 @@ gold: 1, exp: 14, defense: 1, health: -4, level: 0, attack: 3, stage: 8, next: 1
 
 지하철 차량을 수색한다.
 버려진 차량 안에서 유용한 도구를 발견합니다. 감염자는 없습니다.
-gold: 1, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 8, next: 36
+gold: 1, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 8, next: 20
 
 #9
 상점 내부에서 물자를 챙기던 당신, 돌연 좀비가 들이닥칩니다.
 뒤편 문으로 도망친다.
 당신은 문을 열고 좁은 골목으로 도주합니다. 추격은 계속됩니다.
-gold: 0, exp: 11, defense: 1, health: -2, level: 0, attack: 1, stage: 9, next: 20
+gold: 0, exp: 11, defense: 1, health: -2, level: 0, attack: 1, stage: 9, next: 18
 
 싸운다.
 진열대를 넘어 좀비와 격투를 벌입니다. 팔에 상처를 입지만 물자는 챙깁니다.
