@@ -1,3 +1,4 @@
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,15 +10,15 @@
 
 #define BUFFER_SIZE 10240
 #define MAX_CLIENTS  FD_SETSIZE
-
+#define MAX_STAGE    100
 #define INIT 1
 #define SELECT 2
 #define END 3
-
+#define CHAT 4
+#define RESULT 5
 #define FILE_NAME "game_scenarios.txt"
-#define LOG_FILE "log.txt"
 
-typedef struct{
+typedef struct {
     int user_id;
     int stage;
     int health;
@@ -26,7 +27,6 @@ typedef struct{
     int gold;
     int attack;
     int defense;
-    //int item[10];
     char user_name[100];
 } user_status;
 
@@ -39,6 +39,7 @@ typedef struct {
 typedef struct {
     int cmd;
     int select;
+    char buffer[BUFFER_SIZE];
     user_status status;
 } ctosPacket;
 
@@ -46,23 +47,35 @@ typedef struct {
     char text[256];
     char result_text[256];
     int health, exp, gold, attack, defense, level, stage;
-    int next_scenario;  // 다음으로 이동할 시나리오 번호
+    int next_scenario;
 } Choice;
 
 typedef struct {
     int number;
     char description[512];
-    char result_text[512];
     Choice choices[3];
 } Scenario;
 
+typedef struct {
+    int stage;
+    int client_fds[MAX_CLIENTS];
+    int selected[MAX_CLIENTS];
+    user_status statuses[MAX_CLIENTS];
+    int client_count;
+    time_t start_time;
+    int active;
+    int all_selected;
+} CoopEvent;
+
+Scenario scenarios[MAX_STAGE];
+CoopEvent coop_event;
+int client_inited[MAX_CLIENTS] = {0}; // 각 클라이언트의 INIT 여부
+
 void init_user_status(user_status *status, int user_id);
-Scenario* file_read_scenario(const char *filename, int *scenario_count);
-void  get_scenario(Scenario *scenario, int scenario_number);
-void print_scenario(Scenario *scenario);
-void print_all_scenarios(Scenario *scenarios, int count);
-void save_log(const char *log);
 void change_status(user_status *status, Choice select);
+int calculate_majority(int selected[], int count);
+Scenario* load_scenarios(const char *filename, int *count);
+void reset_event();
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
@@ -70,182 +83,184 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    int scenario_count = 0;
+    int scenario_count;
+    load_scenarios(FILE_NAME, &scenario_count);
 
-    Scenario *scenario;
-    scenario = file_read_scenario(FILE_NAME, &scenario_count);
-    //print_all_scenarios(scenario, scenario_count);
-
-    int port = atoi(argv[1]);
-    int server_fd, client_fd, fd_max, fd_num;
-    int client_fds[MAX_CLIENTS];
-    int client_count = 0, user_id = 1;
-
-    struct sockaddr_in address;
-    socklen_t addrlen = sizeof(address);
-    stocPacket stocpacket;
-    ctosPacket ctospacket;
-
+    int server_fd = socket(AF_INET, SOCK_STREAM, 0);
+    struct sockaddr_in addr;
     fd_set read_fds, temp_fds;
+    int fd_max, client_fds[MAX_CLIENTS], client_count = 0;
+    socklen_t addrlen = sizeof(addr);
 
-    // 1. 소켓 생성
-    server_fd = socket(AF_INET, SOCK_STREAM, 0);
-    if (server_fd == -1) {
-        perror("socket failed");
-        exit(EXIT_FAILURE);
-    }
+    memset(&addr, 0, sizeof(addr));
+    addr.sin_family = AF_INET;
+    addr.sin_addr.s_addr = INADDR_ANY;
+    addr.sin_port = htons(atoi(argv[1]));
 
-    // 2. 옵션 설정
-    int option = 1;
-    setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &option, sizeof(option));
-
-    // 3. 주소 설정
-    memset(&address, 0, sizeof(address));
-    address.sin_family = AF_INET;
-    address.sin_addr.s_addr = INADDR_ANY;
-    address.sin_port = htons(port);
-
-    // 4. 바인드
-    if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0) {
-        perror("bind failed");
-        exit(EXIT_FAILURE);
-    }
-
-    // 5. 리슨
-    if (listen(server_fd, 1) < 0) {
-        perror("listen failed");
-        exit(EXIT_FAILURE);
-    }
-
-    printf("Server listening on port %d...\n", port);
+    setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &(int){1}, sizeof(int));
+    bind(server_fd, (struct sockaddr*)&addr, sizeof(addr));
+    listen(server_fd, 5);
 
     FD_ZERO(&read_fds);
     FD_SET(server_fd, &read_fds);
     fd_max = server_fd;
+    int count_temp = 0;
+
+    printf("Server started on port %s\n", argv[1]);
+    reset_event();
 
     while (1) {
         temp_fds = read_fds;
-        fd_num = select(fd_max + 1, &temp_fds, NULL, NULL, NULL);
-        if (fd_num < 0) {
-            perror("select failed");
-            exit(EXIT_FAILURE);
-        }
+        select(fd_max + 1, &temp_fds, NULL, NULL, &(struct timeval){1, 0});    
 
-        // 새로운 클라이언트 접속
-        if (FD_ISSET(server_fd, &temp_fds)) {
-            client_fd = accept(server_fd, (struct sockaddr *)&address, &addrlen);
-            if (client_fd < 0) {
-                perror("accept failed");
-                continue;
-            }
+        for (int i = 0; i <= fd_max; i++) {
+            if (FD_ISSET(i, &temp_fds)) {
+                if (i == server_fd) {
+                    int client_fd = accept(server_fd, (struct sockaddr*)&addr, &addrlen);
+                    FD_SET(client_fd, &read_fds);
+                    if (client_fd > fd_max) fd_max = client_fd;
+                    client_fds[client_count++] = client_fd;
+                    printf("Client connected\n");
 
-            if (client_count >= MAX_CLIENTS) {
-                fprintf(stderr, "Too many clients.\n");
-                close(client_fd);
-                continue;
-            }
-
-            client_fds[client_count++] = client_fd;
-            FD_SET(client_fd, &read_fds);
-            if (client_fd > fd_max) fd_max = client_fd;
-
-            printf("%d Client connected!\n", client_count);
-        }
-
-        // 기존 클라이언트 메시지 처리
-        for (int i = 0; i < client_count; i++) {
-            int cur_fd = client_fds[i];
-
-            if (FD_ISSET(cur_fd, &temp_fds)) {
-                int n = read(cur_fd, &ctospacket, sizeof(ctospacket));
-                if (n <= 0) {
-                    // 클라이언트가 연결을 종료했거나 오류 발생
-                    close(cur_fd);
-                    FD_CLR(cur_fd, &read_fds);
-                    for (int j = i; j < client_count - 1; j++) {
-                        client_fds[j] = client_fds[j + 1];
+                    // 새 클라이언트 등록
+                    coop_event.client_fds[coop_event.client_count] = client_fd;
+                    init_user_status(&coop_event.statuses[coop_event.client_count], client_fd);
+                    coop_event.selected[coop_event.client_count] = 0;
+                    client_inited[coop_event.client_count] = 0;
+                    coop_event.client_count++;
+                }
+                else {
+                    ctosPacket ctospacket;
+                    int n = read(i, &ctospacket, sizeof(ctospacket));
+                    if (n <= 0) {
+                        close(i); FD_CLR(i, &read_fds);
+                        continue;
                     }
-                    client_count--;
-                    i--; // 리스트가 당겨졌으므로 인덱스 조정
-                    printf("Client left, %d Client(s) remaining\n", client_count);
-                } else {
-                    // 클라이언트와 통신
-                    if(ctospacket.cmd == INIT) {
-                        init_user_status(&stocpacket.status,user_id);
-                        user_id++;
-                        strcpy(stocpacket.status.user_name, ctospacket.status.user_name);
-                        strncpy(stocpacket.status.user_name, ctospacket.status.user_name, sizeof(stocpacket.status.user_name) - 1);
-                        stocpacket.cmd = SELECT;
 
-                        // 시나리오 번호에 따라 설명과 선택지 전송
-                        int scenario_number = ctospacket.status.stage;
-                        Scenario cur_scenario = scenario[scenario_number];
-                        sprintf(stocpacket.buffer, "#%d\n%s\n1. %s\n2. %s\n3. %s",
-                            cur_scenario.number,
-                            cur_scenario.description,
-                            cur_scenario.choices[0].text,
-                            cur_scenario.choices[1].text,
-                            cur_scenario.choices[2].text
-                        );
-
-                        write(cur_fd, &stocpacket, sizeof(stocpacket));
-                    } else if (ctospacket.cmd == SELECT) {
-                        // 선택 처리
-                        char log_message[1024];
-                        stocpacket.cmd = SELECT;
-                        printf("User %s selected option %d\n", ctospacket.status.user_name, ctospacket.select);
-                        sprintf(log_message,"User %s selected option %d [#%d -> #%d]\n", ctospacket.status.user_name, ctospacket.select,
-                            ctospacket.status.stage, scenario[ctospacket.status.stage].choices[ctospacket.select - 1].next_scenario);
-                        save_log(log_message);
-
-                        stocpacket.status = ctospacket.status; // 선택한 유저 상태 저장
-                        change_status(&stocpacket.status, scenario[stocpacket.status.stage].choices[ctospacket.select - 1]); // 선택에 따른 상태 변경
-                        stocpacket.status.stage = scenario[stocpacket.status.stage].choices[ctospacket.select - 1].next_scenario; // 다음 시나리오 번호 업데이트
-
-                        // 다음 시나리오 번호에 따라 설명과 선택지 전송
-                        int scenario_number = stocpacket.status.stage;
-                        Scenario cur_scenario = scenario[scenario_number];
-                        sprintf(stocpacket.buffer, "%s\n\n#%d\n%s\n1. %s\n2. %s\n3. %s",
-                            cur_scenario.result_text,
-                            cur_scenario.number,
-                            cur_scenario.description,
-                            cur_scenario.choices[0].text,
-                            cur_scenario.choices[1].text,
-                            cur_scenario.choices[2].text
-                        );
-
-                        if(stocpacket.status.health <= 0) stocpacket.cmd = END;
-
-                        write(cur_fd, &stocpacket, sizeof(stocpacket));
-                    } else if (ctospacket.cmd == END) {
-                        // 종료 처리
-                        close(cur_fd);
-                        FD_CLR(cur_fd, &read_fds);
-                        for (int j = i; j < client_count - 1; j++) {
-                            client_fds[j] = client_fds[j + 1];
+                    if (ctospacket.cmd == INIT) {
+                        // 닉네임만 갱신
+                        int idx = -1;
+                        for (int j = 0; j < coop_event.client_count; j++) {
+                            if (coop_event.client_fds[j] == i) {
+                                idx = j;
+                                break;
+                            }
                         }
-                        client_count--;
-                        i--; // 리스트가 당겨졌으므로 인덱스 조정
-                        printf("Client left, %d Client(s) remaining\n", client_count);
+                        if (idx != -1) {
+                            strncpy(coop_event.statuses[idx].user_name, ctospacket.status.user_name, 99);
+                            client_inited[idx] = 1;
+                        }
+
+                        // 모든 클라이언트가 INIT을 보냈는지 확인
+                        int all_inited = 1;
+                        for (int j = 0; j < coop_event.client_count; j++) {
+                            if (!client_inited[j]) {
+                                all_inited = 0;
+                                break;
+                            }
+                        }
+
+                        if (all_inited && coop_event.client_count > 0 && !coop_event.active) {
+                            coop_event.stage = coop_event.statuses[0].stage;
+                            coop_event.start_time = time(NULL);
+                            coop_event.active = 1;
+
+                            // 모든 클라이언트에게 SELECT 패킷 전송
+                            for (int j = 0; j < coop_event.client_count; j++) {
+                                stocPacket pkt = { .cmd = SELECT, .status = coop_event.statuses[j] };
+                                Scenario scen = scenarios[coop_event.statuses[j].stage];
+                                snprintf(pkt.buffer, sizeof(pkt.buffer), "#%d\n%s\n1. %s\n2. %s\n3. %s",
+                                    scen.number, scen.description, scen.choices[0].text, scen.choices[1].text, scen.choices[2].text);
+                                write(coop_event.client_fds[j], &pkt, sizeof(pkt));
+                            }
+                        }
+                    } else if (ctospacket.cmd == SELECT) {
+                        for (int j = 0; j < coop_event.client_count; j++) {
+                            if (coop_event.client_fds[j] == i) {
+                                coop_event.selected[j] = ctospacket.select;
+
+                                stocPacket pkt = { .cmd = CHAT, .status = coop_event.statuses[j] };
+                                snprintf(pkt.buffer, sizeof(pkt.buffer),
+                                    "선택 완료. 다른 유저를 기다리는 중..\n");
+                                write(i, &pkt, sizeof(pkt));
+
+                                // --- 선택 사실을 다른 플레이어에게 알림 ---
+                                for (int k = 0; k < coop_event.client_count; k++) {
+                                    if (k != j) {
+                                        stocPacket chatpkt = { .cmd = CHAT };
+                                        snprintf(chatpkt.buffer, sizeof(chatpkt.buffer),
+                                            "%s님이 %d번 선택지를 골랐습니다.", ctospacket.status.user_name, ctospacket.select);
+                                        write(coop_event.client_fds[k], &chatpkt, sizeof(chatpkt));
+                                    }
+                                }
+                            }
+                        }
+
+                        // --- 모든 클라이언트가 선택을 했는지 확인 ---
+                        int all_selected = 1;
+                        for (int j = 0; j < coop_event.client_count; j++) {
+                            if (coop_event.selected[j] == 0) {
+                                all_selected = 0;
+                                break;
+                            }
+                        }
+                        coop_event.all_selected = all_selected;
+
+                        coop_event.stage = scenarios[coop_event.stage].choices->next_scenario;
+
+                        if (coop_event.all_selected && coop_event.active) {
+                            int final_choice = calculate_majority(coop_event.selected, coop_event.client_count);
+                            for (int j = 0; j < coop_event.client_count; j++) {
+                                stocPacket pkt = { .cmd = RESULT, .status = coop_event.statuses[j] };    
+                                Scenario scen = scenarios[coop_event.statuses[j].stage];   
+                                sprintf(pkt.buffer, "결과 : [%d] %s",final_choice,scen.choices->result_text);                     
+                                write(coop_event.client_fds[j], &pkt, sizeof(pkt));
+                                coop_event.statuses[j].stage = coop_event.stage;
+                            }                            
+
+                            sleep(10);
+
+                            for (int j = 0; j < coop_event.client_count; j++) {
+                                stocPacket pkt = { .cmd = SELECT, .status = coop_event.statuses[j] };
+                                Scenario scen = scenarios[coop_event.statuses[j].stage];
+                                snprintf(pkt.buffer, sizeof(pkt.buffer), "#%d\n%s\n1. %s\n2. %s\n3. %s",
+                                    scen.number, scen.description, scen.choices[0].text, scen.choices[1].text, scen.choices[2].text);
+                                write(coop_event.client_fds[j], &pkt, sizeof(pkt));
+                            }
+
+                            coop_event.all_selected = 0;
+                            for (int j = 0; j < coop_event.client_count; j++) {
+                                coop_event.selected[j] = 0;                                
+                        }
+
+                        }
+                    } else if (ctospacket.cmd == CHAT) {
+                        ctospacket.buffer[strcspn(ctospacket.buffer, "\n")] = '\0';
+                        for (int j = 0; j < coop_event.client_count; j++) {
+                            if (coop_event.client_fds[j] != i) {
+                                stocPacket chatpkt = { .cmd = CHAT };
+                                snprintf(chatpkt.buffer, sizeof(chatpkt.buffer), "%s: %s", ctospacket.status.user_name, ctospacket.buffer);
+                                write(coop_event.client_fds[j], &chatpkt, sizeof(chatpkt));
+                            }
+                        }
                     }
                 }
             }
         }
     }
-
-    // 소켓 닫기
-    for (int i = 0; i < client_count; i++) {
-        close(client_fds[i]);
-    }
-    close(server_fd);
-    printf("Server shutting down...\n");
-    free(scenario);
-
     return 0;
 }
 
+void reset_event() {
+    coop_event.client_count = 0;
+    coop_event.active = 0;
+    coop_event.all_selected = 0;
+    memset(coop_event.client_fds, 0, sizeof(coop_event.client_fds));
+    memset(coop_event.selected, 0, sizeof(coop_event.selected));
+}
+
 void init_user_status(user_status *status, int user_id) {
-    status->user_id = 0;
+    status->user_id = user_id;
     status->stage = 0;
     status->health = 100;
     status->level = 1;
@@ -253,102 +268,7 @@ void init_user_status(user_status *status, int user_id) {
     status->gold = 0;
     status->attack = 10;
     status->defense = 5;
-}
-
-Scenario* file_read_scenario(const char *filename, int *scenario_count) {
-    FILE *fp = fopen(filename, "r");
-    if (fp == NULL) {
-        perror("Failed to open scenario file");
-        exit(EXIT_FAILURE);
-    }
-
-    Scenario *scenarios = malloc(sizeof(Scenario) * 100);
-    char line[1024];
-    int current = -1;
-
-    while (fgets(line, sizeof(line), fp)) {
-        if (strncmp(line, "#", 1) == 0) {
-            current++;
-            scenarios[current].number = atoi(line + 1);
-
-            // 시나리오 설명
-            fgets(line, sizeof(line), fp);
-            line[strcspn(line, "\n")] = 0;
-            strncpy(scenarios[current].description, line, sizeof(scenarios[current].description) - 1);
-
-            for (int i = 0; i < 3; i++) {
-                // 선택지 텍스트
-                fgets(line, sizeof(line), fp);
-                line[strcspn(line, "\n")] = 0;
-                strncpy(scenarios[current].choices[i].text, line, sizeof(scenarios[current].choices[i].text) - 1);
-
-                // 결과 텍스트
-                fgets(line, sizeof(line), fp);
-                line[strcspn(line, "\n")] = 0;
-                strncpy(scenarios[current].result_text, line, sizeof(scenarios[current].result_text) - 1);
-
-                // 결과 파라미터
-                fgets(line, sizeof(line), fp);
-                sscanf(line,
-                    "gold: %d, exp: %d, defense: %d, health: %d, level: %d, attack: %d, stage: %d, next: %d",
-                    &scenarios[current].choices[i].gold,
-                    &scenarios[current].choices[i].exp,
-                    &scenarios[current].choices[i].defense,
-                    &scenarios[current].choices[i].health,
-                    &scenarios[current].choices[i].level,
-                    &scenarios[current].choices[i].attack,
-                    &scenarios[current].choices[i].stage,
-                    &scenarios[current].choices[i].next_scenario
-                );
-                fgets(line, sizeof(line), fp);
-            }
-        }
-    }
-
-    fclose(fp);
-    *scenario_count = current + 1;
-    return scenarios;
-}
-
-
-void print_scenario(Scenario *scenario) {
-    printf("Scenario %d: %s\n", scenario->number, scenario->description);
-    for (int i = 0; i < 3; i++) {
-        printf("Choice %d: %s\n", i + 1, scenario->choices[i].text);
-    }
-}
-
-void print_all_scenarios(Scenario *scenarios, int count) {
-    for (int i = 0; i < count; i++) {
-        printf("Scenario #%d: %s\n", scenarios[i].number, scenarios[i].description);
-        for (int j = 0; j < 3; j++) {
-            printf("  Choice %d: %s\n", j + 1, scenarios[i].choices[j].text);
-            printf("    → Result: HP %d, ATK %d, DEF %d, EXP %d, LV %d, Gold %d, Stage %d, Next %d\n",
-                scenarios[i].choices[j].health,
-                scenarios[i].choices[j].attack,
-                scenarios[i].choices[j].defense,
-                scenarios[i].choices[j].exp,
-                scenarios[i].choices[j].level,
-                scenarios[i].choices[j].gold,
-                scenarios[i].choices[j].stage,
-                scenarios[i].choices[j].next_scenario
-            );
-        }
-        printf("--------------------------------------------------\n");
-    }
-}
-
-void save_log(const char *log) {
-    FILE *fp = fopen(LOG_FILE, "a");
-    if (fp == NULL) {
-        perror("Failed to open log file");
-        return;
-    }
-    time_t now = time(NULL);
-    char *timestamp = ctime(&now);
-    timestamp[strcspn(timestamp, "\n")] = 0;
-    fprintf(fp, "[%s] %s", timestamp, log);
-    fclose(fp);
+    strcpy(status->user_name, "");
 }
 
 void change_status(user_status *status, Choice select) {
@@ -357,11 +277,40 @@ void change_status(user_status *status, Choice select) {
     status->gold += select.gold;
     status->attack += select.attack;
     status->defense += select.defense;
-    if(status->exp >= 100) {
-        status->level++;
-        status->exp = status->exp - 100;
+    status->level = select.level > 0 ? select.level : status->level;
+}
+
+int calculate_majority(int selected[], int count) {
+    int vote[4] = {0};
+    for (int i = 0; i < count; i++) vote[selected[i]]++;
+    int max_vote = 1;
+    for (int i = 2; i <= 3; i++) if (vote[i] > vote[max_vote]) max_vote = i;
+    return max_vote;
+}
+
+Scenario* load_scenarios(const char *filename, int *count) {
+    FILE *fp = fopen(filename, "r");
+    if (!fp) exit(1);
+    char line[1024]; int current = -1;
+    while (fgets(line, sizeof(line), fp)) {
+        if (line[0] == '#') {
+            current++;
+            scenarios[current].number = atoi(line + 1);
+            fgets(scenarios[current].description, sizeof(scenarios[current].description), fp);
+            for (int i = 0; i < 3; i++) {
+                fgets(scenarios[current].choices[i].text, sizeof(scenarios[current].choices[i].text), fp);
+                fgets(scenarios[current].choices[i].result_text, sizeof(scenarios[current].choices[i].result_text), fp);
+                fgets(line, sizeof(line), fp);
+                sscanf(line, "gold: %d, exp: %d, defense: %d, health: %d, level: %d, attack: %d, stage: %d, next: %d",
+                    &scenarios[current].choices[i].gold, &scenarios[current].choices[i].exp,
+                    &scenarios[current].choices[i].defense, &scenarios[current].choices[i].health,
+                    &scenarios[current].choices[i].level, &scenarios[current].choices[i].attack,
+                    &scenarios[current].choices[i].stage, &scenarios[current].choices[i].next_scenario);
+                fgets(line, sizeof(line), fp);
+            }
+        }
     }
-    if(status->gold < 0) {
-        status->gold = 0;
-    }
+    fclose(fp);
+    *count = current + 1;
+    return scenarios;
 }
