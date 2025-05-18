@@ -195,7 +195,7 @@ int main(int argc, char *argv[]) {
                                 }
                             }
                         }
-//asd
+//asd/asd
                         // --- 모든 클라이언트가 선택을 했는지 확인 ---
                         int all_selected = 1;
                         for (int j = 0; j < coop_event.client_count; j++) {
