@@ -14,7 +14,6 @@
 #include <locale.h>
 #include <ncursesw/ncurses.h>
 #include <wchar.h>
-//hello
 
 #define BUFFER_SIZE 10240
 #define INIT 1
