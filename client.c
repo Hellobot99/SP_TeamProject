@@ -170,6 +170,14 @@ void destroy_windows()
     endwin();
 }
 
+int calculate_score(user_status stat)
+{
+    int score = 0;
+    score += (stat.attack + stat.defense + stat.gold/10 + stat.exp/10);
+    score *= stat.level;
+    return score;
+}
+
 int main(int argc, char *argv[])
 {
     if (argc != 3)
