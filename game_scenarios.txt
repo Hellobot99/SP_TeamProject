@@ -138,6 +138,20 @@ gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
 주변의 무선 장비를 이용해 구조 요청을 시도합니다. 응답은 없지만 주파수가 열려 있습니다.  
 gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 30
 
+#11
+시나리오 인덱싱을 위한 11번 시나리오 임시 제작
+시나리오 인덱싱을 위한 11번 시나리오 임시 제작
+임시
+gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 10, next: 22
+
+시나리오 인덱싱을 위한 11번 시나리오 임시 제작
+임시
+gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
+
+시나리오 인덱싱을 위한 11번 시나리오 임시 제작
+임시  
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 30
+
 #12
 환기구를 통해 기지 내부로 진입한 당신, 어둠 속에서 기계음이 울립니다.
 전력을 복구한다.
@@ -277,6 +291,48 @@ gold: 1, exp: 14, defense: 1, health: -1, level: 0, attack: 0, stage: 21, next: 
 위험을 감지하고 돌아간다.
 당신은 불길한 느낌에 발걸음을 돌립니다. 불길은 여전히 거세게 타오릅니다.
 gold: 0, exp: 11, defense: 3, health: 1, level: 0, attack: 0, stage: 21, next: 10
+
+#22
+시나리오 인덱싱을 위한 22번 시나리오 임시 제작
+시나리오 인덱싱을 위한 22번 시나리오 임시 제작
+임시
+gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 10, next: 22
+
+시나리오 인덱싱을 위한 22번 시나리오 임시 제작
+임시
+gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
+
+시나리오 인덱싱을 위한 22번 시나리오 임시 제작
+임시  
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 30
+
+#23
+시나리오 인덱싱을 위한 23번 시나리오 임시 제작
+시나리오 인덱싱을 위한 23번 시나리오 임시 제작
+임시
+gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 10, next: 22
+
+시나리오 인덱싱을 위한 23번 시나리오 임시 제작
+임시
+gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
+
+시나리오 인덱싱을 위한 23번 시나리오 임시 제작
+임시  
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 30
+
+#24
+시나리오 인덱싱을 위한 24번 시나리오 임시 제작
+시나리오 인덱싱을 위한 24번 시나리오 임시 제작
+임시
+gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 10, next: 22
+
+시나리오 인덱싱을 위한 24번 시나리오 임시 제작
+임시
+gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
+
+시나리오 인덱싱을 위한 24번 시나리오 임시 제작
+임시  
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 30
 
 #25
 창고는 텅 비어 있었지만, 한쪽 벽면에 새로운 지도가 붙어 있습니다.

@@ -211,17 +211,25 @@ int main(int argc, char *argv[]) {
                         }
                         coop_event.all_selected = all_selected;
 
-                        coop_event.stage = scenarios[coop_event.stage].choices->next_scenario;
+                        //coop_event.stage = scenarios[coop_event.stage].choices->next_scenario;
+                        //아직 모든 클라이언트가 선택을 마치기 전이므로, 항상 첫 번째 choice(choices[0])만 참조하게 되므로 삭제
 
                         if (coop_event.all_selected && coop_event.active) {
                             int final_choice = calculate_majority(coop_event.selected, coop_event.client_count);
                             save_log("[결과] 다수결 선택: %d", final_choice);
+                            // final_choice는 1~3. 배열 인덱스로 쓰려면 -1
+                            int old_stage  = coop_event.stage;
+                            int choice_idx = final_choice - 1;
+                            // 실제 선택된 choice로부터 다음 스테이지를 가져옴
+                            int next_stage = scenarios[old_stage].choices[choice_idx].next_scenario-1;
+                            coop_event.stage = next_stage;
                             for (int j = 0; j < coop_event.client_count; j++) {
-                                stocPacket pkt = { .cmd = RESULT, .status = coop_event.statuses[j] };    
-                                Scenario scen = scenarios[coop_event.statuses[j].stage];   
-                                sprintf(pkt.buffer, "결과 : [%d] %s",final_choice,scen.choices->result_text);                     
+                                stocPacket pkt = { .cmd = RESULT, .status = coop_event.statuses[j] }; 
+                                // 결과 텍스트도 동일한 인덱스로 뽑아야 함   
+                                Scenario scen = scenarios[old_stage];   
+                                sprintf(pkt.buffer, "결과 : [%d] %s",final_choice,scen.choices[choice_idx].result_text);                     
                                 write(coop_event.client_fds[j], &pkt, sizeof(pkt));
-                                coop_event.statuses[j].stage = coop_event.stage;
+                                coop_event.statuses[j].stage = next_stage;
                             }                            
 
                             sleep(10);
