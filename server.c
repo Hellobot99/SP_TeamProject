@@ -7,6 +7,7 @@
 #include <sys/select.h>
 #include <arpa/inet.h>
 #include <time.h>
+#include <stdarg.h>
 
 #define BUFFER_SIZE 10240
 #define MAX_CLIENTS  FD_SETSIZE
@@ -17,6 +18,7 @@
 #define CHAT 4
 #define RESULT 5
 #define FILE_NAME "game_scenarios.txt"
+#define LOG_FILE "log.txt"
 
 typedef struct {
     int user_id;
@@ -76,6 +78,7 @@ void change_status(user_status *status, Choice select);
 int calculate_majority(int selected[], int count);
 Scenario* load_scenarios(const char *filename, int *count);
 void reset_event();
+void save_log(const char *fmt, ...);
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
@@ -121,6 +124,7 @@ int main(int argc, char *argv[]) {
                     if (client_fd > fd_max) fd_max = client_fd;
                     client_fds[client_count++] = client_fd;
                     printf("Client connected\n");
+                    save_log("[접속] fd=%d", client_fd);
 
                     // 새 클라이언트 등록
                     coop_event.client_fds[coop_event.client_count] = client_fd;
@@ -173,11 +177,13 @@ int main(int argc, char *argv[]) {
                                     scen.number, scen.description, scen.choices[0].text, scen.choices[1].text, scen.choices[2].text);
                                 write(coop_event.client_fds[j], &pkt, sizeof(pkt));
                             }
+                            save_log("[게임시작] 플레이어 수: %d", coop_event.client_count);
                         }
                     } else if (ctospacket.cmd == SELECT) {
                         for (int j = 0; j < coop_event.client_count; j++) {
                             if (coop_event.client_fds[j] == i) {
                                 coop_event.selected[j] = ctospacket.select;
+                                save_log("[선택] %s(%d) -> %d", coop_event.statuses[j].user_name, i, ctospacket.select);
 
                                 stocPacket pkt = { .cmd = CHAT, .status = coop_event.statuses[j] };
                                 snprintf(pkt.buffer, sizeof(pkt.buffer),
@@ -195,7 +201,6 @@ int main(int argc, char *argv[]) {
                                 }
                             }
                         }
-
                         // --- 모든 클라이언트가 선택을 했는지 확인 ---
                         int all_selected = 1;
                         for (int j = 0; j < coop_event.client_count; j++) {
@@ -210,6 +215,7 @@ int main(int argc, char *argv[]) {
 
                         if (coop_event.all_selected && coop_event.active) {
                             int final_choice = calculate_majority(coop_event.selected, coop_event.client_count);
+                            save_log("[결과] 다수결 선택: %d", final_choice);
                             for (int j = 0; j < coop_event.client_count; j++) {
                                 stocPacket pkt = { .cmd = RESULT, .status = coop_event.statuses[j] };    
                                 Scenario scen = scenarios[coop_event.statuses[j].stage];   
@@ -243,6 +249,7 @@ int main(int argc, char *argv[]) {
                                 write(coop_event.client_fds[j], &chatpkt, sizeof(chatpkt));
                             }
                         }
+                        save_log("[채팅] %s(%d): %s", ctospacket.status.user_name, i, ctospacket.buffer);
                     }
                 }
             }
@@ -313,4 +320,34 @@ Scenario* load_scenarios(const char *filename, int *count) {
     fclose(fp);
     *count = current + 1;
     return scenarios;
+}
+
+void save_log(const char *fmt, ...)
+{
+    FILE *fp = fopen(LOG_FILE, "a");
+    if (!fp) return;
+
+    // 현재 시간 구하기
+    time_t t = time(NULL);
+    struct tm *tm_info = localtime(&t);
+
+    char time_buf[32];
+
+    snprintf(time_buf, sizeof(time_buf),
+             "[%02d-%02d %02d:%02d:%02d]",
+             tm_info->tm_mon + 1,
+             tm_info->tm_mday,
+             tm_info->tm_hour,
+             tm_info->tm_min,
+             tm_info->tm_sec);
+
+    fprintf(fp, "%s ", time_buf);
+
+    va_list args;
+    va_start(args, fmt);
+    vfprintf(fp, fmt, args);
+    va_end(args);
+
+    fprintf(fp, "\n");
+    fclose(fp);
 }
