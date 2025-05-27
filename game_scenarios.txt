@@ -2,7 +2,7 @@
 당신은 고립된 병원 옥상에 있습니다. 무엇을 하시겠습니까?
 헬기를 기다린다.
 당신은 구조 신호를 반복해 송신하며, 먼 하늘을 바라봅니다. 어딘가에서 날카로운 프로펠러 소리가 희미하게 울려옵니다.
-gold: 0, exp: 10, defense: 2, health: 5, level: 0, attack: 0, stage: 1, next: 2
+gold: 0, exp: 10, defense: 2, health: 5, level: 0, attack: 0, stage: 1, next: 100
 
 도시로 탈출을 시도한다.
 당신은 병원의 화재 출입문을 열고 폐허가 된 거리로 몸을 던집니다. 잿빛 공기 속에서 꺾인 신음이 들려옵니다.
@@ -1388,14 +1388,14 @@ gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 99, next: 2
 관측소 최상층. 다시 전원을 확보한 장비가 송신을 반복합니다.
 응답을 기다린다.
 반응이 오고 있습니다. 구조 신호가 전 세계로 송출됩니다.
-gold: 2, exp: 20, defense: 3, health: 2, level: 1, attack: 2, stage: 100, next: 1
+gold: 2, exp: 20, defense: 3, health: 2, level: 1, attack: 2, stage: 100, next: -1
 
 장비를 강화한다.
 전력을 조정하고 무전을 증폭합니다. 다른 생존자들과의 연결 가능성이 높아집니다.
-gold: 1, exp: 18, defense: 2, health: 1, level: 1, attack: 1, stage: 100, next: 33
+gold: 1, exp: 18, defense: 2, health: 1, level: 1, attack: 1, stage: 100, next: -1
 
 즉시 철수한다.
 관측소는 더 이상 안전하지 않습니다. 당신은 새로운 거점을 향해 출발합니다.
-gold: 0, exp: 16, defense: 2, health: 0, level: 1, attack: 0, stage: 100, next: 10
+gold: 0, exp: 16, defense: 2, health: 0, level: 1, attack: 0, stage: 100, next: -1
 
 

@@ -21,6 +21,7 @@
 #define END 3
 #define CHAT 4
 #define RESULT 5
+#define ENDING 6
 
 #define TIMEOUT_SECONDS 30
 #define CHAT_WIDTH 40
@@ -336,6 +337,13 @@ int main(int argc, char *argv[])
                             }
                             else if (len > 0 && !(len == 1 && chat_input[0] >= '1' && chat_input[0] <= '3'))
                             {
+                                if (strcmp(input_buf, "exit") == 0)
+                                {
+                                ctospacket.cmd = END;
+                                write(sock, &ctospacket, sizeof(ctospacket));
+                                print_game("게임을 종료합니다.\n");
+                                break;
+                                }
                                 ctospacket.cmd = CHAT;
                                 strncpy(ctospacket.buffer, chat_input, BUFFER_SIZE - 1);
                                 strncpy(ctospacket.status.user_name, my_nickname, sizeof(ctospacket.status.user_name));
@@ -373,8 +381,18 @@ int main(int argc, char *argv[])
                 }
                 else if (stocpacket.cmd == END)
                 {
-                    print_game("Game Over!\n");
                     break;
+                }
+                else if(stocpacket.cmd == ENDING)
+                {
+                    print_game("엔딩\n");
+                    print_game("%s", stocpacket.buffer);
+                    print_game("게임이 종료되었습니다. 종료하려면 아무 키나 누르세요.\n");
+                    getchar();
+                    clear_game();
+                    
+                    ctospacket.cmd = END;
+                    write(sock, &ctospacket, sizeof(ctospacket));
                 }
             }
         }
@@ -382,5 +400,6 @@ int main(int argc, char *argv[])
 
     destroy_windows();
     close(sock);
+    printf("게임이 종료되었습니다.\n");
     return 0;
 }
