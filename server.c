@@ -178,6 +178,7 @@ int main(int argc, char *argv[]) {
                                     scen.number, scen.description, scen.choices[0].text, scen.choices[1].text, scen.choices[2].text);
                                 write(coop_event.client_fds[j], &pkt, sizeof(pkt));
                             }
+                            printf("[게임시작] 플레이어 수: %d\n", coop_event.client_count);
                             save_log("[게임시작] 플레이어 수: %d", coop_event.client_count);
                         }
                     } else if (ctospacket.cmd == SELECT) {
@@ -223,32 +224,26 @@ int main(int argc, char *argv[]) {
                             int choice_idx = final_choice - 1;
                             // 실제 선택된 choice로부터 다음 스테이지를 가져옴
                             int next_stage = scenarios[old_stage].choices[choice_idx].next_scenario-1;
-                            coop_event.stage = next_stage;
+                            coop_event.stage = next_stage;                           
 
-                            if(next_stage == -1){
-                                // 엔딩 처리
-                                for (int j = 0; j < coop_event.client_count; j++) {
-                                    stocPacket pkt = { .cmd = ENDING, .status = coop_event.statuses[j] };   
+                            for (int j = 0; j < coop_event.client_count; j++) {
+                                stocPacket pkt;
+                                    if(coop_event.stage == -2)
+                                        pkt.cmd = ENDING;
+                                                                         
+                                    else
+                                        pkt.cmd = RESULT;             
+                                          
+                                    pkt.status = coop_event.statuses[j];
                                     Scenario scen = scenarios[old_stage];   
-                                    sprintf(pkt.buffer, "결과 : [%d] %s",final_choice,scen.choices[choice_idx].result_text);                     
+                                    sprintf(pkt.buffer, "[%d] %s",final_choice,scen.choices[choice_idx].result_text);                                     
                                     write(coop_event.client_fds[j], &pkt, sizeof(pkt));
                                     coop_event.statuses[j].stage = next_stage;
-                                }
-                            }
-                            else{
-                                for (int j = 0; j < coop_event.client_count; j++) {
-                                    stocPacket pkt = { .cmd = RESULT, .status = coop_event.statuses[j] }; 
-                                    // 결과 텍스트도 동일한 인덱스로 뽑아야 함   
-                                    Scenario scen = scenarios[old_stage];   
-                                    sprintf(pkt.buffer, "결과 : [%d] %s",final_choice,scen.choices[choice_idx].result_text);                     
-                                    write(coop_event.client_fds[j], &pkt, sizeof(pkt));
-                                    coop_event.statuses[j].stage = next_stage;
-                                }
-                            }                                                 
+                                }                                               
 
                             sleep(1);
-
-                            if(next_stage != -1){
+                            if(next_stage != -2){
+                                
                                 for (int j = 0; j < coop_event.client_count; j++) {
                                     stocPacket pkt = { .cmd = SELECT, .status = coop_event.statuses[j] };
                                     Scenario scen = scenarios[coop_event.statuses[j].stage];
@@ -279,8 +274,6 @@ int main(int argc, char *argv[]) {
                         // 게임 종료
                         for (int j = 0; j < coop_event.client_count; j++) {
                             if (coop_event.client_fds[j] == i) {
-                                ctospacket.cmd = END;
-                                write(coop_event.client_fds[j], &ctospacket, sizeof(ctospacket));
                                 close(i); FD_CLR(i, &read_fds);
                                 client_inited[j] = 0;
                                 save_log("[종료] %s(%d)", ctospacket.status.user_name, i);
@@ -290,7 +283,15 @@ int main(int argc, char *argv[]) {
                         coop_event.client_count--;
                         if (coop_event.client_count == 0) {
                             reset_event();
+                            printf("[모든 클라이언트 종료] 게임 종료\n");
                             save_log("[모든 클라이언트 종료] 게임 종료");
+                            close(server_fd);
+                            for (int i = 0; i < client_count; i++) {
+                                close(client_fds[i]);
+                            }
+                            printf("Server closed\n");
+                            save_log("[서버종료]");
+                            return 0;
                         }
                     }
                 }
@@ -302,7 +303,7 @@ int main(int argc, char *argv[]) {
         close(client_fds[i]);
     }
     printf("Server closed\n");
-    save_log("[서버종료] 모든 클라이언트 종료");
+    save_log("[서버종료]");
     return 0;
 }
 

@@ -95,37 +95,35 @@ void print_game(const char *format, ...)
     vsnprintf(buf, sizeof(buf), format, args);
     va_end(args);
 
-    int max_x = getmaxx(game_win) - 4; // 테두리와 여백 고려
+    int max_x = getmaxx(game_win) - 4;
     int y = 2;
-    char *line = strtok(buf, "\n");
-    while (line)
-    {
-        int len = strlen(line);
+    char *p = buf;
+    while (*p) {
+        char *newline = strchr(p, '\n');
+        int len = newline ? (newline - p) : strlen(p);
         int start = 0;
         while (start < len) {
             int width = 0, end = start;
             while (end < len && width < max_x) {
-                unsigned char c = line[end];
+                unsigned char c = p[end];
                 int char_width = 1;
                 if (c >= 0x80) {
-                    // UTF-8 멀티바이트 한글 처리
-                    if ((c & 0xE0) == 0xC0) char_width = 2;      // 2바이트 문자
-                    else if ((c & 0xF0) == 0xE0) char_width = 3; // 3바이트 문자
-                    else char_width = 1;
+                    if ((c & 0xE0) == 0xC0) char_width = 2;
+                    else if ((c & 0xF0) == 0xE0) char_width = 3;
                 }
-                // 실제 출력 폭 계산 (한글은 2칸)
                 int w = (char_width == 3) ? 2 : 1;
                 if (width + w > max_x) break;
                 width += w;
                 end += char_width;
             }
             char temp[BUFFER_SIZE];
-            strncpy(temp, line + start, end - start);
+            strncpy(temp, p + start, end - start);
             temp[end - start] = '\0';
             mvwprintw(game_win, y++, 3, "%s", temp);
             start = end;
         }
-        line = strtok(NULL, "\n");
+        if (len == 0) y++; // 빈 줄도 줄바꿈
+        p = newline ? newline + 1 : p + len;
     }
 
     wrefresh(game_win);
@@ -165,6 +163,7 @@ void clear_game()
 
 void destroy_windows()
 {
+    clear_game();
     delwin(input_win);
     delwin(game_win);
     delwin(chat_win);
@@ -385,14 +384,18 @@ int main(int argc, char *argv[])
                 }
                 else if(stocpacket.cmd == ENDING)
                 {
-                    print_game("엔딩\n");
-                    print_game("%s", stocpacket.buffer);
-                    print_game("게임이 종료되었습니다. 종료하려면 아무 키나 누르세요.\n");
-                    getchar();
+                    char ending_msg[BUFFER_SIZE * 2];
+                    snprintf(ending_msg, sizeof(ending_msg),
+                        "******************************** 엔딩 *******************************\n\n\n\n%s\n\n\n게임이 종료되었습니다. 종료하려면 아무 키나 누르세요.\n",
+                        stocpacket.buffer);
+
+                    print_game("%s", ending_msg);
+                    wgetch(game_win); // ncurses 모드에서 입력 받기
                     clear_game();
-                    
+
                     ctospacket.cmd = END;
                     write(sock, &ctospacket, sizeof(ctospacket));
+                    break;
                 }
             }
         }
