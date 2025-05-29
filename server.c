@@ -21,6 +21,8 @@
 #define FILE_NAME "game_scenarios.txt"
 #define LOG_FILE "log.txt"
 
+int test;
+
 typedef struct {
     int user_id;
     int stage;
