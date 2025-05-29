@@ -21,8 +21,6 @@
 #define FILE_NAME "game_scenarios.txt"
 #define LOG_FILE "log.txt"
 
-int test;
-
 typedef struct {
     int user_id;
     int stage;
@@ -246,23 +244,28 @@ int main(int argc, char *argv[]) {
                                 coop_event.statuses[j].stage = next_stage;
 
                                 stocPacket pkt;
-                                    if(coop_event.stage == -2)
+                                Scenario scen = scenarios[old_stage];
+                                pkt.status = coop_event.statuses[j];
+                                    if(coop_event.stage == -2){
                                         pkt.cmd = ENDING;
-                                                                         
+                                        sprintf(pkt.buffer, "[%d] %s\n",
+                                        final_choice, 
+                                        scen.choices[choice_idx].result_text);                              
+                                    }                                  
                                     else
-                                        pkt.cmd = RESULT;             
-                                          
-                                    pkt.status = coop_event.statuses[j];
-                                    Scenario scen = scenarios[old_stage];   
-                                    sprintf(pkt.buffer, "[%d] %s\n\n현재 상태:\nHP: %5d  레벨: %2d  경험치: %3d \n공격: %3d  방어: %3d  골드: %4d",
-                                    final_choice, 
-                                    scen.choices[choice_idx].result_text,
-                                    pkt.status.health,
-                                    pkt.status.level,
-                                    pkt.status.exp,
-                                    pkt.status.gold,
-                                    pkt.status.attack,
-                                    pkt.status.defense);                                     
+                                    {
+                                        pkt.cmd = RESULT;    
+                                        sprintf(pkt.buffer, "[%d] %s\n\n현재 상태:\nHP: %5d  레벨: %2d  경험치: %3d \n공격: %3d  방어: %3d  골드: %4d",
+                                        final_choice, 
+                                        scen.choices[choice_idx].result_text,
+                                        pkt.status.health,
+                                        pkt.status.level,
+                                        pkt.status.exp,
+                                        pkt.status.gold,
+                                        pkt.status.attack,
+                                        pkt.status.defense); 
+                                    }                                           
+                                  
                                     write(coop_event.client_fds[j], &pkt, sizeof(pkt));
                                     coop_event.statuses[j].stage = next_stage;
                                 }                                               
