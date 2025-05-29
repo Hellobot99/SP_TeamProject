@@ -96,13 +96,14 @@ void print_game(const char *format, ...)
     va_end(args);
 
     int max_x = getmaxx(game_win) - 4;
+    int max_y = getmaxy(game_win) - 7;
     int y = 2;
     char *p = buf;
-    while (*p) {
+    while (*p && y < max_y) {
         char *newline = strchr(p, '\n');
         int len = newline ? (newline - p) : strlen(p);
         int start = 0;
-        while (start < len) {
+        while (start < len && y < max_y) {
             int width = 0, end = start;
             while (end < len && width < max_x) {
                 unsigned char c = p[end];
@@ -372,7 +373,7 @@ int main(int argc, char *argv[])
                 }
                 else if (stocpacket.cmd == RESULT)
                 {
-                    print_game("%s", stocpacket.buffer);                
+                    print_game("%s", stocpacket.buffer);           
                 }
                 else if (stocpacket.cmd == CHAT)
                 {

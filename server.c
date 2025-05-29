@@ -70,6 +70,17 @@ typedef struct {
     int all_selected;
 } CoopEvent;
 
+typedef struct {
+    int gold;
+    int exp;
+    int defense;
+    int health;
+    int level;
+    int attack;
+    int stage;
+    int next;
+} status_change;
+
 Scenario scenarios[MAX_STAGE];
 CoopEvent coop_event;
 int client_inited[MAX_CLIENTS] = {0}; // 각 클라이언트의 INIT 여부
@@ -227,6 +238,11 @@ int main(int argc, char *argv[]) {
                             coop_event.stage = next_stage;                           
 
                             for (int j = 0; j < coop_event.client_count; j++) {
+                                // 상태 업데이트
+                                Choice selected_choice = scenarios[old_stage].choices[choice_idx];
+                                change_status(&coop_event.statuses[j], selected_choice);
+                                coop_event.statuses[j].stage = next_stage;
+
                                 stocPacket pkt;
                                     if(coop_event.stage == -2)
                                         pkt.cmd = ENDING;
@@ -236,7 +252,15 @@ int main(int argc, char *argv[]) {
                                           
                                     pkt.status = coop_event.statuses[j];
                                     Scenario scen = scenarios[old_stage];   
-                                    sprintf(pkt.buffer, "[%d] %s",final_choice,scen.choices[choice_idx].result_text);                                     
+                                    sprintf(pkt.buffer, "[%d] %s\n\n현재 상태:\nHP: %5d  레벨: %2d  경험치: %3d \n공격: %3d  방어: %3d  골드: %4d",
+                                    final_choice, 
+                                    scen.choices[choice_idx].result_text,
+                                    pkt.status.health,
+                                    pkt.status.level,
+                                    pkt.status.exp,
+                                    pkt.status.gold,
+                                    pkt.status.attack,
+                                    pkt.status.defense);                                     
                                     write(coop_event.client_fds[j], &pkt, sizeof(pkt));
                                     coop_event.statuses[j].stage = next_stage;
                                 }                                               
@@ -333,7 +357,20 @@ void change_status(user_status *status, Choice select) {
     status->gold += select.gold;
     status->attack += select.attack;
     status->defense += select.defense;
+
+    if (status->health < 0) status->health = 0;
+    if (status->health > 100) status->health = 100; 
+    while (status->exp >= 100) {
+        status->level++;
+        status->exp -= 100;
+        status->attack += 2;  // Level up bonus
+        status->defense += 1; // Level up bonus
+        save_log("[레벨업] %s: Level %d", status->user_name, status->level);
+    }
     status->level = select.level > 0 ? select.level : status->level;
+    save_log("[상태변화] %s: HP:%d EXP:%d Gold:%d ATK:%d DEF:%d LV:%d",
+        status->user_name, status->health, status->exp, status->gold,
+        status->attack, status->defense, status->level);
 }
 
 int calculate_majority(int selected[], int count) {
