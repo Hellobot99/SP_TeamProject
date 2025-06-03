@@ -350,7 +350,9 @@ int main(int argc, char *argv[])
                                 write(sock, &ctospacket, sizeof(ctospacket));
 
                                 char mychat[BUFFER_SIZE + 100];
-                                snprintf(mychat, sizeof(mychat), "%s : %s", my_nickname, chat_input);
+                                int max_msg = sizeof(mychat) - strlen(my_nickname) - 4; // " : "와 널문자
+                                if (max_msg < 0) max_msg = 0;
+                                snprintf(mychat, sizeof(mychat), "%s : %.*s", my_nickname, max_msg, chat_input);
                                 print_chat(mychat);
 
                                 clear_input();

@@ -83,7 +83,7 @@ typedef struct {
 
 Scenario scenarios[MAX_STAGE];
 CoopEvent coop_event;
-int client_inited[MAX_CLIENTS] = {0}; // 각 클라이언트의 INIT 여부
+int client_inited[MAX_CLIENTS] = {0};
 
 void init_user_status(user_status *status, int user_id);
 void change_status(user_status *status, Choice select);
@@ -136,9 +136,8 @@ int main(int argc, char *argv[]) {
                     if (client_fd > fd_max) fd_max = client_fd;
                     client_fds[client_count++] = client_fd;
                     printf("Client connected\n");
-                    save_log("[접속] fd=%d", client_fd);
+                    save_log("[접속] fd = %d", client_fd);
 
-                    // 새 클라이언트 등록
                     coop_event.client_fds[coop_event.client_count] = client_fd;
                     init_user_status(&coop_event.statuses[coop_event.client_count], client_fd);
                     coop_event.selected[coop_event.client_count] = 0;
@@ -150,11 +149,46 @@ int main(int argc, char *argv[]) {
                     int n = read(i, &ctospacket, sizeof(ctospacket));
                     if (n <= 0) {
                         close(i); FD_CLR(i, &read_fds);
+                        printf("Client %d disconnected.\n", i);
+                        save_log("[연결종료] fd = %d", i);
+
+                        int idx = -1;
+                        for (int j = 0; j < coop_event.client_count; j++) {
+                            if (coop_event.client_fds[j] == i) {
+                                idx = j;
+                                break;
+                            }
+                        }
+                        if (idx != -1) {
+                            for (int j = idx; j < coop_event.client_count - 1; j++) {
+                                coop_event.client_fds[j] = coop_event.client_fds[j + 1];
+                                coop_event.statuses[j] = coop_event.statuses[j + 1];
+                                coop_event.selected[j] = coop_event.selected[j + 1];
+                                client_inited[j] = client_inited[j + 1];
+                            }
+                            coop_event.client_count--;
+                        }
+
+                        for (int j = 0; j < client_count; j++) {
+                            if (client_fds[j] == i) {
+                                for (int k = j; k < client_count - 1; k++) {
+                                    client_fds[k] = client_fds[k + 1];
+                                }
+                                client_count--;
+                                break;
+                            }
+                        }
+
+                        if (coop_event.client_count == 0) {
+                            reset_event();
+                            printf("[모든 클라이언트 종료] 게임 종료\n");
+                            save_log("[모든 클라이언트 종료] 게임 종료");
+                        }
                         continue;
                     }
 
                     if (ctospacket.cmd == INIT) {
-                        // 닉네임만 갱신
+
                         int idx = -1;
                         for (int j = 0; j < coop_event.client_count; j++) {
                             if (coop_event.client_fds[j] == i) {
@@ -167,7 +201,6 @@ int main(int argc, char *argv[]) {
                             client_inited[idx] = 1;
                         }
 
-                        // 모든 클라이언트가 INIT을 보냈는지 확인
                         int all_inited = 1;
                         for (int j = 0; j < coop_event.client_count; j++) {
                             if (!client_inited[j]) {
@@ -288,7 +321,10 @@ int main(int argc, char *argv[]) {
                         for (int j = 0; j < coop_event.client_count; j++) {
                             if (coop_event.client_fds[j] != i) {
                                 stocPacket chatpkt = { .cmd = CHAT };
-                                snprintf(chatpkt.buffer, sizeof(chatpkt.buffer), "%s: %s", ctospacket.status.user_name, ctospacket.buffer);
+                                int max_msg = sizeof(chatpkt.buffer) - strlen(ctospacket.status.user_name) - 3; // ": "와 널문자
+                                if (max_msg < 0) max_msg = 0;
+                                snprintf(chatpkt.buffer, sizeof(chatpkt.buffer), "%s: %.*s",
+                                    ctospacket.status.user_name, max_msg, ctospacket.buffer);
                                 write(coop_event.client_fds[j], &chatpkt, sizeof(chatpkt));
                             }
                         }
