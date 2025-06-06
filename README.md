@@ -82,19 +82,11 @@ C와 ncurses로구현된 협동형 좀비 아포칼립스 생존 텍스트 어�
   프로젝트 전체를 로컬로 가져옵니다.
 
 ### 3. 서버(Server) 빌드 및 실행
-3.1 서버 디렉터리로 이동
-
-프로젝트 최상위 디렉터리에 미리 제공된 server.sh 스크립트를 이용하면, 소스 컴파일부터 서버 실행까지 한 번에 할 수 있습니다.
-
-터미널에서 프로젝트 루트 디렉터리로 이동:
-
-cd REPO
-server.sh에 실행 권한이 없다면 부여합니다. (최초 한 번만 필요)
-
-chmod +x server.sh
-bash server.sh 또는 ./server.sh 명령으로 서버를 컴파일하고 바로 실행합니다:
-
-bash server.sh
+ 프로젝트 최상위 디렉터리에 미리 제공된 server.sh 스크립트를 이용하면, 소스 컴파일부터 서버 실행까지 한 번에 할 수 있습니다.
+- server.sh에 실행 권한이 없다면 부여합니다. (최초 한 번만 필요)
+  - chmod +x server.sh
+- bash server.sh 또는 ./server.sh 명령으로 서버를 컴파일하고 바로 실행합니다:
+  - bash server.sh
 내부 동작:
 
 server.c를 gcc -std=c11 -Wall -Wextra -o server server.c로 컴파일
