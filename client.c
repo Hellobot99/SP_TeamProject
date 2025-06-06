@@ -388,8 +388,8 @@ int main(int argc, char *argv[])
                 {
                     char ending_msg[BUFFER_SIZE * 2];
                     snprintf(ending_msg, sizeof(ending_msg),
-                        "******************************** 엔딩 *******************************\n\n\n\n%s\n\n\n게임이 종료되었습니다. 종료하려면 아무 키나 누르세요.\n",
-                        stocpacket.buffer);
+                        "******************************** 엔딩 *******************************\n\n\n\n%s\n\n\n게임이 종료되었습니다. 종료하려면 아무 키나 누르세요.\n\n최종점수 : %d",
+                        stocpacket.buffer, calculate_score(stocpacket.status));
 
                     print_game("%s", ending_msg);
                     wgetch(game_win); // ncurses 모드에서 입력 받기
