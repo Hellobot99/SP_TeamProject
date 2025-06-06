@@ -8,7 +8,6 @@
 #include <sys/select.h>
 #include <termios.h>
 #include <time.h>
-#include <fcntl.h>
 #include <ncurses.h>
 #include <stdarg.h>
 #include <locale.h>
