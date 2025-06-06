@@ -1,1401 +1,1582 @@
 #1
-당신은 고립된 병원 옥상에 있습니다. 무엇을 하시겠습니까?
-헬기를 기다린다.
-당신은 구조 신호를 반복해 송신하며, 먼 하늘을 바라봅니다. 어딘가에서 날카로운 프로펠러 소리가 희미하게 울려옵니다.
-gold: 0, exp: 10, defense: 2, health: 5, level: 0, attack: 0, stage: 1, next: 100
+당신은 폐허가 된 도시 한복판, 쓰러진 버스 안에서 눈을 뜹니다. 무엇을 하시겠습니까?
+창문을 깨고 밖으로 나간다.
+당신은 유리조각에 팔을 긁히며 거리로 나섭니다. 좀비의 흔적이 가득합니다.
+gold: 0, exp: 10, defense: 1, health: -1, level: 0, attack: 1, stage: 1, next: 2
 
-도시로 탈출을 시도한다.
-당신은 병원의 화재 출입문을 열고 폐허가 된 거리로 몸을 던집니다. 잿빛 공기 속에서 꺾인 신음이 들려옵니다.
-gold: 0, exp: 15, defense: 1, health: -2, level: 0, attack: 1, stage: 1, next: 3
+버스 안을 수색한다.
+낡은 가방 하나에서 통조림과 손전등을 찾습니다.
+gold: 1, exp: 8, defense: 0, health: 1, level: 0, attack: 0, stage: 1, next: 3
 
-군 기지로 향한다.
-당신은 희미한 표지판을 따라 도심 외곽을 향해 달립니다. 폐허 속, 군 시설의 철문이 보이기 시작합니다.
-gold: 1, exp: 12, defense: 1, health: -3, level: 0, attack: 2, stage: 1, next: 4
+창문 틈으로 주변을 살핀다.
+밖은 고요하지만, 멀리서 울음소리가 들려옵니다.
+gold: 0, exp: 9, defense: 2, health: 0, level: 0, attack: 0, stage: 1, next: 4
 
 #2
-좀비가 옥상으로 올라오기 시작합니다. 어떻게 하시겠습니까?
-끝까지 버틴다.
-당신은 벽을 등지고 선 채, 한 손엔 무기, 다른 손엔 마지막 희망을 움켜쥡니다. 계단 아래서 울부짖는 소리가 가까워집니다.
-gold: 0, exp: 14, defense: 3, health: -5, level: 0, attack: 0, stage: 2, next: 5
+거리는 폐허뿐입니다. 당신은 갈림길에 섭니다.
+지하철역으로 향한다.
+당신은 지하로 내려갑니다. 어둠 속에서 쥐떼가 달아납니다.
+gold: 0, exp: 11, defense: 1, health: -1, level: 0, attack: 1, stage: 2, next: 5
 
-지하로 도망친다.
-당신은 계단을 따라 아래층으로 내려갑니다. 먼지 낀 형광등 아래, 그림자가 꿈틀거립니다.
-gold: -1, exp: 12, defense: 1, health: -2, level: 0, attack: 1, stage: 2, next: 6
+인근 마트를 수색한다.
+부서진 선반 사이에서 응급키트를 찾습니다. 경보음은 멈추지 않습니다.
+gold: 1, exp: 10, defense: 0, health: 1, level: 0, attack: 0, stage: 2, next: 6
 
-다른 생존자와 함께 싸운다.
-당신은 옥상에 남은 생존자들과 등을 맞대고 싸움을 준비합니다. 서로의 호흡 속에 절박함이 스며듭니다.
-gold: 0, exp: 16, defense: 2, health: -4, level: 0, attack: 2, stage: 2, next: 7
+고층 건물로 들어간다.
+당신은 낡은 계단을 따라 올라갑니다. 누군가의 발소리가 위층에서 울립니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 1, stage: 2, next: 7
 
 #3
-도시는 좀비로 가득 차 있습니다. 어디로 향하시겠습니까?
-지하철역으로 간다.
-당신은 인근 지하철역으로 몸을 숨깁니다. 낡은 터널 벽엔 피가 말라붙어 있고, 고요함이 불안하게 감돕니다.
-gold: 0, exp: 13, defense: 1, health: -2, level: 0, attack: 1, stage: 3, next: 6
+당신은 버스 밑바닥에 숨어 한숨을 돌립니다.
+잠시 더 쉰다.
+휴식을 취하며 체력을 회복합니다. 배는 점점 고파집니다.
+gold: 0, exp: 8, defense: 2, health: 2, level: 0, attack: 0, stage: 3, next: 6
 
-인근 상점에서 물자를 구한다.
-당신은 깨진 유리창을 넘고, 선반을 뒤지며 식량을 모읍니다. 낡은 경보기는 간신히 침묵을 지킵니다.
-gold: 2, exp: 10, defense: 0, health: -3, level: 0, attack: 1, stage: 3, next: 9
+다시 밖으로 나간다.
+조심히 거리로 발을 내딛습니다. 누군가의 비명소리가 울려 퍼집니다.
+gold: 0, exp: 10, defense: 1, health: -1, level: 0, attack: 1, stage: 3, next: 2
 
-숨을 곳을 찾는다.
-당신은 쓰러진 간판 아래로 몸을 숨깁니다. 소리는 멀어지지만, 심장은 여전히 빠르게 뜁니다.
-gold: 0, exp: 9, defense: 2, health: 0, level: 0, attack: 0, stage: 3, next: 10
+소리를 향해 간다.
+비명을 따라간 당신은, 무너진 차량 옆에 쓰러진 사람을 발견합니다.
+gold: 0, exp: 12, defense: 0, health: -2, level: 0, attack: 1, stage: 3, next: 8
 
 #4
-당신은 군 기지 외부에 도착했습니다. 안쪽은 조용하지만 위협이 도사립니다.
-출입구를 강제로 연다.
-잠긴 철문을 부수고 들어갑니다. 경보가 울리며 안쪽에서 무언가 움직입니다.
-gold: 0, exp: 13, defense: 1, health: -3, level: 0, attack: 2, stage: 4, next: 11
+당신은 주변을 살피다 작은 드론을 발견합니다.
+드론을 따라간다.
+드론이 안내하는 방향으로 조심스레 따라갑니다. 작은 출입구가 보입니다.
+gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 4, next: 9
 
-다른 진입로를 찾는다.
-기지를 돌며 틈새를 탐색합니다. 작은 환기구 하나를 발견하고 진입합니다.
-gold: 0, exp: 12, defense: 2, health: -1, level: 0, attack: 1, stage: 4, next: 12
+드론을 부순다.
+기계의 정체를 알 수 없습니다. 당신은 위험을 감수하지 않기로 합니다.
+gold: 1, exp: 9, defense: 1, health: 0, level: 0, attack: 1, stage: 4, next: 10
 
-기다린다.
-당신은 위험을 감수하지 않고 주변을 관찰하며 시간을 보냅니다. 어둠 속에서 희미한 불빛이 깜빡입니다.
-gold: 0, exp: 9, defense: 2, health: 0, level: 0, attack: 0, stage: 4, next: 10
+드론을 무시한다.
+드론은 멀어지고 당신은 폐허 속으로 다시 방향을 잡습니다.
+gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 4, next: 11
 
 #5
-옥상 끝까지 버틴 끝에, 헬기가 접근합니다. 그러나 착륙할 공간이 부족합니다.
-착륙 지점을 확보한다.
-당신은 좀비 무리를 분산시키며 안전 구역을 확보합니다. 헬기는 흔들리며 내려옵니다.
-gold: 1, exp: 15, defense: 2, health: -3, level: 0, attack: 2, stage: 5, next: 14
-
-헬기를 포기하고 옥상에서 뛰어내린다.
-생존을 위해 마지막 선택을 합니다. 밧줄을 이용해 아래 건물로 강하합니다.
-gold: 0, exp: 12, defense: 1, health: -2, level: 0, attack: 1, stage: 5, next: 15
-
-옥상에서 신호탄을 쏜다.  
-당신은 헬기 시야 확보를 위해 마지막 신호탄을 발사합니다. 구조대가 방향을 수정합니다.  
-gold: 0, exp: 13, defense: 2, health: -1, level: 0, attack: 1, stage: 5, next: 17
-
-#6
-지하 공간은 어둡고 습기 찬 공포로 가득합니다. 당신은 조심스레 앞으로 나아갑니다.
-통로 끝까지 이동한다.
-폐쇄된 벽 너머 희미한 빛이 보입니다. 당신은 조용히 접근합니다.
-gold: 0, exp: 11, defense: 2, health: -1, level: 0, attack: 1, stage: 6, next: 16
-
-숨을 곳을 찾는다.
-당신은 케이블 뒤에 몸을 숨깁니다. 지나가는 발소리와 숨소리가 교차합니다.
-gold: 0, exp: 10, defense: 3, health: 1, level: 0, attack: 0, stage: 6, next: 10
-
-함정을 설치한다.  
-당신은 주운 금속과 배관으로 급조한 덫을 설치합니다. 위험을 조금이나마 분산시킬 수 있습니다.  
-gold: 0, exp: 12, defense: 3, health: 0, level: 0, attack: 1, stage: 6, next: 23
-
-#7
-옥상에서 함께 싸웠던 생존자들과 다시 조우합니다. 생존자들은 이동을 준비 중입니다.
-그들과 동행한다.
-당신은 생존자들과 함께 이동하기로 합니다. 협력이 유일한 희망입니다.
-gold: 1, exp: 13, defense: 2, health: 0, level: 0, attack: 1, stage: 7, next: 17
-
-혼자서 움직인다.
-신뢰보다 생존이 먼저입니다. 당신은 다른 길을 선택합니다.
-gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 1, stage: 7, next: 18
-
-지도에 표시된 낯선 지점을 따라간다.
-생존자 중 한 명이 넘겨준 지도 조각을 참고해 다른 위치를 탐색합니다.
-gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 7, next: 18
-
-#8
-지하철역 깊숙한 구간, 좀비 무리가 모여 있습니다. 선택의 순간입니다.
-조용히 돌아간다.
-당신은 발소리를 죽이며 다른 경로를 탐색합니다. 불 꺼진 통로가 보입니다.
-gold: 0, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 8, next: 10
-
-기습 공격을 감행한다.
-먼저 공격하여 틈을 만듭니다. 격렬한 교전 후 간신히 빠져나옵니다.
-gold: 1, exp: 14, defense: 1, health: -4, level: 0, attack: 3, stage: 8, next: 19
-
-지하철 차량을 수색한다.
-버려진 차량 안에서 유용한 도구를 발견합니다. 감염자는 없습니다.
-gold: 1, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 8, next: 20
-
-#9
-상점 내부에서 물자를 챙기던 당신, 돌연 좀비가 들이닥칩니다.
-뒤편 문으로 도망친다.
-당신은 문을 열고 좁은 골목으로 도주합니다. 추격은 계속됩니다.
-gold: 0, exp: 11, defense: 1, health: -2, level: 0, attack: 1, stage: 9, next: 18
-
-싸운다.
-진열대를 넘어 좀비와 격투를 벌입니다. 팔에 상처를 입지만 물자는 챙깁니다.
-gold: 2, exp: 13, defense: 0, health: -3, level: 0, attack: 2, stage: 9, next: 21
-
-선반 위로 올라가 숨는다.
-높은 곳에서 주변을 관찰하며 숨을 돌립니다. 위험은 일시적으로 피했습니다.
-gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 9, next: 10
-
-#10
-숨은 곳에서 상황을 지켜보던 당신. 위협은 조금씩 사라집니다.
-바깥으로 이동한다.
-당신은 조심스럽게 길로 나옵니다. 거리에는 몇몇 시체가 널려 있습니다.
-gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 10, next: 22
-
-더 기다린다.
-아무도 없는 틈을 노리기 위해 더 기다립니다. 피로가 쌓이지만 안전은 확보됩니다.
-gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
-
-무전기를 이용해 신호를 보낸다.  
-주변의 무선 장비를 이용해 구조 요청을 시도합니다. 응답은 없지만 주파수가 열려 있습니다.  
-gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 30
-
-#11
-시나리오 인덱싱을 위한 11번 시나리오 임시 제작
-시나리오 인덱싱을 위한 11번 시나리오 임시 제작
-임시
-gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 10, next: 22
-
-시나리오 인덱싱을 위한 11번 시나리오 임시 제작
-임시
-gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
-
-시나리오 인덱싱을 위한 11번 시나리오 임시 제작
-임시  
-gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 30
-
-#12
-환기구를 통해 기지 내부로 진입한 당신, 어둠 속에서 기계음이 울립니다.
-전력을 복구한다.
-당신은 차단기를 찾아 전원을 연결합니다. 형광등이 깜빡이며 다시 켜집니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 1, stage: 12, next: 27
-
-폐쇄 구역을 조사한다.
-경고문이 붙은 구역 안으로 들어섭니다. 거기엔 오래된 연구기록과 특수 장비가 있습니다.
-gold: 2, exp: 14, defense: 1, health: -2, level: 0, attack: 2, stage: 12, next: 28
-
-숨는다.
-기계음이 가까워지자, 당신은 공구함 뒤에 몸을 숨깁니다. 인기척은 점점 멀어집니다.
-gold: 0, exp: 10, defense: 3, health: 0, level: 0, attack: 0, stage: 12, next: 10
-
-#13
-생존자들과 함께하는 여정 중, 낯선 신호가 잡힙니다.
-무전을 분석한다.
-기기에서 반복되는 코드가 들립니다. 당신은 그것이 좌표라는 걸 알아냅니다.
-gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 13, next: 18
-
-신호를 따라간다.
-숲 속 깊은 곳, 오래된 중계탑 근처에서 기지 흔적을 발견합니다.
-gold: 1, exp: 14, defense: 1, health: -2, level: 0, attack: 2, stage: 13, next: 19
-
-무시하고 경로를 유지한다.
-당신은 계획된 루트를 따라 이동합니다. 주변은 점점 조용해집니다.
-gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 13, next: 20
-
-#14
-착륙한 헬기 안, 조종사는 당신에게 갈림길을 제시합니다.
-도심 상공으로 향한다.
-조종사는 도심을 상공에서 순찰합니다. 아래에 살아있는 신호들이 감지됩니다.
-gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 14, next: 19
-
-산악 지대로 간다.
-격오지의 은신처로 향합니다. 연료는 아슬아슬하지만 도착에 성공합니다.
-gold: 0, exp: 13, defense: 1, health: 1, level: 0, attack: 0, stage: 14, next: 20
-
-조종사를 남기고 낙하한다.
-당신은 낙하산을 착용하고 외곽 기지 상공에서 낙하합니다. 바람이 거셉니다.
-gold: -1, exp: 14, defense: 0, health: -3, level: 0, attack: 2, stage: 14, next: 21
-
-#15
-옥상에서의 도약 이후, 당신은 도심의 폐허 속으로 떨어집니다.
-근처 건물로 숨어든다.
-피투성이가 된 몸으로 당신은 근처 건물로 들어가 숨을 고릅니다.
-gold: 0, exp: 11, defense: 2, health: -1, level: 0, attack: 1, stage: 15, next: 20
-
-거리를 달려 탈출한다.
-당신은 마지막 힘을 짜내 달립니다. 뒤에서는 좀비의 울음소리가 멀어집니다.
-gold: 1, exp: 13, defense: 1, health: -2, level: 0, attack: 1, stage: 15, next: 21
-
-버려진 차를 사용한다.
-차 안으로 들어가 시동을 걸어보지만, 배터리가 방전되어 있습니다. 경적이 울립니다.
-gold: -1, exp: 10, defense: 0, health: -3, level: 0, attack: 2, stage: 15, next: 18
-
-#16
-지하 통로에서 발견한 문은 열쇠가 필요합니다.
-열쇠를 찾는다.
-당신은 다시 어둠 속을 거슬러 올라갑니다. 이전 경로에서 단서를 찾습니다.
-gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 1, stage: 16, next: 13
-
-문을 부순다.
-당신은 무기로 철문을 강타합니다. 결국 문은 열리지만 큰 소음을 남깁니다.
-gold: 0, exp: 14, defense: 1, health: -3, level: 0, attack: 2, stage: 16, next: 21
-
-다른 길을 찾는다.
-좌측 배관 통로를 따라갑니다. 당신은 좁은 배수구를 지나 외부로 나옵니다.
-gold: 0, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 16, next: 10
-
-#17
-생존자 무리와 동행 중, 식량이 바닥납니다.
-사냥에 나선다.
-숲가에서 동물의 흔적을 따라갑니다. 작은 짐승 하나를 잡는 데 성공합니다.
-gold: 1, exp: 13, defense: 2, health: 1, level: 0, attack: 1, stage: 17, next: 22
-
-무전기로 도움을 청한다.
-당신은 구조 신호를 다시 보냅니다. 멀리서 반응이 감지됩니다.
-gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 17, next: 14
-
-식량을 나눠준다.
-당신은 마지막 비상식량을 건넵니다. 팀의 사기는 높아지지만, 당신은 허기지기 시작합니다.
-gold: -1, exp: 11, defense: 3, health: -2, level: 0, attack: 0, stage: 17, next: 20
-
-#18
-낯선 통신 신호를 추적한 끝에, 방공호 입구를 발견합니다.
-진입을 시도한다.
-입구는 무너져 있었지만, 한쪽에 손전등 불빛이 흔들립니다. 당신은 천천히 다가갑니다.
-gold: 0, exp: 14, defense: 2, health: -1, level: 0, attack: 1, stage: 18, next: 44
-
-위에서 감시한다.
-당신은 건물 옥상에서 방공호를 관찰합니다. 안쪽에서 사람 그림자가 오갑니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 18, next: 45
-
-지나친다.
-위험을 감지한 당신은 더 이상 접근하지 않고 다른 방향으로 이동합니다.
-gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 18, next: 46
-
-#19
-폭우 속, 고립된 통신탑에 신호가 잡힙니다.
-탑 안으로 들어간다.
-내부에는 망가진 장비와 전단지들이 흩어져 있습니다. 그러나 한 구역은 아직 작동합니다.
-gold: 1, exp: 13, defense: 1, health: -2, level: 0, attack: 1, stage: 19, next: 47
-
-지붕 위에 올라가 신호를 강화한다.
-위험을 무릅쓰고 안테나를 수동 조정합니다. 더 강한 신호가 퍼져나갑니다.
-gold: 0, exp: 15, defense: 1, health: -3, level: 0, attack: 2, stage: 19, next: 48
-
-탑을 떠난다.
-그저 신호만 기록하고 당신은 떠납니다. 어둠이 더 짙어집니다.
-gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 19, next: 49
-
-#20
-이동 도중 폐허 도시의 중심지에 도착합니다. 밤은 깊어지고 있습니다.
-야영지를 마련한다.
-버려진 빌딩에 자리를 잡고 휴식을 취합니다. 당신은 짧은 꿈을 꿉니다.
-gold: 0, exp: 11, defense: 2, health: 2, level: 0, attack: 0, stage: 20, next: 50
-
-도시 지도를 그린다.
-고지대에서 시야를 확보하고 손전등으로 지형을 기록합니다. 내일을 위한 준비입니다.
-gold: 1, exp: 13, defense: 1, health: 1, level: 0, attack: 1, stage: 20, next: 51
-
-기습을 대비해 감시를 선다.
-밤새 감시를 맡으며 피곤함을 견딥니다. 아침이 오기 전, 무언가 스쳐 지나갑니다.
-gold: 0, exp: 14, defense: 2, health: -1, level: 0, attack: 1, stage: 20, next: 52
-
-#21
-당신은 도시에서 본 거대한 연기 기둥을 따라 움직입니다. 가까이 갈수록 매캐한 냄새가 짙어집니다.
-화재 현장을 조사한다.
-소방차와 불타버린 구조물이 어지럽게 널려 있습니다. 무전기 하나가 아직 작동합니다.
-gold: 0, exp: 13, defense: 2, health: -2, level: 0, attack: 1, stage: 21, next: 53
-
-잔불을 끄고 길을 확보한다.
-화재는 거의 꺼졌습니다. 당신은 주변을 정리하며 새로운 경로를 만듭니다.
-gold: 1, exp: 14, defense: 1, health: -1, level: 0, attack: 0, stage: 21, next: 54
-
-위험을 감지하고 돌아간다.
-당신은 불길한 느낌에 발걸음을 돌립니다. 불길은 여전히 거세게 타오릅니다.
-gold: 0, exp: 11, defense: 3, health: 1, level: 0, attack: 0, stage: 21, next: 10
-
-#22
-시나리오 인덱싱을 위한 22번 시나리오 임시 제작
-시나리오 인덱싱을 위한 22번 시나리오 임시 제작
-임시
-gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 10, next: 22
-
-시나리오 인덱싱을 위한 22번 시나리오 임시 제작
-임시
-gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
-
-시나리오 인덱싱을 위한 22번 시나리오 임시 제작
-임시  
-gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 30
-
-#23
-시나리오 인덱싱을 위한 23번 시나리오 임시 제작
-시나리오 인덱싱을 위한 23번 시나리오 임시 제작
-임시
-gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 10, next: 22
-
-시나리오 인덱싱을 위한 23번 시나리오 임시 제작
-임시
-gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
-
-시나리오 인덱싱을 위한 23번 시나리오 임시 제작
-임시  
-gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 30
-
-#24
-시나리오 인덱싱을 위한 24번 시나리오 임시 제작
-시나리오 인덱싱을 위한 24번 시나리오 임시 제작
-임시
-gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 10, next: 22
-
-시나리오 인덱싱을 위한 24번 시나리오 임시 제작
-임시
-gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
-
-시나리오 인덱싱을 위한 24번 시나리오 임시 제작
-임시  
-gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 30
-
-#25
-창고는 텅 비어 있었지만, 한쪽 벽면에 새로운 지도가 붙어 있습니다.
-지도에 따라 이동한다.
-당신은 공장지대 북쪽의 폐터널로 향합니다. 지하로 이어지는 입구가 보입니다.
-gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 25, next: 6
-
-기록을 분석한다.
-지도의 메모와 기호를 해석합니다. 이전에 지나쳤던 구역의 비밀 통로를 알아냅니다.
-gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 0, stage: 25, next: 10
-
-지도 일부를 훼손한다.
-당신은 우발적으로 지도의 일부를 찢습니다. 방향은 불확실하지만 길을 떠납니다.
-gold: 0, exp: 11, defense: 2, health: -1, level: 0, attack: 1, stage: 25, next: 20
-
-#26
-공장을 지나친 뒤, 황폐한 거리 끝에서 의외의 생존 신호를 감지합니다.
-신호를 추적한다.
-멀지 않은 폐차장 쪽에서 단파 신호가 잡힙니다. 고장 난 드론도 발견됩니다.
-gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 26, next: 14
-
-신호를 무시한다.
-정체불명의 신호에 휘둘리지 않기로 합니다. 대신 도시 남쪽 벙커로 향합니다.
-gold: 0, exp: 13, defense: 1, health: -1, level: 0, attack: 0, stage: 26, next: 19
-
-신호 발신지를 파괴한다.
-위험 요소 제거를 위해 간단한 EMP 장치를 가동합니다. 근처에 잠들어 있던 좀비들이 움직입니다.
-gold: 1, exp: 15, defense: 1, health: -3, level: 0, attack: 2, stage: 26, next: 18
-
-#27
-당신은 이른 새벽, 도시 외곽의 버려진 초소에 도착합니다.
-초소 내부를 수색한다.
-보급품 일부와 낙서가 남아 있습니다. “남쪽으로 가라”는 문구가 반복됩니다.
-gold: 1, exp: 13, defense: 1, health: 1, level: 0, attack: 0, stage: 27, next: 22
-
-경비로봇을 재가동한다.
-낡은 보안 시스템에 전력을 공급합니다. 로봇은 느릿하게 움직이며 경로를 안내합니다.
-gold: 0, exp: 14, defense: 2, health: -2, level: 0, attack: 1, stage: 27, next: 28
-
-건물을 벗어난다.
-더 머물 이유는 없습니다. 당신은 길을 따라 계속 이동합니다.
-gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 27, next: 10
-
-#28
-당신은 산산이 부서진 가로등 근처에서 생존자 무리를 만납니다.
-동행을 제안한다.
-서로 상황을 공유하고 물자를 나눕니다. 무리는 곧 하나의 팀이 됩니다.
-gold: 1, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 28, next: 17
-
-무리를 따로 조사한다.
-그들의 동선을 추적합니다. 일부는 수상한 행동을 보입니다.
-gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 28, next: 31
-
-무시하고 떠난다.
-불신은 생존의 기술입니다. 당신은 홀로 길을 떠납니다.
-gold: 0, exp: 11, defense: 2, health: 0, level: 0, attack: 1, stage: 28, next: 20
-
-#29
-도시 깊은 곳, 당신은 숨겨진 입구를 발견합니다. 문은 약간 열려 있습니다.
-안으로 들어간다.
-지하 대피소였습니다. 여기엔 식량과 의료품이 남아 있습니다.
-gold: 2, exp: 15, defense: 2, health: 2, level: 0, attack: 0, stage: 29, next: 40
-
-문을 닫고 떠난다.
-들어가기엔 너무 불안합니다. 당신은 조용히 자리를 떴습니다.
-gold: 0, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 29, next: 19
-
-입구를 덮어 숨긴다.
-자원을 확보한 뒤 출입 흔적을 지웁니다. 이곳은 당신의 비밀 피난처입니다.
-gold: 0, exp: 14, defense: 3, health: 0, level: 0, attack: 0, stage: 29, next: 10
-
-#30
-당신은 실험 데이터를 들고 외부 네트워크와 접속을 시도합니다.
-송신에 성공한다.
-누군가 응답합니다. “기록을 확보했다. 위치를 보내라.” 구조의 가능성이 생깁니다.
-gold: 0, exp: 16, defense: 2, health: 1, level: 0, attack: 1, stage: 30, next: 33
-
-송신에 실패한다.
-전력 불안정으로 실패합니다. 당신은 더 높은 위치를 찾기로 합니다.
-gold: 0, exp: 12, defense: 1, health: -2, level: 0, attack: 1, stage: 30, next: 19
-
-장비를 숨긴다.
-당장은 위험하다 판단한 당신은 데이터를 보관한 채 이동합니다.
-gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 30, next: 10
-
-#31
-당신은 생존자 무리의 수상한 행동을 끝까지 지켜봅니다. 결국 그들은 분열합니다.
-무리를 설득한다.
-갈등 중간에서 중재를 시도합니다. 일부는 당신을 따르기로 합니다.
-gold: 1, exp: 14, defense: 2, health: 1, level: 0, attack: 1, stage: 31, next: 17
-
-혼란을 틈타 떠난다.
-혼란을 이용해 무리를 빠져나옵니다. 시야에서 벗어나자 숨이 가빠옵니다.
-gold: 0, exp: 11, defense: 1, health: -1, level: 0, attack: 0, stage: 31, next: 10
-
-무리를 따로 추적한다.
-분열된 이들 중 한 명을 따라갑니다. 그가 들른 장소는 예전에 본 폐건물이었습니다.
-gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 1, stage: 31, next: 29
-
-#32
-당신은 무전으로 구조 요청을 받습니다. 좌표는 폐허가 된 교회입니다.
-바로 출발한다.
-교회 내부는 불길하게 조용합니다. 벽면에는 메시지가 남아 있습니다.
-gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 1, stage: 32, next: 10
-
-잠시 대기 후 출발한다.
-정찰을 마치고 교회로 향합니다. 외곽에 누군가가 숨어 있는 듯합니다.
-gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 32, next: 28
-
-무시한다.
-신뢰할 수 없는 신호는 무시합니다. 당신은 동쪽 언덕으로 향합니다.
-gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 32, next: 22
-
-#33
-구조팀은 당신에게 생존 지역으로 향하라 지시합니다. 하지만 경로는 위험합니다.
-지시에 따른다.
-낮은 고개를 넘어 산지로 진입합니다. 도중에 좀비 떼를 마주칩니다.
-gold: 0, exp: 16, defense: 2, health: -4, level: 0, attack: 2, stage: 33, next: 34
-
-지시를 무시한다.
-지시가 함정일 수도 있다는 불신에 당신은 방향을 바꿉니다.
-gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 33, next: 20
-
-일행과 상의한다.
-당신은 무선으로 생존자들과 논의합니다. 더 안전한 대안이 제시됩니다.
-gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 33, next: 30
-
-#34
-산지 초입에서 안개가 짙게 깔립니다. 시야는 제한되고, 발소리만 울립니다.
-잠복한다.
-당신은 바위 뒤에 몸을 숨깁니다. 누군가 지나갑니다. 좀비는 아닙니다.
-gold: 0, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 34, next: 31
-
-경로를 우회한다.
-짙은 안개를 피해 다른 능선을 따라갑니다. 오르막이 가팔라집니다.
-gold: 0, exp: 12, defense: 2, health: -1, level: 0, attack: 1, stage: 34, next: 29
-
-등산 장비를 쓴다.
-로프와 아이젠을 꺼내 경사면을 오릅니다. 아래에서 짐승 소리가 들려옵니다.
-gold: 1, exp: 15, defense: 1, health: -2, level: 0, attack: 2, stage: 34, next: 36
-
-#35
-당신은 외곽 거점에 도착합니다. 입구는 폐쇄되어 있고, 내부는 정전 상태입니다.
-돌입한다.
-문을 부수고 진입합니다. 내부는 폐쇄되어 있었고, 무언가 들끓고 있습니다.
-gold: 0, exp: 13, defense: 1, health: -3, level: 0, attack: 2, stage: 35, next: 18
-
-기다린다.
-주위를 정찰하며 적당한 틈을 찾습니다. 주변은 매우 조용합니다.
-gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 35, next: 10
-
-우회한다.
-다른 생존자가 개방한 후문을 발견합니다. 당신은 그 길로 들어갑니다.
-gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 35, next: 22
-
-#36
-능선 끝자락, 당신은 오래된 감시탑에 도달합니다. 구조물은 기울어져 있습니다.
-탑을 조사한다.
-위에서 망원경과 통신기기 잔해를 발견합니다. 신호가 잡힙니다.
-gold: 0, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 36, next: 33
-
-탑을 지나친다.
-감시탑은 위험해 보입니다. 당신은 아래 오솔길을 따라갑니다.
-gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 36, next: 19
-
-기초 보수를 한다.
-탑의 구조를 보완해 다시 사용할 수 있게 만듭니다. 안정적인 구조 지점 확보.
-gold: 1, exp: 16, defense: 3, health: 1, level: 0, attack: 0, stage: 36, next: 40
-
-#37
-당신은 숲 속 낡은 수로를 발견합니다. 내부는 습하고 좁지만 이동 가능합니다.
-진입한다.
-수로를 통해 이동합니다. 외부 소음은 들리지 않고, 내부는 습합니다.
-gold: 0, exp: 13, defense: 2, health: -1, level: 0, attack: 0, stage: 37, next: 6
-
-우회한다.
-좁은 공간을 피하고 외곽 산책로를 선택합니다. 그 끝에 작은 창고가 보입니다.
-gold: 0, exp: 12, defense: 1, health: 1, level: 0, attack: 0, stage: 37, next: 20
-
-탐사 포기를 고민한다.
-지금은 쉬는 게 먼저입니다. 당신은 가까운 바위 아래에 잠시 몸을 누입니다.
-gold: 0, exp: 10, defense: 2, health: 2, level: 0, attack: 0, stage: 37, next: 10
-
-#38
-무너진 아파트 단지, 구조 신호가 간헐적으로 잡힙니다. 생존 가능성은 낮습니다.
-구조를 시도한다.
-위험을 무릅쓰고 무너진 콘크리트를 헤칩니다. 인명은 없지만 기록 장비 확보.
-gold: 1, exp: 15, defense: 2, health: -2, level: 0, attack: 1, stage: 38, next: 30
-
-포기한다.
-정찰만 하고 떠납니다. 아파트 뒤편으로 열린 길이 보입니다.
-gold: 0, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 38, next: 22
-
-함정을 설치한다.
-이곳은 적의 통로일 수 있습니다. 간단한 함정을 설치하고 떠납니다.
-gold: 1, exp: 14, defense: 3, health: 0, level: 0, attack: 0, stage: 38, next: 10
-
-#39
-안개 낀 도심 한복판, 오래된 방송국 건물에 도달합니다. 내부는 침묵뿐입니다.
-방송 장비를 재가동한다.
-주파수를 맞추고 송신을 시도합니다. 멀리서 희미한 응답이 돌아옵니다.
-gold: 0, exp: 16, defense: 2, health: 0, level: 0, attack: 1, stage: 39, next: 30
-
-장비를 회수한다.
-유용한 부품을 챙깁니다. 그러나 일부 좀비가 따라옵니다.
-gold: 2, exp: 13, defense: 1, health: -3, level: 0, attack: 1, stage: 39, next: 10
-
-방송국을 봉쇄한다.
-입구를 폐쇄하고 주변을 경계합니다. 이곳을 임시 거점으로 삼습니다.
-gold: 0, exp: 14, defense: 3, health: 1, level: 0, attack: 0, stage: 39, next: 40
-
-#40
-당신은 다시 거점으로 돌아옵니다. 여기엔 익숙한 얼굴들과 새로운 계획이 기다립니다.
-무전을 보낸다.
-생존자들에게 다음 이동 위치를 알립니다. 협력이 시작됩니다.
-gold: 0, exp: 15, defense: 2, health: 1, level: 0, attack: 1, stage: 40, next: 10
-
-거점을 강화한다.
-기존 방어선을 보수하고 감시망을 구축합니다. 점점 안전해집니다.
-gold: 1, exp: 16, defense: 3, health: 2, level: 0, attack: 0, stage: 40, next: 22
-
-임무를 떠난다.
-더 많은 생존자와 자원을 찾아 또 다른 여정을 시작합니다.
-gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 40, next: 41
-
-#41
-임무를 떠난 당신은 도심 외곽의 무너진 다리 근처에 도달합니다. 수색은 더딥니다.
-다리 밑을 수색한다.
-폐차와 쓰레기로 가득한 다리 아래서 신선한 피 냄새를 감지합니다.
-gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 1, stage: 41, next: 18
-
-다리를 넘는다.
-낙석 위험이 있지만 강을 건너는 길을 선택합니다. 중간에서 짐승이 포효합니다.
-gold: 0, exp: 13, defense: 1, health: -3, level: 0, attack: 1, stage: 41, next: 36
-
-탐색을 중단하고 돌아간다.
-위험이 감지되자 탐색을 중단하고 기지로 향합니다.
-gold: 0, exp: 11, defense: 3, health: 1, level: 0, attack: 0, stage: 41, next: 40
-
-#42
-탐색 도중 당신은 누군가의 은신처로 보이는 천막을 발견합니다.
-안으로 들어가 본다.
-먹다 남은 식량과 사진, 마지막 기록이 남아 있습니다.
-gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 42, next: 29
-
-지나친다.
-개입하지 않기로 하고 조용히 이동합니다. 등 뒤에서 낡은 무전기 소리가 들립니다.
-gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 42, next: 19
-
-은신처를 봉쇄한다.
-좀비의 소굴이 될 위험을 막기 위해 입구를 막습니다. 무언가 안에서 움직입니다.
-gold: 0, exp: 13, defense: 3, health: -1, level: 0, attack: 1, stage: 42, next: 10
-
-#43
-폐건물 옥상에서 구조 신호가 보입니다. 연기가 하늘로 솟구칩니다.
-옥상으로 올라간다.
-낙하산 흔적과 응급 장비를 발견합니다. 이미 구조는 끝난 듯합니다.
-gold: 0, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 43, next: 30
-
-지하로 진입한다.
-연기의 발원은 아닙니다. 하지만 지하엔 누군가 머문 흔적이 있습니다.
-gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 43, next: 6
-
-건물 밖에서 대기한다.
-상황을 파악할 수 없어 멀찍이서 기다립니다. 인근에서 소란이 일어납니다.
-gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 0, stage: 43, next: 22
-
-#44
-방공호 진입 후 당신은 깊숙한 통로에서 묘한 기계음을 듣습니다.
-소리를 따라간다.
-실험 설비와 냉동 보관된 무언가를 발견합니다. 문서엔 '2차 변이'라는 단어가 적혀 있습니다.
-gold: 2, exp: 16, defense: 2, health: -1, level: 0, attack: 1, stage: 44, next: 30
-
-기계를 파괴한다.
-너무 위험하다고 판단한 당신은 설비를 손상시킵니다. 경보가 울리기 시작합니다.
-gold: 1, exp: 14, defense: 2, health: -3, level: 0, attack: 2, stage: 44, next: 45
-
-빠르게 철수한다.
-더 이상 머무를 수 없습니다. 당신은 가능한 빠르게 탈출합니다.
-gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 44, next: 40
-
-#45
-경보가 울리는 가운데 방공호 밖으로 나왔습니다. 주변은 이미 소란스럽습니다.
-기지를 향한다.
-당신은 빠르게 후퇴합니다. 뒤에서 무언가가 따라옵니다.
-gold: 0, exp: 14, defense: 2, health: -2, level: 0, attack: 1, stage: 45, next: 40
-
-근처 지붕으로 올라간다.
-옥상에서 상황을 관찰합니다. 드론 한 대가 하늘을 가로지릅니다.
-gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 45, next: 36
-
-다른 생존자와 접촉을 시도한다.
-통신기를 꺼내 접속을 시도합니다. 잡음 속에서 “북쪽으로”라는 메시지가 들립니다.
-gold: 1, exp: 15, defense: 2, health: 1, level: 0, attack: 1, stage: 45, next: 41
-
-#46
-도심 북쪽 외곽, 폐선 철도 위에 낡은 화물열차가 멈춰 있습니다.
-열차 내부를 탐색한다.
-잊힌 보급품과 마른 피가 남아 있습니다. 귀퉁이에 누군가의 흔적도 보입니다.
-gold: 1, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 46, next: 10
-
-지붕 위로 올라간다.
-열차 지붕은 시야가 넓지만, 흔들리며 균형을 잃기 쉽습니다.
-gold: 0, exp: 13, defense: 1, health: -2, level: 0, attack: 0, stage: 46, next: 33
-
-선로를 따라 이동한다.
-멀리 굴뚝이 보입니다. 당신은 선로를 따라 도보 이동을 시작합니다.
-gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 46, next: 50
-
-#47
-굴뚝 건물은 오래된 소각장이었습니다. 내부는 탄냄새와 검은 그을음으로 가득합니다.
-소각로를 조사한다.
-벽면에 암호화된 문장과 기계 부품이 숨겨져 있습니다.
-gold: 0, exp: 15, defense: 1, health: -1, level: 0, attack: 1, stage: 47, next: 30
-
-건물 뒤편을 확인한다.
-작은 컨테이너 하나가 반쯤 묻혀 있습니다. 안쪽엔 의료용 드론 잔해가 보입니다.
-gold: 1, exp: 13, defense: 1, health: 1, level: 0, attack: 0, stage: 47, next: 19
-
-불길해 떠난다.
-당신은 직감적으로 위험을 감지하고 빠르게 자리를 떠납니다.
-gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 47, next: 40
-
-#48
-도시의 오래된 지하철 노선 끝, 폐쇄된 정거장에 도착합니다.
-전력 시스템을 점검한다.
-약한 불빛이 돌아오고, 안내 방송이 잠시 켜집니다. 짧은 희망이 피어납니다.
-gold: 0, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 48, next: 30
-
-터널 깊숙이 들어간다.
-과거 피난민이 머문 흔적과 녹슨 무기들이 널려 있습니다.
-gold: 1, exp: 15, defense: 2, health: -2, level: 0, attack: 2, stage: 48, next: 6
-
-정거장에서 대기한다.
-더 나아갈 여력이 없습니다. 당신은 짧은 휴식을 취합니다.
-gold: 0, exp: 11, defense: 2, health: 2, level: 0, attack: 0, stage: 48, next: 10
-
-#49
-도심 남쪽, 물이 고인 낡은 공원에 진입합니다. 고요함이 기묘하게 무겁습니다.
-호수를 수색한다.
-물속에서 자동차 잔해를 발견합니다. 트렁크엔 무기 상자가 있습니다.
-gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 2, stage: 49, next: 18
-
-주변을 순찰한다.
-나무 뒤에 무언가 숨어 있습니다. 당신은 조심스럽게 다가갑니다.
-gold: 0, exp: 13, defense: 1, health: -1, level: 0, attack: 1, stage: 49, next: 22
-
-그늘에서 쉰다.
-도시의 소음이 잦아든 공원 그늘 아래서 당신은 눈을 감습니다.
-gold: 0, exp: 11, defense: 2, health: 2, level: 0, attack: 0, stage: 49, next: 10
-
-#50
-당신은 폐광 입구 앞에 서 있습니다. 바람은 지하 깊은 곳에서 불어옵니다.
-광산 안으로 들어간다.
-예전 작업자들의 흔적과 무너진 장비들, 그리고 최근 흔적이 엿보입니다.
-gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 1, stage: 50, next: 44
-
-입구를 봉쇄한다.
-이곳은 더 이상 누구도 들어와선 안 될 공간처럼 느껴집니다.
-gold: 1, exp: 14, defense: 3, health: 0, level: 0, attack: 0, stage: 50, next: 10
-
-지도를 남기고 돌아간다.
-다른 생존자가 이곳을 발견하길 바라며, 당신은 기록을 남깁니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 50, next: 19
-
-#51
-지하 벙커에서 나온 당신은 외부 통신 기지를 발견합니다. 신호는 약하지만 연결 가능성이 있습니다.
-신호를 증폭한다.
-임시 송신 장비를 조작해 신호 강도를 높입니다. 누군가 응답합니다.
-gold: 1, exp: 16, defense: 2, health: 0, level: 0, attack: 1, stage: 51, next: 33
-
-기지를 해킹한다.
-보안이 허술한 시스템을 뚫어 내부 정보를 확보합니다. 감지 알림이 울립니다.
-gold: 0, exp: 15, defense: 1, health: -2, level: 0, attack: 2, stage: 51, next: 45
-
-기지를 벗어난다.
-너무 오래 머물 순 없습니다. 당신은 다음 지역으로 이동합니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 51, next: 22
-
-#52
-폐허가 된 방송탑 내부에서 끊어진 케이블과 음성 기록을 발견합니다.
-기록을 재생한다.
-불안정한 음성 데이터가 반복됩니다. '남은 자들, 북부 방벽'이라는 문장이 잡힙니다.
-gold: 0, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 52, next: 19
-
-탑을 수리한다.
-위험을 무릅쓰고 케이블을 연결합니다. 전원이 돌아오며 강한 전류가 흐릅니다.
-gold: 1, exp: 14, defense: 1, health: -3, level: 0, attack: 2, stage: 52, next: 30
-
-현장을 떠난다.
-이곳은 오래전에 버려졌습니다. 당신은 다음 거점을 향합니다.
-gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 52, next: 40
-
-#53
-당신은 폐도심 고층 건물에 잠입합니다. 바닥엔 신선한 발자국이 있습니다.
-발자국을 추적한다.
-누군가 최근 이곳을 지나갔습니다. 옥상으로 향하는 문이 반쯤 열려 있습니다.
-gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 53, next: 43
-
-경비 시스템을 확인한다.
-출입 기록과 감시 카메라를 통해 과거 로그를 조회합니다. 생존자 무리가 확인됩니다.
-gold: 0, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 53, next: 29
-
-즉시 철수한다.
-위험하다고 판단한 당신은 빠르게 건물을 빠져나옵니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 53, next: 10
-
-#54
-북부 외곽 숲길에서 당신은 쓰러진 수송 트럭을 발견합니다.
-화물칸을 연다.
-약품과 보급품이 발견되지만, 문틈에 감염자가 숨어 있습니다.
-gold: 2, exp: 14, defense: 1, health: -2, level: 0, attack: 2, stage: 54, next: 18
+지하철역 입구는 쓰레기와 방치된 시체로 막혀 있습니다.
+철제 문을 연다.
+문을 밀어 열며 큰 소음이 발생합니다. 내부에서 인기척이 납니다.
+gold: 0, exp: 12, defense: 1, health: -2, level: 0, attack: 1, stage: 5, next: 12
+
+지하철로 뛰어든다.
+당신은 소리를 무시하고 어둠 속으로 들어갑니다. 한기가 엄습합니다.
+gold: 0, exp: 11, defense: 2, health: 0, level: 0, attack: 1, stage: 5, next: 13
 
 주변을 수색한다.
-트럭에서 흘러나온 자취를 따라가 보니 숲 속에 또 다른 흔적이 있습니다.
-gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 54, next: 19
+역 주변 상점에서 빈 캔과 휴지를 발견합니다. 대피 흔적이 보입니다.
+gold: 1, exp: 10, defense: 0, health: 0, level: 0, attack: 0, stage: 5, next: 14
 
-지나친다.
-무시하고 경로를 유지합니다. 짧은 거리 뒤에 더 큰 구조물이 보입니다.
-gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 54, next: 22
+#6
+마트 내부는 조용하지만, 언제든 위협이 닥칠 수 있습니다.
+식료품을 챙긴다.
+부서진 냉장고 속에서 먹을 것을 꺼냅니다. 악취가 진동합니다.
+gold: 1, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 6, next: 15
 
-#55
-하천을 따라 난 길을 걷던 당신은 부서진 보트와 낙오자를 발견합니다.
-낙오자를 돕는다.
-그는 중상을 입었지만 정보를 제공합니다. 북동쪽 거점에 사람들의 흔적이 있다고 합니다.
-gold: 0, exp: 15, defense: 2, health: -1, level: 0, attack: 0, stage: 55, next: 41
+비상구를 찾는다.
+깜빡이는 불빛 아래서 비상 출구 표지판을 발견합니다. 긴장감이 맴돕니다.
+gold: 0, exp: 11, defense: 2, health: 0, level: 0, attack: 1, stage: 6, next: 16
 
-장비만 챙긴다.
-낙오자가 쓰러진 틈을 이용해 물자를 챙기고 자리를 뜹니다.
-gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 1, stage: 55, next: 10
+몰래 잠입한다.
+뒤편 창고로 숨어들어갑니다. 누군가 남긴 낙서를 발견합니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 6, next: 17
 
-신호탄을 쏘고 떠난다.
-잠재적인 구조 신호로 오해를 유도하며, 당신은 빠르게 사라집니다.
-gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 1, stage: 55, next: 33
+#7
+고층 건물의 옥상에 도착합니다. 시야가 트이지만, 아래는 위험투성이입니다.
+옥상에서 구조 신호를 쏜다.
+당신은 조난 신호를 보냅니다. 하늘에서 작은 반짝임이 감지됩니다.
+gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 7, next: 18
 
-#56
-폐허 아파트 단지의 붕괴된 주차장에서 기계 소리가 들립니다.
-소리를 추적한다.
-잠긴 셔터 뒤, 자율 드론이 정비 중입니다. 배터리를 일부 확보합니다.
-gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 56, next: 45
+내려간다.
+계단을 따라 아래로 내려갑니다. 어둠이 짙고, 소리가 메아리칩니다.
+gold: 0, exp: 11, defense: 1, health: -1, level: 0, attack: 1, stage: 7, next: 13
 
-기계실에 들어간다.
-방호복을 입은 인물이 장비를 조작 중입니다. 무언가를 숨깁니다.
-gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 2, stage: 56, next: 30
+건물 내부를 수색한다.
+사무실에서 오래된 지도를 발견합니다. 북쪽 캠프가 표시돼 있습니다.
+gold: 1, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 7, next: 19
 
-도망친다.
-이상한 기운을 느낀 당신은 발걸음을 돌립니다. 무언가 쫓아옵니다.
-gold: 0, exp: 11, defense: 2, health: -1, level: 0, attack: 0, stage: 56, next: 10
+#8
+그는 숨을 헐떡이며 구조를 요청합니다. 감염 여부는 불확실합니다.
+도와준다.
+당신은 붕대를 꺼내 그의 상처를 지혈합니다. 그는 감사의 표시로 약을 줍니다.
+gold: 0, exp: 12, defense: 2, health: -1, level: 0, attack: 0, stage: 8, next: 20
 
-#57
-숲속에서 당신은 오래된 산장 하나를 발견합니다. 연기가 피어오릅니다.
-안으로 들어간다.
-벽난로 옆엔 노인이 앉아 있습니다. 그는 당신에게 따뜻한 차를 건넵니다.
-gold: 0, exp: 14, defense: 2, health: 2, level: 0, attack: 0, stage: 57, next: 40
+무시하고 떠난다.
+감염이 걱정된 당신은 그대로 자리를 떴습니다. 등 뒤로 한숨이 들립니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 8, next: 14
 
-뒤로 물러난다.
-산장은 비정상적으로 조용합니다. 뒤로 물러나며 정찰을 시작합니다.
-gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 57, next: 22
+총을 겨눈다.
+혹시 몰라 위협합니다. 그는 겁먹고 자신의 무전기를 넘깁니다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 8, next: 21
 
-문을 두드린다.
-안에서 인기척이 있습니다. 잠시 후, 낯선 얼굴이 문을 엽니다.
-gold: 1, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 57, next: 58
+#9
+출입구를 지나자 지하창고가 나타납니다. 습기와 곰팡이 냄새가 진동합니다.
+조심히 안으로 들어간다.
+낡은 식량과 배터리를 챙깁니다. 발자국이 이어져 있습니다.
+gold: 1, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 9, next: 22
 
-#58
-산장에서 만난 낯선 이는 북쪽에 남은 생존자들의 거점을 알려줍니다.
-거점으로 향한다.
-숲길을 따라 이동합니다. 중간에 헬기 잔해가 보입니다.
-gold: 0, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 58, next: 43
+즉시 빠져나간다.
+위험하다 판단한 당신은 돌아섭니다. 그러나 누군가 따라옵니다.
+gold: 0, exp: 10, defense: 1, health: -1, level: 0, attack: 1, stage: 9, next: 23
 
-산장을 되돌아본다.
-의심이 남은 당신은 다시 산장을 바라봅니다. 불빛이 꺼져 있습니다.
-gold: 0, exp: 13, defense: 2, health: -1, level: 0, attack: 1, stage: 58, next: 10
+은신처로 삼는다.
+작은 공간을 정리해 하루를 보냅니다. 내일을 대비합니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 9, next: 24
 
-정보를 무시한다.
-그의 말을 신뢰하지 않고, 다른 방향으로 갑니다.
-gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 58, next: 22
+#10
+지하 터널은 복잡하게 얽혀 있습니다. 어디로 가시겠습니까?
+왼쪽 통로로 향한다.
+물웅덩이를 피해 좁은 길을 걷습니다. 공기가 탁합니다.
+gold: 0, exp: 11, defense: 1, health: -1, level: 0, attack: 1, stage: 10, next: 21
 
-#59
-북부 고속도로 진입로에 도착합니다. 버려진 차량들이 도로를 막고 있습니다.
-차량을 치운다.
-움직이는 데 어려움이 있지만 길을 확보합니다. 무전기가 작동합니다.
-gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 1, stage: 59, next: 30
-
-우회로를 찾는다.
-임시 도로로 진입합니다. 위험하지만 빠르게 통과할 수 있습니다.
-gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 59, next: 36
-
-현장을 사진으로 남긴다.
-정찰 기록을 위해 현장을 촬영합니다. 이후 분석을 위해 기지로 복귀합니다.
-gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 59, next: 40
-
-#60
-강 서편에 위치한 폐유조선에 접근합니다. 내부는 어둡고 기름 냄새가 짙습니다.
-엔진실을 확인한다.
-장비 일부는 작동 가능해 보입니다. 배터리를 확보합니다.
-gold: 1, exp: 14, defense: 1, health: -1, level: 0, attack: 1, stage: 60, next: 33
-
-선실을 수색한다.
-기록 장치와 지도, 오래된 식량이 발견됩니다.
-gold: 0, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 60, next: 19
-
-선체를 벗어난다.
-지금은 머물 시간 없다 판단하고 당신은 선체 밖으로 빠르게 나옵니다.
-gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 60, next: 22
-
-#61
-고립된 터널 입구에서 희미한 불빛이 깜빡입니다. 주변은 으스스하게 조용합니다.
-불빛을 향해 간다.
-좁은 입구를 통과하자 누군가 설치한 임시 거처가 보입니다.
-gold: 0, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 61, next: 29
+오른쪽 통로로 향한다.
+작은 바람 소리가 들려옵니다. 출구가 가까운 듯합니다.
+gold: 1, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 10, next: 22
 
 잠시 대기한다.
-무언가 함정일 수 있기에 주변을 살핍니다. 어두운 바닥에 발자국이 보입니다.
-gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 61, next: 43
+길을 잘못 들 수 없기에 주변을 분석합니다. 발소리는 사라졌습니다.
+gold: 0, exp: 9, defense: 3, health: 1, level: 0, attack: 0, stage: 10, next: 23
 
-다른 방향으로 이동한다.
-위험하다 판단한 당신은 강 건너편 도로를 따라 이동합니다.
-gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 61, next: 19
+#11
+당신은 터널 끝에서 낡은 벽면 지도를 발견합니다.
+지도를 따라 이동한다.
+남쪽 방향 통로를 선택합니다. 출구에 대한 단서가 보입니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 11, next: 24
 
-#62
-폐허화된 대형 마트 앞에 도착합니다. 안쪽은 어두우며 바람이 스칩니다.
-마트에 진입한다.
-유통기한이 지난 물품들 사이로 건전지와 응급약품을 찾습니다.
-gold: 1, exp: 13, defense: 2, health: 0, level: 0, attack: 1, stage: 62, next: 37
+지도를 복사한다.
+기록을 남겨두고 다른 경로를 고려합니다. 복잡한 갈림길이 많습니다.
+gold: 1, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 11, next: 25
 
-뒷편 창고로 향한다.
-폐쇄된 철문을 열자 식량 저장고가 보입니다. 그러나 안쪽에서 인기척이 납니다.
-gold: 0, exp: 15, defense: 2, health: -2, level: 0, attack: 2, stage: 62, next: 18
+지도를 찢는다.
+당신은 우발적으로 찢어진 종이를 바닥에 떨어뜨립니다. 혼란스러운 감정이 밀려옵니다.
+gold: 0, exp: 9, defense: 1, health: -1, level: 0, attack: 0, stage: 11, next: 26
 
-정찰만 하고 떠난다.
-위험을 무릅쓰지 않기로 결정한 당신은 주변만 확인하고 이동합니다.
-gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 62, next: 22
+#12
+철제 문 너머에서 희미한 빛이 새어 나옵니다.
+문을 연다.
+빛은 태양빛이었습니다. 지하에서 벗어난 듯합니다. 아직 도시는 끝나지 않았습니다.
+gold: 0, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 12, next: 27
 
-#63
-고속도로 아래 낡은 쉼터에서 구조 요청 낙서가 보입니다. 희미한 피자국이 이어져 있습니다.
-피자국을 따라간다.
-수풀 사이에 쓰러진 인물을 발견합니다. 그는 미약하게 숨을 쉽니다.
-gold: 0, exp: 14, defense: 2, health: -1, level: 0, attack: 0, stage: 63, next: 41
+잠시 기다린다.
+혹시 있을 위험에 대비해 주변을 정찰합니다. 고요함은 이어집니다.
+gold: 0, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 12, next: 28
 
-쉼터를 수색한다.
-버려진 짐가방 안에서 건전지와 방수포를 찾습니다.
-gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 63, next: 36
+문을 두드린다.
+금속성 울림이 멀리 퍼집니다. 하지만 반응은 없습니다. 길을 다시 찾습니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 1, stage: 12, next: 29
 
-낙서를 기록만 한다.
-당신은 낙서를 사진으로 남기고 빠르게 자리를 뜹니다.
-gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 63, next: 20
+#13
+당신은 도시 외곽 숲의 초입에 도착합니다. 길은 어둡고 습합니다.
+숲 안으로 들어간다.
+나뭇가지가 얼굴을 스칩니다. 짐승의 소리가 납니다. 캠프로 향하는 길은 아직 멀었습니다.
+gold: 0, exp: 14, defense: 2, health: -1, level: 0, attack: 1, stage: 13, next: 16
 
-#64
-지하 주차장 통로에서 엔진 소리가 들립니다. 누군가 차량을 사용 중입니다.
-접근한다.
-차량 내부엔 무장한 생존자가 있습니다. 그는 합류를 제안합니다.
-gold: 1, exp: 15, defense: 2, health: 1, level: 0, attack: 1, stage: 64, next: 17
-
-은신한다.
-당신은 기둥 뒤로 숨고 상황을 지켜봅니다. 차량은 곧 떠납니다.
-gold: 0, exp: 12, defense: 3, health: 0, level: 0, attack: 0, stage: 64, next: 39
-
-무시하고 빠져나간다.
-소음을 피해 조용히 반대 방향 출구로 향합니다.
-gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 64, next: 22
-
-#65
-도시 경계, 강변 방파제 아래 은신처 흔적이 보입니다. 짐은 오래된 듯합니다.
-짐을 조사한다.
-지도를 포함한 생존자의 일지가 보입니다. 귀중한 정보가 담겨 있습니다.
-gold: 1, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 65, next: 30
-
-은신처를 떠난다.
-잔해만 남아 있을 뿐입니다. 다른 길을 찾기로 합니다.
-gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 65, next: 22
+숲가를 따라 이동한다.
+숲 가장자리로 이동하며 길을 찾습니다. 발자국이 보입니다. 누군가 앞서간 흔적입니다.
+gold: 1, exp: 12, defense: 1, health: 1, level: 0, attack: 0, stage: 13, next: 17
 
 불을 피운다.
-몸을 녹이며 짧은 휴식을 취합니다. 어딘가에서 그림자가 움직입니다.
-gold: 0, exp: 13, defense: 1, health: 2, level: 0, attack: 0, stage: 65, next: 38
+피로에 지친 당신은 작은 불을 지펴 휴식을 취합니다. 아직 도달하진 못했지만 힘을 회복합니다.
+gold: 0, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 13, next: 20
+
+#14
+낮은 언덕 너머로 무전 신호가 잡힙니다.
+신호를 추적한다.
+기지에서 쏘는 구조 신호입니다. 방향이 확실해집니다. 캠프의 위치가 명확해졌습니다.
+gold: 1, exp: 15, defense: 1, health: 0, level: 0, attack: 1, stage: 14, next: 15
+
+무시하고 길을 계속 간다.
+신호는 위험 요소일 수 있습니다. 당신은 본래 방향을 유지합니다. 언덕 너머로 희미한 불빛이 보입니다.
+gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 14, next: 11
+
+잠시 신호를 분석한다.
+좌표를 기록하고 안전한 경로를 계획합니다. 지도에 캠프 추정 위치를 표시합니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 14, next: 19
+
+#15
+당신은 낯선 외벽과 경비초소를 멀리서 봅니다. 캠프일 수 있습니다.
+경비초소로 다가간다.
+군복 차림의 인물이 당신을 향해 손짓합니다. 무기를 내려두라 합니다.
+gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 15, next: 30
+
+숲 뒤편으로 돌아간다.
+정면 진입은 위험해 보입니다. 당신은 우회로를 선택합니다. 더 나은 접근 지점을 찾습니다.
+gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 1, stage: 15, next: 13
+
+초소를 관찰만 한다.
+당신은 먼 거리에서 망원경으로 캠프 구조를 분석합니다. 접근 루트를 파악합니다.
+gold: 1, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 15, next: 12
+
+#16
+캠프 경계선에서 수색조가 접근합니다.
+손을 든다.
+당신은 위협이 없음을 표시합니다. 그들은 당신을 안내하려 하나 절차가 남았습니다.
+gold: 0, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 16, next: 30
+
+숨는다.
+당신은 수풀 뒤로 몸을 피합니다. 수색조는 사라지지만 접근 기회를 놓칩니다.
+gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 16, next: 14
+
+신호탄을 쏜다.
+긴급 상황이라 판단한 당신은 하늘로 신호탄을 쏩니다. 누군가 응답합니다.
+gold: -1, exp: 13, defense: 2, health: -1, level: 0, attack: 0, stage: 16, next: 18
+
+#17
+외벽 앞에 도달했습니다. 마지막 인증 절차가 남았습니다.
+신분을 밝힌다.
+당신은 살아남은 경위를 설명하고 확인 절차를 거칩니다. 입장이 허가됩니다.
+gold: 0, exp: 16, defense: 2, health: 1, level: 0, attack: 0, stage: 17, next: 30
+
+거짓말을 한다.
+당신은 신원을 숨기려 합니다. 그러나 질문이 꼬리를 물고 이어집니다. 검문이 길어집니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 1, stage: 17, next: 9
+
+무시하고 돌파한다.
+당신은 담장을 넘습니다. 경보음이 울립니다. 이탈자 취급을 받습니다.
+gold: 0, exp: 14, defense: 1, health: -2, level: 0, attack: 2, stage: 17, next: 10
+
+#18
+캠프 입구 앞 대기구역에서 구조된 생존자들이 보입니다.
+식량을 나눈다.
+당신은 가지고 있던 음식을 나눕니다. 따뜻한 말이 돌아옵니다.
+gold: -1, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 18, next: 20
+
+상황을 파악한다.
+당신은 주변 시설을 확인하며 캠프 구조를 익힙니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 18, next: 19
+
+휴식을 취한다.
+긴장 속에서 잠시 눈을 붙입니다. 문은 아직 열리지 않았습니다.
+gold: 0, exp: 11, defense: 3, health: 2, level: 0, attack: 0, stage: 18, next: 16
+
+#19
+너른 초지에 임시 구조 벙커가 설치되어 있습니다. 주변은 아직 정돈되지 않았습니다.
+정찰을 자원한다.
+당신은 벙커 지도와 장비를 챙기고 수색 임무를 위해 대기합니다.
+gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 19, next: 21
+
+임무를 거절한다.
+당신은 아직 충분히 회복되지 않았기에 의자에 몸을 기대며 상황을 지켜봅니다.
+gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 0, stage: 19, next: 12
+
+기록을 정리한다.
+당신은 도시에서 벗어나온 여정을 간략히 정리해 임시 본부에 제출합니다.
+gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 0, stage: 19, next: 17
+
+#20
+숲을 지나 너른 벌판에 임시 쉼터가 설치돼 있습니다. 구조된 자들의 기척이 희미하게 들려옵니다.
+다른 생존자를 찾으러 간다.
+당신은 작은 무전을 들고 외곽 탐색을 준비합니다. 나뭇가지에 조난 신호가 걸려 있습니다.
+gold: 1, exp: 16, defense: 2, health: 1, level: 0, attack: 1, stage: 20, next: 8
+
+은신처를 보수한다.
+비를 피할 수 있게 나뭇가지와 천막을 다시 엮습니다. 바람이 한층 덜합니다.
+gold: 0, exp: 14, defense: 3, health: 2, level: 0, attack: 0, stage: 20, next: 3
+
+휴식을 연장한다.
+장작불이 꺼져가는 틈을 메우며 몸을 녹입니다. 곧 다시 움직여야 할 때입니다.
+gold: 0, exp: 12, defense: 2, health: 2, level: 0, attack: 0, stage: 20, next: 1
+
+#21
+왼쪽 통로는 오래된 발전기로 이어졌습니다. 불이 깜빡입니다.
+발전기를 점검한다.
+오래된 배선이 손상된 상태입니다. 일부 기능만 회복됩니다.
+gold: 1, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 21, next: 22
+
+발전기를 무시한다.
+기계음이 시끄럽지만 다른 길을 찾습니다.
+gold: 0, exp: 9, defense: 2, health: 0, level: 0, attack: 0, stage: 21, next: 23
+
+주변을 수색한다.
+철제 선반에서 오래된 물자를 발견합니다.
+gold: 2, exp: 11, defense: 0, health: 1, level: 0, attack: 0, stage: 21, next: 5
+
+#22
+오른쪽 통로 끝엔 작은 환풍구가 있습니다.
+환풍구로 빠져나간다.
+좁고 어둡지만 밖의 공기가 느껴집니다.
+gold: 0, exp: 12, defense: 1, health: -1, level: 0, attack: 1, stage: 22, next: 4
+
+기다린다.
+무언가 지나가길 기다립니다. 기회는 곧 옵니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 22, next: 24
+
+돌아간다.
+지나온 길이 더 안전하다고 판단합니다.
+gold: 0, exp: 9, defense: 1, health: 0, level: 0, attack: 0, stage: 22, next: 6
+
+#23
+발소리가 들리지 않는다는 건 위험이 사라졌다는 뜻일까요?
+조심스럽게 이동한다.
+앞이 트입니다. 탈출구가 보이기 시작합니다.
+gold: 1, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 23, next: 7
+
+멈춰서 쉰다.
+몸 상태를 점검하며 체력을 보충합니다.
+gold: 0, exp: 9, defense: 1, health: 1, level: 0, attack: 0, stage: 23, next: 3
+
+뒤로 물러난다.
+의심이 듭니다. 조심은 나쁠 게 없습니다.
+gold: 0, exp: 8, defense: 2, health: 0, level: 0, attack: 0, stage: 23, next: 11
+
+#24
+지도에 표기된 위치로 향합니다. 경로는 정확했습니다.
+표시된 문을 연다.
+녹슨 경첩이 비명을 지릅니다. 그 너머는 폐건물입니다.
+gold: 0, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 24, next: 25
+
+다른 문을 찾는다.
+표시된 위치가 불안해 보여 다른 출구를 탐색합니다.
+gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 24, next: 26
+
+일단 숨는다.
+위험을 감지한 당신은 어둠 속에서 상황을 지켜봅니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 24, next: 9
+
+#25
+지도를 복사한 덕분에 전체 구조가 눈에 들어옵니다.
+가장 짧은 경로로 간다.
+곧장 출구를 향해 이동합니다. 덫이 하나 설치돼 있었습니다.
+gold: 0, exp: 12, defense: 1, health: -1, level: 0, attack: 0, stage: 25, next: 27
+
+우회 경로로 간다.
+조금 오래 걸리지만 덜 위험해 보입니다.
+gold: 0, exp: 10, defense: 2, health: 1, level: 0, attack: 0, stage: 25, next: 28
+
+경로를 분석한다.
+지도 위에 메모를 하며 가장 효율적인 길을 찾습니다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 25, next: 29
+
+#26
+지도가 없는 상황, 당신은 직감을 믿습니다.
+본능적으로 앞으로 나아간다.
+구불구불한 길 끝에 희미한 불빛이 보입니다.
+gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 1, stage: 26, next: 12
+
+무작정 달린다.
+두려움이 앞섰습니다. 다행히 탈출에는 성공합니다.
+gold: 0, exp: 12, defense: 1, health: -1, level: 0, attack: 0, stage: 26, next: 13
+
+기다린다.
+누군가 지나가길 바라며 은신합니다. 소음이 사라집니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 26, next: 10
+
+#27
+문을 열고 나온 곳은 오래된 지하철 플랫폼입니다.
+선로를 따라 이동한다.
+희미한 전등 아래 긴 터널이 이어져 있습니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 27, next: 5
+
+숨는다.
+수상한 인기척을 느끼고 그늘진 벤치 아래로 숨어듭니다.
+gold: 0, exp: 11, defense: 2, health: 0, level: 0, attack: 0, stage: 27, next: 8
+
+도움을 청한다.
+저 멀리 사람의 형체가 보입니다. 위험할 수도 있지만…
+gold: 0, exp: 10, defense: 1, health: 0, level: 0, attack: 1, stage: 27, next: 18
+
+#28
+정찰 결과 이곳은 안전해 보입니다. 그러나 오래 머물 순 없습니다.
+이동을 준비한다.
+남은 자원을 챙겨 다음 거점으로 향합니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 28, next: 19
+
+숨는다.
+적의 이동 경로를 피하며 은신처에 몸을 숨깁니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 28, next: 9
+
+관측을 계속한다.
+위험 요소를 모두 제거하기 전까지 이동하지 않습니다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 28, next: 6
+
+#29
+철제 문 너머에선 인기척이 감지됩니다. 동료일까요?
+문을 연다.
+경계하는 목소리가 들립니다. 조심스럽게 대화를 시도합니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 29, next: 15
+
+문을 두드린다.
+누군가 응답합니다. 천천히 문이 열립니다.
+gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 0, stage: 29, next: 16
+
+기다린다.
+상황을 지켜보며 기회를 엿봅니다.
+gold: 1, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 29, next: 17
+
+#30
+당신은 마침내 안전지대인 베이스캠프에 도착했습니다. 시끄럽던 세계는 잠시 고요해집니다.
+휴식을 취한다.
+당신은 안도감 속에 숨을 고릅니다.
+gold: 0, exp: 15, defense: 3, health: 2, level: 1, attack: 0, stage: 30, next: 31
+
+보급소를 방문한다.
+식량과 물자를 받습니다. 다음 여정을 준비합니다.
+gold: 0, exp: 14, defense: 2, health: 1, level: 1, attack: 0, stage: 30, next: 31
+
+동료들과 이야기한다.
+지금까지의 여정을 나눕니다. 연대감이 생깁니다.
+gold: 0, exp: 13, defense: 2, health: 1, level: 1, attack: 0, stage: 30, next: 31
+
+#31
+무수한 좀비무리를 뚫고 겨우 베이스캠프에 도착하였다. 건네주는 식량 중 무엇을 먹겠습니까?
+라면을 먹는다.
+건네주는 라면을 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 2, level: 0, attack: 1, stage: 31, next: 32
+
+빵을 먹는다.
+건네주는 빵을 먹습니다. 허기를 겨우 채웁니다.
+gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 1, stage: 31, next: 32
+
+수프를 먹는다.
+건네주는 수프를 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 3, level: 0, attack: 1, stage: 31, next: 32
+
+#32
+겨우 안전지대로 들어왔지만, 모두가 반겨주지는 않습니다. 그 상황에서 생존자끼리 다툼이 발생합니다. 어떻게 하시겠습니까?
+베이스캠프를 탈출한다.
+밤이 되면 베이스캠프를 탈출하기로 마음먹습니다.
+gold: 0, exp: 15, defense: 2, health: 3, level: 0, attack: 1, stage: 32, next: 33
+
+권필쌍(34,조폭)무리에 합류한다.
+무력이 강한 권필쌍 무리에 합류하였습니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 3, stage: 32, next: 34
+
+박현명(65,마을이장)무리에 합류한다.
+현명한 박현명 무리에 합류하였습니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 2, attack: 0, stage: 32, next: 35
+
+#33
+캠프 탈출을 하려는 당신에게 함께가자고 2명이 제안합니다. 당신의 선택은?
+의사를 동료로 맞이한다.
+위급상황에 응급처치를 해줄 수 있는 의사가 동료가 되었다.
+gold: 0, exp: 13, defense: 1, health: 3, level: 0, attack: 0, stage: 33, next: 36
+
+군인을 동료로 맞이한다.
+위기의 순간에 도움을 줄 수 있는 군인이 동료가 되었다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 3, stage: 33, next: 37
+
+둘 다 동료로 맞이한다.
+3명이서 함께 움직이기로 하였다.
+gold: 0, exp: 30, defense: 1, health: 0, level: 0, attack: 1, stage: 33, next: 38
+
+#34
+상대 무리(박현명(65,마을이장) 무리)와 싸움이 벌어졌다. 당신의 포지션은?
+선봉에서 싸움을 이끈다.
+싸움의 기세가 우리편으로 기울었다. 승리할것 같다!
+gold: -5, exp: 14, defense: 0, health: -3, level: 0, attack: 0, stage: 34, next: 39
+
+중간에서 싸움의 양상을 살핀다.
+싸움의 기세가 우리편으로 기울었다. 승리할것 같다!
+gold: -5, exp: 13, defense: 0, health: -2, level: 0, attack: 0, stage: 34, next: 40
+
+후방에서 최대한 상황파악만 한다.
+싸움의 기세가 우리편으로 기울었다. 승리할것 같다!
+gold: -5, exp: 12, defense: 0, health: -1, level: 0, attack: 0, stage: 34, next: 41
+
+#35
+상대 무리(권필쌍(34,조폭) 무리)와 싸움이 벌어졌다. 당신의 포지션은?
+선봉에서 싸움을 이끈다.
+싸움이 길어질수록 승리는 힘들어집니다. 점점 힘이 빠집니다..
+gold: 10, exp: 14, defense: 0, health: -3, level: 0, attack: 0, stage: 35, next: 42
+
+중간에서 싸움의 양상을 살핀다.
+싸움이 길어질수록 승리는 힘들어집니다. 점점 힘이 빠집니다..
+gold: 5, exp: 13, defense: 0, health: -2, level: 0, attack: 0, stage: 35, next: 43
+
+후방에서 최대한 상황파악만 한다.
+싸움이 길어질수록 승리는 힘들어집니다. 점점 힘이 빠집니다..
+gold: 3, exp: 12, defense: 0, health: -1, level: 0, attack: 0, stage: 35, next: 44
+
+#36
+의사와 함께 길을 찾아 떠나던 중, 좀비를 마주쳤다. 당신의 선택은?
+내가 선두에 서서 맞서 싸운다.
+함께 좀비를 무찔러, 안전히 돌파했습니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 36, next: 45
+
+의사를 미끼로 삼아 도망간다.
+의사 동료를 잃고, 플레이어도 부상을 입었습니다.
+gold: 0, exp: 12, defense: 1, health: -5, level: 0, attack: 0, stage: 36, next: 46
+
+탐사를 포기한다.
+좀비의 위협에 압도당해, 안전한 베이스캠프로 돌아갑니다.
+gold: 0, exp: -5, defense: 0, health: 0, level: 0, attack: 0, stage: 37, next: 32
+
+#37
+군인과 함께 길을 찾아 떠나던 중, 좀비를 마주쳤다. 당신의 선택은?
+내가 선두에 서서 함께 맞서싸운다.
+군인동료가 당신을 배신해, 당신은 심각한 부상을 입었습니다.
+gold: 0, exp: 13, defense: 2, health: -5, level: 0, attack: 0, stage: 37, next: 47
+
+군인을 미끼로 삼아 도망간다.
+군인 동료를 잃었지만, 무사히 도망쳤습니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 37, next: 48
+
+탐사를 포기한다.
+좀비의 위협에 압도당해, 안전한 베이스캠프로 돌아갑니다.
+gold: 0, exp: -5, defense: 0, health: 0, level: 0, attack: 0, stage: 37, next: 32
+
+#38
+동료 2명과 길을 나서던 중, '퍽'하는 소리와 함께 시야가 흐려진다. 둘이서 짜고 배신을 한 상황. 이때 멀리서 프로펠러 소리가 들린다.
+구조를 요청한다.
+다행히 헬기에서 구조요청을 확인하였습니다.
+gold: 1, exp: 15, defense: 2, health: -2, level: 0, attack: 1, stage: 38, next: 50
+
+시야에서 벗어나기 위해 숨는다.
+헬기는 당신을 발견하지 못하고 유유히 떠납니다.
+gold: 0, exp: 10, defense: 1, health: 0, level: 0, attack: 0, stage: 38, next: 53
+
+탐사를 포기하고, 복귀한다다.
+다친 몸을 이끌고 다시 베이스캠프로 돌아갑니다.
+gold: 0, exp: -5, defense: 0, health: 0, level: 0, attack: 0, stage: 37, next: 32
+
+#39
+승기를 잡은 것 같은 시간도 잠시뿐. 격렬한 싸움 끝에 당신의 팀이 패배하였습니다. 선봉에서 너무 큰 피해를 입었습니다.
+캠프를 탈출한다.
+캠프를 탈출하기로 마음먹습니다.
+gold: 0, exp: 16, defense: 2, health: 0, level: 0, attack: 1, stage: 39, next: 33
+
+굴복하고 승자 팀에 들어간다.
+패배를 인정하고 승자 팀에 합류합니다. 그러나 깊은 상처와 불신이 남아, 몸도 마음도 지쳐갑니다.
+gold: 2, exp: 13, defense: 1, health: -3, level: 0, attack: 1, stage: 39, next: 49
+
+싸움은 끝나지 않습니다. 반란을 도모합니다.
+패배를 받아들이지 않고, 몰래 동료들과 힘을 모아 반란을 준비합니다. 위험하지만 희망의 불씨가 살아납니다.
+gold: 0, exp: 14, defense: 3, health: 1, level: 0, attack: 0, stage: 39, next: 34
+
+#40
+승기를 잡은 것 같은 시간도 잠시뿐. 격렬한 싸움 끝에 당신의 팀이 패배하였습니다. 중간에서 큰 피해를 입었습니다.
+캠프를 탈출한다.
+캠프를 탈출하기로 마음먹습니다.
+gold: 0, exp: 16, defense: 2, health: 0, level: 0, attack: 1, stage: 39, next: 33
+
+굴복하고 승자 팀에 들어간다.
+패배를 인정하고 승자 팀에 합류합니다. 그러나 깊은 상처와 불신이 남아, 몸도 마음도 지쳐갑니다.
+gold: 2, exp: 13, defense: 1, health: -3, level: 0, attack: 1, stage: 39, next: 49
+
+싸움은 끝나지 않습니다. 반란을 도모합니다.
+패배를 받아들이지 않고, 몰래 동료들과 힘을 모아 반란을 준비합니다. 위험하지만 희망의 불씨가 살아납니다.
+gold: 0, exp: 14, defense: 3, health: 1, level: 0, attack: 0, stage: 39, next: 34
+
+#41
+승기를 잡은 것 같은 시간도 잠시뿐. 격렬한 싸움 끝에 당신의 팀이 패배하였습니다. 다만, 후미에서 적은 피해를 입었습니다.
+캠프를 탈출한다.
+캠프를 탈출하기로 마음먹습니다.
+gold: 0, exp: 16, defense: 2, health: 0, level: 0, attack: 1, stage: 39, next: 33
+
+굴복하고 승자 팀에 들어간다.
+패배를 인정하고 승자 팀에 합류합니다. 그러나 깊은 상처와 불신이 남아, 몸도 마음도 지쳐갑니다.
+gold: 2, exp: 13, defense: 1, health: -3, level: 0, attack: 1, stage: 39, next: 49
+
+싸움은 끝나지 않습니다. 반란을 도모합니다.
+패배를 받아들이지 않고, 몰래 동료들과 힘을 모아 반란을 준비합니다. 위험하지만 희망의 불씨가 살아납니다.
+gold: 0, exp: 14, defense: 3, health: 1, level: 0, attack: 0, stage: 39, next: 34
+
+#42
+긴 시간의 전투 끝에 당신의 팀이 승리하였습니다. 선봉에서 가장 많은 보상을 얻었습니다. 추가 전리품을 고르세요.
+의약품을 챙긴다.
+상처 치료에 쓸 수 있는 구급약과 붕대를 발견합니다. 생존 확률이 높아집니다.
+gold: 0, exp: 13, defense: 1, health: 3, level: 0, attack: 0, stage: 42, next: 49
+
+탄약 상자를 챙긴다.
+남겨진 탄약 상자에서 총알을 확보합니다. 무장 상태가 한층 강화됩니다.
+gold: 0, exp: 14, defense: 0, health: 0, level: 0, attack: 2, stage: 42, next: 49
+
+지도와 무전기를 챙긴다.
+이동 경로가 표시된 지도와 무전기를 얻습니다. 앞으로의 탐사에 큰 도움이 될 것 같습니다.
+gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 42, next: 49
+
+#43
+중간에서 싸운 당신도 전투의 보상을 받았습니다. 남은 전리품 중 하나를 선택하세요.
+의약품을 챙긴다.
+구급약과 소량의 붕대를 챙깁니다. 응급처치에 도움이 됩니다.
+gold: 0, exp: 10, defense: 1, health: 2, level: 0, attack: 0, stage: 43, next: 49
+
+탄약을 챙긴다.
+남은 탄약 몇 발을 챙깁니다. 무장에 약간의 여유가 생깁니다.
+gold: 0, exp: 11, defense: 0, health: 0, level: 0, attack: 1, stage: 43, next: 49
+
+지도 조각을 챙긴다.
+지도 일부와 낡은 무전기를 얻습니다. 앞으로의 이동에 약간 도움이 될 것 같습니다.
+gold: 0, exp: 9, defense: 1, health: 0, level: 0, attack: 0, stage: 43, next: 49
+
+#44
+후미에서 싸운 당신은 소박한 전리품을 받습니다. 남은 것 중 하나를 고르세요.
+붕대를 챙긴다.
+붕대 한두 개를 챙깁니다. 작은 상처 정도는 치료할 수 있습니다.
+gold: 0, exp: 7, defense: 0, health: 1, level: 0, attack: 0, stage: 44, next: 49
+
+탄피를 챙긴다.
+쓸만한 탄피 몇 개를 주워듭니다. 무기에 쓸 수 있는 건 적지만, 언젠가 도움이 될지도 모릅니다.
+gold: 0, exp: 8, defense: 0, health: 0, level: 0, attack: 0, stage: 44, next: 49
+
+낡은 지도 조각을 챙긴다.
+지도 한 귀퉁이와 고장난 무전기를 챙깁니다. 큰 도움은 아니지만, 언젠가 쓸모가 있을지도 모릅니다.
+gold: 0, exp: 6, defense: 0, health: 0, level: 0, attack: 0, stage: 44, next: 49
+
+#45
+좀비를 무찌르고 안전히 돌파하였습니다. 이때, 멀리서 날아가던 헬기에 의해 구조됩니다. 비상식량을 하나 선택하세요.
+라면을 먹는다.
+건네주는 라면을 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 2, level: 0, attack: 1, stage: 31, next: 60
+
+빵을 먹는다.
+건네주는 빵을 먹습니다. 허기를 겨우 채웁니다.
+gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 1, stage: 31, next: 60
+
+수프를 먹는다.
+건네주는 수프를 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 3, level: 0, attack: 1, stage: 31, next: 60
+
+#46
+의사 동료를 잃고 당신도 부상을 입었습니다. 이때, 멀리서 날아가던 헬기에 의해 구조됩니다. 비상식량을 하나 선택하세요. 
+라면을 먹는다.
+건네주는 라면을 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 2, level: 0, attack: 1, stage: 31, next: 60
+
+빵을 먹는다.
+건네주는 빵을 먹습니다. 허기를 겨우 채웁니다.
+gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 1, stage: 31, next: 60
+
+수프를 먹는다.
+건네주는 수프를 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 3, level: 0, attack: 1, stage: 31, next: 60
+
+#47
+군인 동료에게 배신당해 큰 부상을 입었습니다. 이때, 다행히 멀리서 날아가는 헬기에 의해 구조됩니다. 비상식량을 하나 선택하세요.
+라면을 먹는다.
+건네주는 라면을 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 2, level: 0, attack: 1, stage: 31, next: 60
+
+빵을 먹는다.
+건네주는 빵을 먹습니다. 허기를 겨우 채웁니다.
+gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 1, stage: 31, next: 60
+
+수프를 먹는다.
+건네주는 수프를 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 3, level: 0, attack: 1, stage: 31, next: 60
+
+#48
+군인 동료 덕분에 무사히 도망쳤습니다. 이때, 다행히 날아가는 헬기에 의해 구조됩니다. 비상식량을 하나 선택하세요.
+라면을 먹는다.
+건네주는 라면을 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 2, level: 0, attack: 1, stage: 31, next: 60
+
+빵을 먹는다.
+건네주는 빵을 먹습니다. 허기를 겨우 채웁니다.
+gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 1, stage: 31, next: 60
+
+수프를 먹는다.
+건네주는 수프를 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 3, level: 0, attack: 1, stage: 31, next: 60
+
+#49
+승자 팀에 합류하였습니다. 이때, 멀리에서 헬기소리가 들립니다. 당신의 선택은?
+구조 신호를 보낸다.
+당신의 구조 신호를 확인하였습니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 2, stage: 49, next: 50
+
+외부의 침략으로 의십됩니다. 싸운다.
+전투태세를 갖춥니다.
+gold: 0, exp: 0, defense: 1, health: -10, level: 0, attack: -5, stage: 49, next: 51
+
+외부의 침략으로 의심됩니다. 숨는다.
+헬기에게 들키지 않도록 안전히 숨습니다.
+gold: 0, exp: 0, defense: 2, health: 0, level: 0, attack: 0, stage: 49, next: 52
+
+#50
+헬기에 탑승하였습니다. 비상식량을 건네줍니다.
+라면을 먹는다.
+건네주는 라면을 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 2, level: 0, attack: 1, stage: 31, next: 60
+
+빵을 먹는다.
+건네주는 빵을 먹습니다. 허기를 겨우 채웁니다.
+gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 1, stage: 31, next: 60
+
+수프를 먹는다.
+건네주는 수프를 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 3, level: 0, attack: 1, stage: 31, next: 60
+
+#51
+해당 헬기에 군인도 있었습니다. 군인들에 의해 공격받습니다. 강제 호송되는 과정에서 식량이 제공됩니다.
+라면을 먹는다.
+건네주는 라면을 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 2, level: 0, attack: 1, stage: 31, next: 60
+
+빵을 먹는다.
+건네주는 빵을 먹습니다. 허기를 겨우 채웁니다.
+gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 1, stage: 31, next: 60
+
+수프를 먹는다.
+건네주는 수프를 먹습니다. 몸이 따뜻해집니다.
+gold: 0, exp: 10, defense: 1, health: 3, level: 0, attack: 1, stage: 31, next: 60
+
+#52
+헬기는 베이스캠프를 지나쳤습니다. 하지만, 이후로 헬기도 오지않고 긴 시간이 흐릅니다. 다시 갈등이 발생하는 시점에서 당신의 선택은?
+베이스캠프를 탈출한다.
+밤이 되면 베이스캠프를 탈출하기로 마음먹습니다.
+gold: 0, exp: 15, defense: 2, health: 3, level: 0, attack: 1, stage: 32, next: 33
+
+권필쌍(34,조폭)무리에 합류한다.
+무력이 강한 권필쌍 무리에 합류하였습니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 3, stage: 32, next: 34
+
+박현명(65,마을이장)무리에 합류한다.
+현명한 박현명 무리에 합류하였습니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 2, attack: 0, stage: 32, next: 35
+
+#53
+정신을 차리고 보니, 주변은 온통 폐허뿐입니다. 동료도, 구조 헬기도 없습니다. 어떻게 하시겠습니까?
+인근 폐건물에서 쉴 곳을 찾는다.
+폐건물 안에서 잠시 숨을 돌립니다. 다행히 큰 위험은 피했습니다.
+gold: 0, exp: 10, defense: 1, health: 2, level: 0, attack: 0, stage: 53, next: 54
+
+위험을 무릅쓰고 도로를 따라 이동한다.
+위험한 도로를 따라 이동하다가 좀비와 마주쳐 부상을 입었지만, 가까스로 벗어납니다.
+gold: 0, exp: 12, defense: 0, health: -1, level: 0, attack: 1, stage: 53, next: 55
+
+조용히 주변을 수색한다.
+조심스럽게 주변을 살피며 은신처를 찾았습니다. 잠시 쉴 수 있습니다.
+gold: 0, exp: 9, defense: 1, health: 0, level: 0, attack: 0, stage: 53, next: 54
+
+#54
+폐건물에서 잠시 숨을 돌립니다. 밖에서는 좀비 떼가 점점 가까워집니다. 어떻게 하시겠습니까?
+건물 안에 숨는다.
+건물 구석에 몸을 숨깁니다. 좀비 떼가 지나가길 기다립니다.
+gold: 0, exp: 8, defense: 2, health: 1, level: 0, attack: 0, stage: 54, next: 55
+
+옥상으로 올라가 주변을 살핀다.
+옥상에서 멀리 연기가 피어오르는 것을 발견합니다.
+gold: 0, exp: 10, defense: 0, health: 0, level: 0, attack: 1, stage: 54, next: 55
+
+뒷문으로 빠르게 탈출한다.
+뒷문으로 탈출하는 도중 약간의 부상을 입었지만, 건물을 빠져나옵니다.
+gold: 0, exp: 9, defense: 1, health: -1, level: 0, attack: 1, stage: 54, next: 55
+
+#55
+도로를 따라 이동하던 중, 멀리서 연기가 피어오르는 것을 발견합니다. 어떻게 하시겠습니까?
+연기 나는 곳으로 접근한다.
+연기 나는 곳 근처에서 다른 생존자 무리를 발견합니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 55, next: 56
+
+연기를 피해서 우회한다.
+연기를 피해 우회하던 중, 비교적 안전한 길을 찾았습니다.
+gold: 0, exp: 10, defense: 1, health: 1, level: 0, attack: 0, stage: 55, next: 56
+
+근처 차량을 뒤진다.
+차량 안에서 쓸만한 물자를 얻었지만, 오래 머물 수 없어 곧 자리를 뜹니다.
+gold: 1, exp: 11, defense: 0, health: 0, level: 0, attack: 1, stage: 55, next: 56
+
+#56
+연기 나는 곳에는 다른 생존자 무리가 있습니다. 그들은 경계심을 보입니다. 어떻게 하시겠습니까?
+조심스럽게 다가가 도움을 청한다.
+생존자 무리와 대화를 나누며 잠시 안전을 보장받습니다.
+gold: 0, exp: 13, defense: 1, health: 1, level: 0, attack: 0, stage: 56, next: 57
+
+멀리서 관찰만 한다.
+멀리서 그들의 움직임을 관찰하다가 위험이 없음을 확인하고 이동합니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 0, attack: 0, stage: 56, next: 57
+
+그들을 피해 조용히 이동한다.
+조용히 이동해 충돌을 피하고, 다음 목적지로 향합니다.
+gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 1, stage: 56, next: 57
+
+#57
+생존자 무리와 접촉에 성공했거거나, 혼자 이동을 이어갑니다. 밤이 되어 체력도 한계에 달합니다. 어떻게 하시겠습니까?
+무리와 함께 하기로 한다.
+생존자들과 밤을 보내며 체력을 회복합니다.
+gold: 0, exp: 14, defense: 2, health: 2, level: 0, attack: 0, stage: 57, next: 58
+
+혼자서 안전한 곳을 찾아 쉰다.
+혼자 은신처를 찾아 휴식을 취합니다.
+gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 57, next: 58
+
+밤새 이동을 강행한다.
+무리한 이동으로 지쳤지만, 조금 더 전진할 수 있었습니다.
+gold: 0, exp: 13, defense: 0, health: -2, level: 0, attack: 2, stage: 57, next: 58
+
+#58
+새벽, 연구소가 위치한 산기슭에 도착합니다. 하지만 연구소 입구는 좀비 무리로 봉쇄되어 있습니다. 어떻게 하시겠습니까?
+몰래 우회로를 찾는다.
+위험을 피해 우회로로 접근하는 데 성공합니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 58, next: 59
+
+돌파를 시도한다.
+좀비 떼 사이를 뚫고 힘겹게 돌파합니다.
+gold: 0, exp: 15, defense: 0, health: -2, level: 0, attack: 2, stage: 58, next: 59
+
+주변을 수색해 진입 방법을 찾는다.
+주변을 수색해 비밀 통로를 발견합니다.
+gold: 1, exp: 12, defense: 1, health: 1, level: 0, attack: 0, stage: 58, next: 59
+
+#59
+마침내 연구소 담장 앞까지 도착합니다. 안에서는 희미한 불빛이 새어 나옵니다. 어떻게 하시겠습니까?
+정문을 두드린다.
+연구소 안에서 누군가가 문을 열어줍니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 59, next: 60
+
+담을 넘어 침입한다.
+담을 넘어 안으로 들어가지만, 약간의 부상을 입습니다.
+gold: 0, exp: 14, defense: 0, health: -1, level: 0, attack: 1, stage: 59, next: 60
+
+구조 신호를 보낸다.
+연구소에서 구조 신호를 확인하고, 곧 문이 열립니다.
+gold: 0, exp: 13, defense: 1, health: 1, level: 0, attack: 0, stage: 59, next: 60
+
+#60
+드디어 연구소에 도착했습니다. 문이 열리고 내부 인원들이 당신을 맞이합니다. 낯선 공간, 낯선 얼굴들. 이제 무엇을 하시겠습니까?
+연구소 인원들과 정중히 인사를 나눈다.
+당신은 연구소 인원들과 악수를 나누고 소속을 확인합니다. 분위기가 조금 부드러워집니다.
+gold: 0, exp: 10, defense: 1, health: 0, level: 1, attack: 0, stage: 61, next: 61
+
+배가 고파 식당으로 바로 향한다.
+당신은 인사를 생략하고 식당으로 직행합니다. 따뜻한 음식은 없지만 칼로리는 살아있습니다.
+gold: 0, exp: 8, defense: 0, health: +1, level: 1, attack: 0, stage: 61, next: 61
+
+숙소를 배정받고 짧은 휴식을 취한다.
+당신은 안내를 받아 숙소에 짐을 풀고 몸을 뉘입니다. 잠깐의 휴식은 회복에 도움이 됩니다.
+gold: 0, exp: 9, defense: 0, health: +1, level: 1, attack: 0, stage: 61, next: 61
+
+#61
+당신은 마침내 외곽의 비밀 연구소에 도착했습니다. 무너진 도시를 지나 생존자들과 함께 어렵게 도달한 이곳. 이제 무엇을 하시겠습니까?
+연구소의 외곽 경계를 담당하는 방어팀에 지원합니다.
+당신의 임무는 연구가 진행되는 동안 이곳을 안전하게 지키는 것입니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 1, attack: 1, stage: 61, next: 62
+
+바이오 연구소 구역으로 향해 감염 치료법 연구에 참여합니다.
+당신은 좀비 바이러스를 분석하고 해답을 찾아야 합니다.
+gold: 0, exp: 12, defense: 0, health: 0, level: 1, attack: 0, stage: 61, next: 80
+
+기계와 장비들이 늘어선 공학 구역으로 들어갑니다.
+당신은 로봇, 무기, 에너지 시스템을 활용해 좀비 대응 기술을 개발해야 합니다.
+gold: 1, exp: 8, defense: 1, health: 0, level: 1, attack: 2, stage: 61, next: 100
+
+#62
+당신은 방어팀에 배치되어 연구소 외곽을 순찰하고 있습니다. 낡은 경비탑 아래서 수상한 흔적을 발견했습니다. 어떻게 하시겠습니까?
+즉시 팀을 호출해 조사를 요청한다.
+당신은 무전기로 상황을 알립니다. 동료들과 함께 흔적을 따라가자 낡은 가방과 손상된 드론을 발견합니다.
+gold: 1, exp: 10, defense: 1, health: 0, level: 1, attack: 0, stage: 62, next: 63
+
+혼자 조용히 조사해본다.
+당신은 무기를 쥔 채 홀로 흔적을 따라갑니다. 폐허 뒤편, 한 남성이 쓰러져 있습니다. 호흡은 있지만 의식은 없습니다.
+gold: 0, exp: 12, defense: 0, health: -1, level: 1, attack: 1, stage: 62, next: 64
+
+무시하고 순찰을 계속한다.
+당신은 시간 낭비라고 판단하고 경로를 유지합니다. 다만, 어딘가에서 당신을 지켜보는 시선이 느껴집니다.
+gold: 0, exp: 8, defense: 2, health: 0, level: 1, attack: 0, stage: 62, next: 65
+
+#63
+발견한 드론은 연구소 소속이 아닌 외부 탐사용으로 보입니다. 안에 있는 메모리칩을 어떻게 하시겠습니까?
+기술팀에 넘긴다.
+기술팀이 데이터를 복원해 인근 지역의 감염 밀도를 파악합니다. 정보는 매우 유용하게 쓰입니다.
+gold: 0, exp: 14, defense: 1, health: 0, level: 1, attack: 0, stage: 63, next: 66
+
+직접 확인해본다.
+당신은 데이터를 확인하다가 감염된 실험 구역의 위치를 알아냅니다. 위험하지만 중요한 정보입니다.
+gold: 1, exp: 12, defense: 0, health: -1, level: 1, attack: 1, stage: 63, next: 67
+
+파괴한다.
+당신은 보안상 문제를 우려해 드론과 칩을 파괴합니다. 그러나 정보의 기회도 함께 사라집니다.
+gold: 0, exp: 6, defense: 2, health: 0, level: 1, attack: 0, stage: 63, next: 68
+
+#64
+쓰러진 남성을 데려온 후 격리실에 격리했습니다. 며칠 뒤, 그는 깨어나 연구소 입장을 요청합니다. 어떻게 하시겠습니까?
+그를 입소시키고 감시한다.
+당신은 제한적 출입을 허용하고 감시를 강화합니다. 그는 기술팀과 접촉해 의심스러운 말을 남깁니다.
+gold: 0, exp: 10, defense: 1, health: 0, level: 1, attack: 0, stage: 64, next: 69
+
+의무적으로 격리된 상태로 유지한다.
+그는 격리실에서 불만을 토로하지만 큰 사고는 일어나지 않습니다. 다만, 당신을 계속 노려봅니다.
+gold: 0, exp: 8, defense: 2, health: 0, level: 1, attack: 0, stage: 64, next: 70
+
+즉시 추방한다.
+남성은 연구소 밖으로 내몰립니다. 이후 주기적으로 바깥에서 구조 요청 신호가 감지됩니다.
+gold: 0, exp: 10, defense: 1, health: 0, level: 1, attack: 1, stage: 64, next: 70
+
+#65
+당신은 순찰 중 무전기를 통해 접근 중인 헬기를 확인합니다. 낡은 민간 구조 헬기로 보입니다. 착륙 허가 여부를 결정해야 합니다.
+착륙을 허가한다.
+헬기는 불안하게 착륙합니다. 생존자 몇 명이 내리지만, 그 중 한 명은 열이 심합니다. 의료진이 급히 대기합니다.
+gold: 1, exp: 14, defense: 0, health: -1, level: 1, attack: 1, stage: 65, next: 71
+
+격납고로 유도한다.
+당신은 헬기를 외곽 격납고로 안내합니다. 그곳에서 철저한 검사를 진행할 수 있습니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 1, attack: 0, stage: 65, next: 72
+
+접근을 막는다.
+당신은 안전을 우선시해 접근을 거부합니다. 헬기는 멀리서 방향을 틀고 사라집니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 1, attack: 0, stage: 65, next: 73
 
 #66
-지하 고철 처리장, 기계 소음이 가끔 울려 퍼지는 어둠 속.
-전원을 꺼본다.
-기계가 멈추고 조용해진다. 누군가 숨겨둔 장비가 드러난다.
-gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 66, next: 30
+기술팀은 드론 데이터 중 인근 보급소에 남은 자원 정보를 확보했습니다. 탐색대를 꾸릴 수 있습니다. 어떻게 하시겠습니까?
+직접 보급소로 향한다.
+당신은 몇 명과 함께 보급소로 출발합니다. 거센 공격을 받지만 귀중한 의약품을 가져옵니다.
+gold: 2, exp: 14, defense: 1, health: -2, level: 1, attack: 1, stage: 66, next: 74
 
-기계를 해체한다.
-내부 회로를 분리하고 일부 부품을 챙긴다. 갑작스런 굉음이 들려온다.
-gold: 0, exp: 14, defense: 2, health: -2, level: 0, attack: 1, stage: 66, next: 45
+탐색대를 조직해 보낸다.
+지휘 능력을 발휘해 팀을 보내고, 무사히 물자를 확보합니다. 당신은 현장을 지키며 보고를 받습니다.
+gold: 1, exp: 12, defense: 2, health: 0, level: 1, attack: 0, stage: 66, next: 75
 
-출구를 찾는다.
-이곳은 위험하다. 당신은 빠르게 길을 벗어난다.
-gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 66, next: 44
+위험하다 판단하고 포기한다.
+당신은 자원을 포기하고 연구소 방어를 강화하는 데 집중합니다. 작은 긴장은 있었지만 큰 사고는 없습니다.
+gold: 0, exp: 8, defense: 3, health: 0, level: 1, attack: 0, stage: 66, next: 76
 
 #67
-수풀로 뒤덮인 송전탑 근처에서 기계 음성이 반복적으로 들려옵니다.
-기계를 확인한다.
-낡은 재난 송신 장치가 자동 반복 방송을 송출 중입니다.
-gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 67, next: 51
+데이터에 표시된 위치에서 폐쇄된 실험실을 찾아냅니다. 내부는 비어 있지만 오래된 노트와 실험기록이 남아 있습니다.
+기록을 연구팀에 넘긴다.
+바이오 연구팀이 데이터를 분석하며 감염의 초기 징후에 대한 실마리를 얻습니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 1, attack: 0, stage: 67, next: 77
 
-탑을 올라가 본다.
-전망이 트이지만 위태로운 구조입니다. 바람이 세차게 붑니다.
-gold: 0, exp: 13, defense: 2, health: -2, level: 0, attack: 1, stage: 67, next: 19
+기록을 숨긴 채 개인 저장소에 보관한다.
+당신은 중요한 정보를 독점합니다. 향후 흥정의 카드가 될 수 있지만 의심을 받기 시작합니다.
+gold: 1, exp: 10, defense: 0, health: 0, level: 1, attack: 1, stage: 67, next: 78
 
-무시하고 이동한다.
-탑 근처는 함정일 수 있습니다. 당신은 북쪽 경로로 향합니다.
-gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 67, next: 22
+기록을 파기한다.
+위험한 내용이라 판단하고 불태워버립니다. 하지만 일부 동료들이 의문을 가집니다.
+gold: 0, exp: 6, defense: 2, health: 0, level: 1, attack: 0, stage: 67, next: 79
 
 #68
-오래된 콘크리트 벙커 입구를 발견합니다. 문은 반쯤 열린 채 흔들립니다.
-안으로 들어간다.
-지하 통로는 깊고 어둡습니다. 벽면엔 낡은 피난 안내도가 보입니다.
-gold: 0, exp: 15, defense: 2, health: -1, level: 0, attack: 0, stage: 68, next: 30
+드론을 파괴한 뒤 정체불명의 무장 생존자 그룹이 연구소 인근에 접근합니다. 대응을 어떻게 하시겠습니까?
+경고 후 무력 대응한다.
+경고에도 불구하고 접근을 시도하자 교전이 발생합니다. 일부 부상자가 발생했지만 적은 퇴각합니다.
+gold: 0, exp: 14, defense: 1, health: -2, level: 1, attack: 2, stage: 68, next: 80
 
-문을 닫고 주변을 정찰한다.
-벙커 주변엔 군번줄과 탄피가 흩어져 있습니다.
-gold: 0, exp: 13, defense: 1, health: 1, level: 0, attack: 1, stage: 68, next: 36
+감시만 하며 경계한다.
+충돌은 피했지만, 무장 생존자들은 여전히 인근에서 활동합니다. 내부에서도 긴장감이 감돕니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 1, attack: 0, stage: 68, next: 81
 
-입구를 봉쇄한다.
-당신은 위험을 감지하고 벽돌과 철근으로 출입을 막습니다.
-gold: 1, exp: 14, defense: 3, health: 0, level: 0, attack: 0, stage: 68, next: 40
+협상을 시도한다.
+당신은 위험을 감수하고 외부 그룹과 접촉합니다. 일부 교환과 정보 공유가 이루어졌지만 내부에서는 논란이 일어납니다.
+gold: 2, exp: 12, defense: 0, health: -1, level: 1, attack: 0, stage: 68, next: 82
 
 #69
-기차역 폐허에서 소형 드론이 떨어진 흔적을 발견합니다.
-드론을 수리한다.
-배터리를 교체하자 드론이 잠시 작동하며 좌표를 보여줍니다.
-gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 69, next: 33
+기술팀과 접촉한 외부 생존자는 유전자 코드를 알고 있다며 교환을 제안합니다. 어떻게 하시겠습니까?
+정보를 받아들인다.
+그가 제공한 유전자 조합은 바이오 연구팀에서 큰 돌파구가 됩니다. 하지만 그의 진짜 정체는 여전히 의심스럽습니다.
+gold: 0, exp: 15, defense: 1, health: 0, level: 1, attack: 0, stage: 69, next: 83
 
-블랙박스를 회수한다.
-녹화된 영상에는 구조 실패와 무전 통신이 기록돼 있습니다.
-gold: 0, exp: 13, defense: 1, health: 1, level: 0, attack: 1, stage: 69, next: 30
+신뢰할 수 없어 거절한다.
+당신은 정보를 거부합니다. 그는 분노한 채 떠나고, 연구팀은 기회를 놓쳤다며 아쉬워합니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 1, attack: 0, stage: 69, next: 84
 
-드론을 파괴한다.
-위험한 정보가 있을 수 있습니다. 당신은 드론을 부숩니다.
-gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 69, next: 10
+정보를 받고 그를 추방한다.
+유전 정보는 확보했지만, 당신은 그를 쫓아냅니다. 이후 바이오팀 내부에서 ‘비윤리적 처리’라는 비판이 나옵니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 1, attack: 1, stage: 69, next: 85
 
 #70
-해안 절벽 위, 오래된 통신 중계소가 삐걱이며 버티고 있습니다.
-중계소 내부를 수색한다.
-생존자 무전과 관련된 낡은 장비가 발견됩니다. 일부는 작동합니다.
-gold: 1, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 70, next: 51
+최근 구조 요청을 무시한 결과, 외부 생존자들이 연구소를 비난하며 무장 시위를 벌이고 있습니다. 방어팀의 대응은?
+공격적으로 해산시킨다.
+무력 진압으로 사태를 일단락시켰지만, 외부의 증오가 커집니다. 연구소는 ‘잔혹한 군벌’로 보이기 시작합니다.
+gold: 0, exp: 16, defense: 1, health: -3, level: 1, attack: 2, stage: 70, next: 86
 
-위성 안테나를 조정한다.
-고도 조절 후 강한 신호가 잡힙니다. 구조 요청이 가능해집니다.
-gold: 0, exp: 14, defense: 1, health: 0, level: 0, attack: 1, stage: 70, next: 33
+지켜보며 방어를 강화한다.
+시위는 며칠간 계속됐지만 점차 흐지부지됩니다. 당신은 피해를 최소화했습니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 1, attack: 0, stage: 70, next: 87
 
-절벽 아래로 이동한다.
-험한 길을 내려가다 미끄러지며 다리를 다칩니다.
-gold: 0, exp: 12, defense: 1, health: -2, level: 0, attack: 0, stage: 70, next: 18
+대표를 보내 협상을 시도한다.
+상호 비난은 있었지만 대화는 열렸습니다. 외부의 신뢰를 일부 회복하며 물자 지원 약속도 받았습니다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 1, attack: 1, stage: 70, next: 88
 
 #71
-도시 변두리의 쓰레기 처리장, 연기와 냄새가 짙습니다.
-더미를 뒤진다.
-버려진 무기와 탄약 일부를 찾습니다. 값진 수확입니다.
-gold: 2, exp: 15, defense: 1, health: 0, level: 0, attack: 2, stage: 71, next: 30
+구조 헬기에서 내린 생존자 중 감염이 의심되던 한 명이 결국 통제를 뚫고 감염 증세를 보입니다. 어떻게 하시겠습니까?
+즉시 제압한다.
+당신은 위험을 무릅쓰고 감염자를 처치합니다. 하지만 동료 하나가 함께 물리고 맙니다.
+gold: 0, exp: 14, defense: 1, health: -2, level: 1, attack: 2, stage: 71, next: 89
 
-지붕 위로 올라간다.
-멈춘 크레인을 이용해 주변을 정찰합니다. 멀리 구조물들이 보입니다.
-gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 71, next: 43
+격리 구역으로 유도한다.
+당신은 침착하게 감염자를 격리 구역으로 유도합니다. 확산은 막았지만 내부 불신이 번지기 시작합니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 1, attack: 1, stage: 71, next: 90
 
-위험하다 판단하고 후퇴한다.
-냄새가 심상치 않습니다. 당신은 곧장 자리를 뜹니다.
-gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 71, next: 19
+다른 생존자와 대피한다.
+당신은 감염자를 피하며 모두 대피시킵니다. 몇몇 물자를 잃었지만 큰 피해는 없습니다.
+gold: -1, exp: 10, defense: 2, health: 0, level: 1, attack: 0, stage: 71, next: 90
 
 #72
-폐교 안 체육관, 천장은 무너졌고 바닥엔 유품이 흩어져 있습니다.
-기록을 수집한다.
-학교 기록과 유품 일부를 챙깁니다. 마지막까지 남은 흔적입니다.
-gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 72, next: 36
+격납고에 격리된 구조 헬기 생존자 중 한 명이 기술팀에 협력하겠다고 합니다. 다만, 신뢰도는 낮습니다. 어떻게 하시겠습니까?
+기회를 준다.
+당신은 그를 감독하에 기술팀에 배정합니다. 예상보다 유능하며 무기 시스템에 기여합니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 1, attack: 1, stage: 72, next: 91
 
-교문을 점검한다.
-문은 낡아 쉽게 열립니다. 출입 흔적은 없습니다.
-gold: 0, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 72, next: 22
+거절한다.
+그를 단순 생존자 처우로 격리합니다. 불만은 있지만 큰 충돌은 없습니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 1, attack: 0, stage: 72, next: 92
 
-교내를 탐색한다.
-과학실에서 보존된 약품과 의료도구를 찾습니다.
-gold: 1, exp: 15, defense: 1, health: 2, level: 0, attack: 1, stage: 72, next: 10
+비밀리에 감시하며 활용한다.
+당신은 정보를 얻기 위해 몰래 기술팀에 섞이게 합니다. 정보는 얻었지만, 의심도 따라옵니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 1, attack: 1, stage: 72, next: 93
 
 #73
-지하 배수구 입구 앞, 누군가 만든 지도가 벽에 붙어 있습니다.
-지도를 따라간다.
-배수구를 지나 낡은 대피소 입구에 도달합니다.
-gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 73, next: 44
+거절당한 헬기는 떠났지만, 그 헬기가 있었던 구역에 폐기된 의약품이 남아 있는 것을 발견합니다. 어떻게 하시겠습니까?
+즉시 회수한다.
+당신은 위험을 무릅쓰고 팀을 꾸려 회수합니다. 일부는 손상됐지만 귀중한 항바이러스제입니다.
+gold: 1, exp: 13, defense: 1, health: -1, level: 1, attack: 1, stage: 73, next: 94
 
-입구를 정찰한다.
-출입 흔적이 보입니다. 발자국은 최근 것 같습니다.
-gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 73, next: 43
+의료팀과 협의 후 회수한다.
+안전 절차를 따른 덕분에 무사히 확보했습니다. 약간의 시간이 걸렸지만 피해는 없었습니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 1, attack: 0, stage: 73, next: 95
 
-지도만 기록한다.
-사진을 찍고 빠르게 자리를 이동합니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 73, next: 20
+회수를 포기한다.
+감염 우려로 회수를 중단합니다. 아쉬운 결정이지만 안전은 유지됩니다.
+gold: 0, exp: 8, defense: 3, health: 0, level: 1, attack: 0, stage: 73, next: 96
 
 #74
-고속도로 터널 내부, 가로등이 깜빡이고 정체불명의 피가 흩어져 있습니다.
-깊숙이 들어간다.
-중앙 벽면에 쓰러진 군인이 있습니다. 무전기와 장비가 남아 있습니다.
-gold: 1, exp: 14, defense: 2, health: -1, level: 0, attack: 1, stage: 74, next: 41
+보급소에서 가져온 의약품 중 일부가 이미 오염되어 있던 것으로 드러났습니다. 내부 감염자가 나올 위기입니다. 어떻게 하시겠습니까?
+즉시 모든 보급품을 폐기한다.
+의약품은 사라졌지만 감염은 막았습니다. 연구팀은 약간의 혼란 속에 작업을 계속합니다.
+gold: -1, exp: 12, defense: 2, health: 0, level: 1, attack: 0, stage: 74, next: 97
 
-피를 따라간다.
-터널 끝으로 갈수록 피가 선명해집니다. 어두운 그림자가 움직입니다.
-gold: 0, exp: 13, defense: 1, health: -2, level: 0, attack: 1, stage: 74, next: 18
+오염 여부를 가려서 사용한다.
+당신은 검사를 통해 안전한 일부만 보급합니다. 자원은 유지되지만 감염자는 1명 발생했습니다.
+gold: 1, exp: 13, defense: 1, health: -1, level: 1, attack: 1, stage: 74, next: 98
 
-즉시 이탈한다.
-직감적으로 이곳은 위험합니다. 당신은 되돌아섭니다.
-gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 74, next: 22
+정보를 은폐하고 계속 사용한다.
+자원은 풍부하지만 감염자 수가 빠르게 증가합니다. 곧 내부 불신이 퍼지기 시작합니다.
+gold: 2, exp: 14, defense: 0, health: -2, level: 1, attack: 1, stage: 74, next: 99
 
 #75
-산 정상의 작은 관측소에 도달합니다. 하늘은 어둡고 구름은 무겁습니다.
-기기를 작동시킨다.
-날씨 정보와 지역 전력망 상태가 표시됩니다.
-gold: 0, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 75, next: 51
+탐색대를 보낸 지역에서 연락이 두절되었습니다. 구조대를 보낼지 여부를 결정해야 합니다.
+즉시 구조대를 보낸다.
+위험한 미션이었지만 생존자 일부를 무사히 데려왔습니다. 구조대원 하나는 부상을 입었습니다.
+gold: 0, exp: 14, defense: 1, health: -1, level: 1, attack: 1, stage: 75, next: 97
 
-관측일지를 살펴본다.
-한 과학자의 생존 기록이 남아 있습니다. 좌표와 감염 초기 분석도 보입니다.
-gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 1, stage: 75, next: 30
+조사만 하고 복귀시키라 명령한다.
+접근은 했지만 회수는 하지 못했습니다. 적어도 탐색대의 위치는 파악됐습니다.
+gold: 0, exp: 10, defense: 2, health: 0, level: 1, attack: 0, stage: 75, next: 98
 
-즉시 철수한다.
-폭풍이 다가오는 걸 느끼고 빠르게 하산합니다.
-gold: 0, exp: 12, defense: 1, health: -2, level: 0, attack: 0, stage: 75, next: 36
+보내지 않고 차단한다.
+생존 가능성은 낮다고 판단하고 모든 연결을 끊습니다. 내부에서 비인도적 결정이란 반응이 나옵니다.
+gold: 0, exp: 8, defense: 3, health: 0, level: 1, attack: 0, stage: 75, next: 99
 
 #76
-항구의 폐쇄된 관리소, 문은 반쯤 열려 있고, 안은 깜깜합니다.
-무기를 들고 진입한다.
-작은 충돌이 발생했지만 내부는 비어 있습니다. 해상 루트 지도 발견.
-gold: 0, exp: 14, defense: 2, health: -1, level: 0, attack: 1, stage: 76, next: 33
+자원을 포기하고 방어에 집중한 결과, 연구팀은 진전이 없다고 불만을 표합니다. 내부 회의에서 당신의 태도를 문제 삼습니다.
+정면 돌파한다.
+당신은 방어가 없으면 연구도 없다고 주장합니다. 일부는 동의했지만, 갈등은 남습니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 1, attack: 1, stage: 76, next: 97
 
-밖에서 관찰한다.
-멀리서 이상한 빛이 반짝입니다. 누군가가 있는 듯합니다.
-gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 76, next: 43
+타협안을 제시한다.
+당신은 일정 시간 후 자원을 재배치하자고 제안합니다. 다수의 지지를 얻습니다.
+gold: 0, exp: 13, defense: 1, health: 0, level: 1, attack: 0, stage: 76, next: 98
 
-출입을 포기하고 돌아선다.
-항구는 이미 위험 지역일 수 있습니다. 당신은 되돌아섭니다.
-gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 76, next: 22
+사과하고 한발 물러선다.
+방어팀은 불만을 품지만 연구팀과의 관계는 회복됩니다. 상호 불신은 줄어들었습니다.
+gold: 0, exp: 11, defense: 0, health: 0, level: 1, attack: 0, stage: 76, next: 99
 
 #77
-도심 중심의 고층 건물 잔해 위, 낙하산 흔적이 보입니다.
-옥상에 올라간다.
-하강 장비와 신호탄이 남아 있습니다. 누군가 탈출했을 수 있습니다.
-gold: 0, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 77, next: 43
+당신이 넘긴 실험 기록으로 바이오 연구팀이 새로운 돌파구를 찾았습니다. 하지만 해당 실험은 윤리 논란이 큽니다. 어떻게 하시겠습니까?
+실험을 승인한다.
+당신의 빠른 대응과 전략적 판단으로 연구소는 큰 혼란 없이 안정을 되찾았습니다. 연구는 진전을 이루었고, 생존자들은 당신을 중심으로 결속했습니다. 사람들은 폐허 위에서 새로운 시작을 준비합니다.
+gold: 2, exp: 25, defense: 3, health: 0, level: 2, attack: 2, stage: 89, next: -1
 
-지하 주차장을 확인한다.
-감염자가 도사리고 있었지만 기민하게 빠져나옵니다.
-gold: 1, exp: 13, defense: 2, health: -2, level: 0, attack: 1, stage: 77, next: 18
+회의에 회부한다.
+당신은 감염 확산을 억제하는 데 성공했지만, 공동체 내 갈등은 해결되지 않았습니다. 불신과 피로가 누적된 연구소는 조용하지만 위태로운 평온을 유지합니다. 당신의 눈앞에 놓인 선택은 명확합니다: 침묵 속에 준비하라. 
+gold: 1, exp: 18, defense: 2, health: 0, level: 2, attack: 1, stage: 90, next: -1
 
-건물 밖을 순찰한다.
-주변에서 생존 흔적은 발견되지 않습니다. 단, 무선 전파는 감지됩니다.
-gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 77, next: 19
+실험 자체를 봉인한다.
+보수적인 선택과 감염 봉쇄, 실험 중단 등으로 연구소는 안전을 유지했지만, 세상과 단절된 채 점점 고립되어 갑니다.  
+누군가는 이것을 생존이라 부르지만, 누군가는 이것을 감옥이라 부릅니다.  
+gold: 0, exp: 16, defense: 4, health: 0, level: 2, attack: 0, stage: 91, next: -1
 
 #78
-지상과 연결된 고가도로는 일부가 무너졌고 길은 끊겨 있습니다.
-줄을 타고 내려간다.
-높은 곳에서 하강은 위험하지만 다른 루트보다 빠릅니다.
-gold: 0, exp: 14, defense: 2, health: -2, level: 0, attack: 1, stage: 78, next: 6
+숨겨두었던 실험 기록이 외부 무장 그룹에게 유출됐습니다. 그들은 기술과 자원 제공을 요구하며 위협합니다. 당신의 결정은?
+기술을 제공한다.
+당신은 외부 무장 세력의 요구를 받아들였지만, 내부 반발은 상상 이상이었습니다. 평화를 지키기 위한 선택이 공동체를 분열시키고 말았습니다. "우리는 평화를 원했지만, 대가가 너무 컸다."  
+gold: 0, exp: 16, defense: 1, health: -1, level: 2, attack: 1, stage: 92, next: -1
 
-되돌아간다.
-시간은 들지만 안전한 길을 다시 이용합니다.
-gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 78, next: 22
+요구를 거절하고 방어를 강화한다.
+외부 요구를 거절하고 방어를 강화한 결과, 전면 충돌이 발생했습니다. 연구소는 큰 피해를 입었고, 방어팀은 사력을 다해 싸웠습니다. 당신은 마지막까지 전선을 지켰지만, 이곳은 더 이상 안전하지 않습니다.  
+gold: 0, exp: 20, defense: 2, health: -3, level: 2, attack: 2, stage: 93, next: -1
 
-무너진 부분을 뛰어넘는다.
-짧은 거리지만 실패 시 위험이 큽니다. 도전에 성공합니다.
-gold: 1, exp: 15, defense: 1, health: -1, level: 0, attack: 1, stage: 78, next: 41
+그들을 함정에 빠뜨린다.
+당신은 외부 무장 세력을 교란하고, 계략을 통해 그들을 몰아냈습니다. 사람들은 당신의 냉철함을 기억합니다. 당신의 이름은 생존자들 사이에서 전설처럼 회자됩니다. "우리는 끝까지 싸워서 이겼다."  
+gold: 3, exp: 22, defense: 2, health: -1, level: 2, attack: 2, stage: 94, next: -1
 
 #79
-작은 개울을 따라가던 중, 흙에 덮인 생존자 천막을 발견합니다.
-안으로 들어간다.
-안은 정리된 흔적이 보이며, 짧은 노트와 무전기가 남아 있습니다.
-gold: 0, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 79, next: 29
+당신의 행동을 두고 열린 종합 평가 회의. 지금까지의 결정들이 드러나며, 생존자 공동체의 리더 후보로 지명됩니다. 어떻게 하시겠습니까?
+리더직을 수락한다.
+당신은 공동체의 리더직을 수락하고, 연구소의 모든 영역을 총괄하게 됩니다. 무너진 세계 위에서, 생존이 아닌 부흥이 시작됩니다. 사람들은 당신을 ‘사령관’이라 부릅니다.  
+gold: 2, exp: 30, defense: 3, health: 0, level: 3, attack: 2, stage: 95, next: -1
 
-물가에서 세수한다.
-정신이 맑아지며 체력이 일부 회복됩니다.
-gold: 0, exp: 11, defense: 1, health: 2, level: 0, attack: 0, stage: 79, next: 10
+고사하고 방어팀에 남는다.
+당신은 조용히 방어팀의 리더로 남았습니다. 누군가는 당신을 과소평가하지만, 진짜 위기가 오면 모두가 당신을 찾습니다. "내가 이곳을 지키지 않으면, 아무도 못 지켜."  
+gold: 1, exp: 22, defense: 4, health: 0, level: 2, attack: 1, stage: 96, next: -1
 
-천막을 지운다.
-감염자 흔적이 남아 있을 위험을 없애기 위해 소각합니다.
-gold: 1, exp: 14, defense: 2, health: -1, level: 0, attack: 1, stage: 79, next: 36
+다른 생존자에게 양보한다.
+당신은 조용히 한 발 물러났고, 공동체는 새 리더 아래 재편되었습니다. 당신의 이름은 잊히지 않지만, 누구도 오래 기억하진 않습니다. 위대한 결말도, 치명적인 실수도 없었습니다.
+gold: 0, exp: 15, defense: 2, health: 0, level: 1, attack: 0, stage: 97, next: -1
 
-#80
-남쪽 외곽의 정수처리장, 내부는 거대한 파이프와 수조로 가득합니다.
-배관을 점검한다.
-일부 작동 중인 설비에서 깨끗한 물을 확보합니다.
-gold: 1, exp: 13, defense: 2, health: 2, level: 0, attack: 0, stage: 80, next: 40
+#80  
+당신은 바이오 연구소 구역에 배정되어 실험실 유전자 분석 부서로 들어갑니다. 초기 감염자 샘플이 도착했고, 연구를 어떻게 시작할지 정해야 합니다.  
+감염자의 유전자 염기서열을 분석한다.  
+당신은 정밀 분석을 통해 변이율과 적응 속도를 추적합니다. 해독제의 실마리가 보이기 시작합니다.  
+gold: 0, exp: 14, defense: 0, health: 0, level: 1, attack: 0, stage: 80, next: 81  
 
-제어실을 확인한다.
-긴급 차단 장치가 눌린 상태입니다. 복구 시 일부 지역 전력이 회복됩니다.
-gold: 0, exp: 15, defense: 1, health: 0, level: 0, attack: 1, stage: 80, next: 30
+좀비의 신경반응을 관찰한다.  
+당신은 좀비 상태에서도 유지되는 신경 패턴을 분석합니다. 고통 반응과 감정 반응이 희미하게 남아 있습니다.  
+gold: 0, exp: 12, defense: 0, health: 0, level: 1, attack: 1, stage: 80, next: 82  
 
-장소를 떠난다.
-더 조사할 필요는 없습니다. 안전을 위해 외부로 나옵니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 80, next: 44
+항바이러스 시약을 바로 실험한다.  
+당신은 실험용 시약을 감염 세포에 주입합니다. 일부 효과는 있지만 변이가 급속히 진행됩니다.  
+gold: 0, exp: 10, defense: 0, health: -1, level: 1, attack: 2, stage: 80, next: 83
 
-#81
-지하 벙커 통로에서 사라진 생존자 흔적이 발견됩니다. 피와 탄피가 남아 있습니다.
-현장을 분석한다.
-무전 기록과 발자국이 방공호 방향을 가리킵니다.
-gold: 0, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 81, next: 30
+#81  
+염기서열 분석 결과, 바이러스는 특정 조건에서 돌연변이를 억제할 수 있음이 확인되었습니다. 하지만 억제제를 만들기 위해선 금지된 인체 실험 데이터를 참조해야 합니다.  
+기록을 열람해본다.  
+당신은 내부에 보관된 과거 인체 실험 자료를 엽니다. 강력한 억제제 후보가 떠오르지만 양심의 가책이 따릅니다.  
+gold: 0, exp: 14, defense: 0, health: 0, level: 1, attack: 0, stage: 81, next: 84  
 
-위험하다고 판단하고 철수한다.
-기분 나쁜 기운에 당신은 빠르게 후퇴합니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 81, next: 40
+기록을 봉인하고 대체 방법을 찾는다.  
+당신은 정공법을 택합니다. 억제 효과는 약하지만 안정성은 확보됩니다.  
+gold: -1, exp: 12, defense: 1, health: 0, level: 1, attack: 0, stage: 81, next: 85  
 
-통로를 더 깊이 들어간다.
-폭발 흔적 이후, 붕괴 직전의 좁은 공간이 나타납니다.
-gold: 0, exp: 13, defense: 1, health: -2, level: 0, attack: 1, stage: 81, next: 90
+상부에 의뢰해 공식 승인 절차를 밟는다.  
+시간이 걸리지만, 공식적으로 실험이 허가됩니다. 다만 다른 연구자들보다 뒤처질 위험이 있습니다.  
+gold: 0, exp: 10, defense: 1, health: 0, level: 1, attack: 0, stage: 81, next: 86
 
-#82
-서쪽 해안 마을. 정박 중인 배가 하나 있고, 낡은 부두에는 발자국이 남아 있습니다.
-배를 점검한다.
-엔진은 고장났지만, 안에는 식량과 연료가 남아 있습니다.
-gold: 1, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 82, next: 19
+#82  
+좀비의 신경반응에서 공포, 혼란, 갈망과 같은 감정 패턴이 미세하게 나타났습니다. 일부 연구진은 ‘치료’보다 ‘재교육’을 주장합니다.  
+재훈련 기반 프로그램을 설계한다.  
+당신은 좀비에게 특정 패턴을 반복 학습시키는 실험을 시작합니다. 미미한 반응이 관측됩니다.  
+gold: 0, exp: 12, defense: 0, health: 0, level: 1, attack: 0, stage: 82, next: 87  
 
-발자국을 따라간다.
-어린아이의 흔적이 근처 폐가로 이어집니다. 희미한 노랫소리가 들립니다.
-gold: 0, exp: 13, defense: 1, health: 0, level: 0, attack: 0, stage: 82, next: 29
+정신 억제제를 투여해 본다.  
+당신은 좀비의 감정 반응을 약화시키는 실험을 시도합니다. 효과는 있지만 예측 불가능한 반응이 나타납니다.  
+gold: 1, exp: 13, defense: 0, health: -1, level: 1, attack: 1, stage: 82, next: 88  
 
-마을을 떠난다.
-감염의 흔적이 많아 보입니다. 당신은 먼 쪽 경로를 택합니다.
-gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 82, next: 22
+해당 연구를 폐기하고 치료법에 집중한다.  
+당신은 재훈련은 비현실적이라고 판단하고, 다시 치료제 개발에 집중합니다.  
+gold: -1, exp: 10, defense: 1, health: 0, level: 1, attack: 0, stage: 82, next: 89
 
-#83
-고층 빌딩 옥상에 접근하자, 조난 신호 불빛이 깜빡입니다.
-신호 위치로 이동한다.
-연막탄과 낙하 장비가 있지만 생존자는 없습니다.
-gold: 1, exp: 15, defense: 1, health: 0, level: 0, attack: 1, stage: 83, next: 36
+#83  
+초기 시약 실험 결과, 좀비 세포의 일부가 죽지 않고 분열을 멈추었습니다. 그러나 주변 조직이 괴사하면서 부작용이 나타납니다. 어떻게 대응하시겠습니까?
+새로운 시약으로 안정성을 높인다.  
+당신은 저강도 억제제를 조합해 부작용을 완화합니다. 반응 속도는 느려지지만 안정성이 개선됩니다.  
+gold: 0, exp: 13, defense: 1, health: 0, level: 1, attack: 0, stage: 83, next: 90
 
-주변을 정찰한다.
-다른 옥상에도 신호 흔적이 있습니다. 이동할 방법을 찾아야 합니다.
-gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 83, next: 33
+고위험 실험을 계속한다.  
+당신은 위험을 감수하고 실험을 이어갑니다. 일부 좀비는 활동을 멈췄지만, 하나가 갑자기 폭주합니다.  
+gold: 1, exp: 15, defense: 0, health: -2, level: 1, attack: 2, stage: 83, next: 91
 
-지하로 내려간다.
-엘리베이터 샤프트를 이용합니다. 하강 중 장비가 손상됩니다.
-gold: 0, exp: 12, defense: 1, health: -2, level: 0, attack: 0, stage: 83, next: 18
+치료 방향을 폐기하고 파괴용 병기로 전환한다.  
+당신은 생존보다 격리를 선택합니다. 이 시약은 좀비를 빠르게 사멸시킵니다 — 인간도 포함입니다.  
+gold: 0, exp: 12, defense: 0, health: 0, level: 1, attack: 2, stage: 83, next: 92
 
-#84
-철제 창고 내부. 안엔 비어있지만 경고 메시지가 벽에 새겨져 있습니다.
-메시지를 분석한다.
-“문을 열지 마라”는 반복된 문장. 근처에 감염체 흔적도 있습니다.
-gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 84, next: 41
+#84  
+기밀 인체 실험 데이터를 활용해 억제제를 완성한 당신. 그러나 연구소 내 일부 인원이 이를 문제 삼습니다. 이대로 밀어붙일까요, 아니면 논란을 잠재울 방법을 찾을까요?
+논란을 무시하고 개발을 가속화한다.  
+당신은 빠른 완성만이 해답이라 판단합니다. 억제제는 효과적이지만 당신에 대한 시선은 차가워집니다.  
+gold: 1, exp: 14, defense: 0, health: 0, level: 1, attack: 1, stage: 84, next: 93
 
-근처 방을 탐색한다.
-장비는 없지만 잠시 쉴 수 있는 안전한 공간입니다.
-gold: 0, exp: 13, defense: 1, health: 2, level: 0, attack: 0, stage: 84, next: 40
+공동 논의를 통해 실험 방향을 조정한다.  
+협의 과정을 거쳐 실험은 약간 지연되지만, 공동체 내 갈등은 완화됩니다.  
+gold: 0, exp: 12, defense: 1, health: 0, level: 1, attack: 0, stage: 84, next: 94
 
-창고를 떠난다.
-기분이 좋지 않습니다. 당신은 발길을 돌립니다.
-gold: 0, exp: 11, defense: 2, health: 1, level: 0, attack: 0, stage: 84, next: 22
+해당 데이터를 봉인하고 정식 윤리 심사를 요청한다.  
+시간은 걸리지만, 외부 기관에서 실험 안정성을 인증해줍니다.  
+gold: -1, exp: 10, defense: 1, health: 0, level: 1, attack: 0, stage: 84, next: 95
 
-#85
-언덕 위 교회. 십자가는 부러졌고, 입구는 반쯤 열린 채 방치돼 있습니다.
-안으로 들어간다.
-성가대석 뒤에서 의료 키트와 일기장이 발견됩니다.
-gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 85, next: 29
+#85  
+대체 방법으로 만들어진 억제제는 효과가 약하고, 반복 투여가 필요합니다. 기술팀은 이를 바이오칩으로 자동화하자고 제안합니다. 선택은 당신에게 달렸습니다.
+바이오칩 시제품 제작에 동의한다.  
+실험은 성공적으로 진행됩니다. 다만, ‘통제된 인간’이라는 우려가 제기됩니다.  
+gold: 2, exp: 14, defense: 0, health: 0, level: 1, attack: 1, stage: 85, next: 96
 
-주변 묘지를 살핀다.
-무덤 일부가 파헤쳐져 있습니다. 누군가 최근에 다녀간 듯합니다.
-gold: 0, exp: 13, defense: 2, health: -1, level: 0, attack: 1, stage: 85, next: 18
+바이오칩 제안을 거절하고 수작업 유지.  
+연구는 느리지만 안정적입니다. 다만 실험 참가자들이 피로를 호소하기 시작합니다.  
+gold: 0, exp: 11, defense: 1, health: -1, level: 1, attack: 0, stage: 85, next: 97
 
-철수한다.
-불길함을 느낀 당신은 머물지 않고 곧장 떠납니다.
-gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 85, next: 10
+이 방식 자체를 폐기하고 다른 치료 방향을 찾는다.  
+모든 진척이 초기화됩니다. 연구소 내부에서는 비효율적 결정이라는 비판이 일어납니다.  
+gold: -1, exp: 9, defense: 2, health: 0, level: 1, attack: 0, stage: 85, next: 98
 
-#86
-전망대 꼭대기에서 망원경을 조작할 수 있습니다. 사방의 지형이 한눈에 보입니다.
-조망 지점 저장.
-지형 정보를 기록합니다. 다음 경로 계획에 큰 도움이 됩니다.
-gold: 0, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 86, next: 30
+#86  
+공식 실험 승인이 내려졌지만, 승인 지연으로 연구소 내부의 다른 팀이 당신의 아이디어를 가로챘습니다. 지금 반응하지 않으면 연구 주도권을 빼앗길 수 있습니다.
+상부에 정식 이의를 제기한다.  
+절차는 시작되었지만 처리는 느립니다. 당신은 자신의 명예를 지켜냈지만, 시간은 또 흘러갑니다.  
+gold: 0, exp: 11, defense: 1, health: 0, level: 1, attack: 0, stage: 86, next: 99
 
-망원경을 분해한다.
-부품을 회수해 통신 장비 수리에 활용할 수 있습니다.
-gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 86, next: 51
+직접 찾아가 항의한다.  
+다툼은 발생했지만 당신의 강경함에 상대는 물러섭니다. 연구소 내 평판은 엇갈립니다.  
+gold: 0, exp: 13, defense: 0, health: -1, level: 1, attack: 1, stage: 86, next: 99
 
-이탈한다.
-기억에만 남긴 채 당신은 이동을 시작합니다.
-gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 86, next: 44
+그들과 공동 연구를 제안한다.  
+경쟁보다는 협력을 택했습니다. 데이터 공유는 빨라졌지만 주도권은 나눠야 합니다.  
+gold: 1, exp: 14, defense: 1, health: 0, level: 1, attack: 0, stage: 86, next: 99
 
-#87
-지하 연구소 폐쇄 구역. 내부는 경고등과 경보음이 계속 울리고 있습니다.
-경고를 무시하고 들어간다.
-실험 샘플과 의문의 통조림이 보입니다. 일부는 가져옵니다.
-gold: 1, exp: 15, defense: 2, health: -1, level: 0, attack: 2, stage: 87, next: 45
+#87  
+재훈련 실험 중, 특정 좀비 개체가 반복 자극에 ‘회피 행동’을 보이기 시작했습니다. 이 반응을 어떻게 해석하고 다음 실험을 이어가시겠습니까?
+의식 회복의 신호로 간주하고 관찰한다.  
+더딘 진행이지만, 점차 더 많은 행동 반응이 나타납니다. 내부 연구진은 들썩입니다.  
+gold: 0, exp: 14, defense: 1, health: 0, level: 1, attack: 0, stage: 87, next: 99
 
-경보 해제를 시도한다.
-안정화에 성공하지만 일부 구역의 전원이 복구되며 함정이 작동합니다.
-gold: 0, exp: 14, defense: 1, health: -2, level: 0, attack: 1, stage: 87, next: 30
+의미 없는 반응이라 판단하고 실험 변경.  
+기존 실험은 종료하고 다른 조건을 시험합니다. 일부는 이탈자 발생이라 비판합니다.  
+gold: 0, exp: 10, defense: 2, health: 0, level: 1, attack: 0, stage: 87, next: 99
 
-후퇴한다.
-위험이 커지고 있습니다. 당신은 빠르게 복귀합니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 87, next: 40
+좀비를 격리하고 감정자극 실험으로 전환.  
+위험하지만, ‘인간성과 공존’ 가능성에 대한 첫 실험이 시작됩니다.  
+gold: 1, exp: 15, defense: 0, health: -1, level: 1, attack: 1, stage: 87, next: 99
 
-#88
-비 내리는 옥상. 낙뢰로 장비가 손상돼 있고, 송신기는 멈춘 상태입니다.
-장비를 수리한다.
-임시 전원을 연결해 메시지를 송출합니다. 신호는 약하지만 반응이 있습니다.
-gold: 1, exp: 15, defense: 1, health: 0, level: 0, attack: 1, stage: 88, next: 33
+#88  
+정신 억제제를 투여받은 실험체가 통제 불능 상태에 빠졌습니다. 격리 구역을 폐쇄하거나, 위험을 무릅쓰고 진정시켜야 합니다.
+격리 구역을 즉시 폐쇄한다.  
+피해는 최소화되었지만, 귀중한 데이터도 함께 소실되었습니다.  
+gold: 0, exp: 11, defense: 2, health: 0, level: 1, attack: 0, stage: 88, next: 99
 
-방수천을 찾는다.
-인근 천막에서 천 조각을 확보해 옷과 장비를 보호합니다.
-gold: 0, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 88, next: 10
+진정제를 주입하고 관찰을 이어간다.  
+실험체는 차츰 안정되었지만, 간호 인원 하나가 부상을 입습니다.  
+gold: 0, exp: 14, defense: 1, health: -1, level: 1, attack: 1, stage: 88, next: 99
 
-빗속을 떠난다.
-기지로 귀환하며 빗속에서 열이 오릅니다.
-gold: 0, exp: 11, defense: 1, health: -1, level: 0, attack: 0, stage: 88, next: 19
+즉시 제거하고 데이터를 확보한다.  
+공격적인 조치로 실험체는 제거됐고, 신경 데이터 일부가 회수됩니다.  
+gold: 1, exp: 13, defense: 0, health: 0, level: 1, attack: 2, stage: 88, next: 99
 
-#89
-폐쇄된 식품 공장. 자동화 기계는 정지했고, 안엔 부패한 식재료가 널려 있습니다.
-설비를 점검한다.
-수리 가능한 기계 부품을 발견하고 일부 회수합니다.
-gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 1, stage: 89, next: 51
+#99  
+연구는 한계에 다다랐습니다. 당신은 이제 마지막 방향을 선택해야 합니다.  
+인류를 치료할 해독제를 완성한다.  
+이제 인간을 되돌릴 수 있습니다. 감염자는 고통 속에서 회복되고, 좀비는 인간으로 돌아오기 시작합니다. 해독제는 인류를 다시 세우는 첫 걸음이 됩니다. 당신의 이름은 ‘구원자’로 기록됩니다.  
+gold: 3, exp: 30, defense: 2, health: +5, level: 3, attack: 0, stage: 101, next: -1
 
-냉동고를 연다.
-강한 악취와 함께 비상 식량이 소량 남아 있습니다.
-gold: 0, exp: 13, defense: 2, health: -1, level: 0, attack: 0, stage: 89, next: 29
+좀비와의 공존 가능성을 검증한다.  
+당신은 이들을 제거 대상이 아닌 재사회화 대상으로 바라봅니다. 당신은 전 세계에서 가장 이상한 가족을 만들었습니다. 그리고, 어쩌면 그것이 인류보다 더 인간적인 공동체일지도 모릅니다.
+gold: 2, exp: 28, defense: 1, health: +2, level: 3, attack: 1, stage: 102, next: -1
 
-떠난다.
-당신은 위험 징후에 반응하며 이곳을 벗어납니다.
-gold: 0, exp: 12, defense: 1, health: 1, level: 0, attack: 0, stage: 89, next: 22
-
-#90
-무너진 지하 구조물 끝에서 낡은 금고가 발견됩니다.
-금고를 연다.
-안엔 설계도와 비밀 명령 문서가 있습니다. 무언가 중요한 단서입니다.
-gold: 2, exp: 16, defense: 2, health: 0, level: 0, attack: 1, stage: 90, next: 33
-
-그대로 둔다.
-열기엔 너무 위험합니다. 당신은 신속히 이탈합니다.
-gold: 0, exp: 11, defense: 1, health: 0, level: 0, attack: 0, stage: 90, next: 40
-
-금고를 파괴한다.
-소음과 진동이 주변을 자극합니다. 뭔가 접근해옵니다.
-gold: 0, exp: 14, defense: 2, health: -2, level: 0, attack: 1, stage: 90, next: 18
-
-#91
-동굴 안 수로에서 비상용 전기가 흐르고 있습니다.
-케이블을 재정비한다.
-빛이 돌아오고 안쪽 벽화가 드러납니다. 숨겨진 메시지가 보입니다.
-gold: 1, exp: 15, defense: 2, health: 1, level: 0, attack: 0, stage: 91, next: 30
-
-수로 끝을 따라간다.
-작은 보관소와 약간의 식수, 장비가 발견됩니다.
-gold: 1, exp: 14, defense: 1, health: 1, level: 0, attack: 0, stage: 91, next: 22
-
-동굴을 빠져나간다.
-그 이상 더 깊이 가는 건 위험합니다. 당신은 퇴각합니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 91, next: 36
-
-#92
-무너진 철탑 근처에서 송신기 흔적이 보입니다.
-잔해를 수색한다.
-신호 기록과 좌표 데이터 일부를 복원합니다.
-gold: 1, exp: 13, defense: 1, health: 0, level: 0, attack: 1, stage: 92, next: 33
-
-근처를 파본다.
-송신기의 뿌리 쪽에서 작은 전력기와 배터리가 나옵니다.
-gold: 0, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 92, next: 30
-
-자리를 뜬다.
-주변 상황이 좋지 않습니다. 당신은 신속히 이동합니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 92, next: 44
-
-#93
-감염 통제소 폐허. 잔해 사이에 흔적이 남아 있습니다.
-기록을 찾는다.
-파일 일부는 훼손됐지만, 초기 감염 경로 데이터가 남아 있습니다.
-gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 1, stage: 93, next: 30
-
-제독 장비를 챙긴다.
-생존에 유용한 보호 장비를 확보합니다.
-gold: 1, exp: 15, defense: 3, health: 1, level: 0, attack: 0, stage: 93, next: 40
-
-현장을 정리한다.
-남은 흔적을 불태우고 떠납니다.
-gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 93, next: 10
-
-#94
-송전소 관제실. 대형 패널이 작동하지 않지만 전력선은 살아 있습니다.
-시스템을 재가동한다.
-패널이 일부 켜지고, 지도에 노란 점이 표시됩니다.
-gold: 1, exp: 14, defense: 2, health: 0, level: 0, attack: 1, stage: 94, next: 33
-
-출력을 낮춘다.
-잦은 전력 소모를 줄이기 위해 일부 회선을 차단합니다.
-gold: 0, exp: 13, defense: 2, health: 0, level: 0, attack: 0, stage: 94, next: 19
-
-즉시 떠난다.
-이 지역은 더 이상 안정적이지 않습니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 94, next: 22
-
-#95
-안개 낀 저수지. 부표가 떠 있고, 물 밑엔 뭔가 희미하게 보입니다.
-물속을 조사한다.
-잠수 후 낡은 상자에서 응급 키트를 회수합니다.
-gold: 1, exp: 14, defense: 1, health: -2, level: 0, attack: 1, stage: 95, next: 10
-
-부표를 끌어올린다.
-의외로 드론 신호기와 배터리가 들어 있습니다.
-gold: 1, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 95, next: 29
-
-떠난다.
-저수지 근처는 위험합니다. 당신은 바로 자리를 옮깁니다.
-gold: 0, exp: 12, defense: 1, health: 0, level: 0, attack: 0, stage: 95, next: 36
-
-#96
-우회로 끝, 작동 중인 경보기 근처에서 익숙한 장비가 떨어져 있습니다.
-장비를 챙긴다.
-구조 요청용 송신기와 마이크입니다. 이전 생존자의 흔적입니다.
-gold: 1, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 96, next: 51
-
-경보를 끈다.
-시끄러운 소리를 끄며 근처 동굴 입구를 엿봅니다.
-gold: 0, exp: 13, defense: 2, health: 1, level: 0, attack: 0, stage: 96, next: 44
-
-떠난다.
-당장은 시간 낭비입니다. 당신은 길을 바꿉니다.
-gold: 0, exp: 12, defense: 2, health: 0, level: 0, attack: 0, stage: 96, next: 22
-
-#97
-산사태 이후 끊긴 산길. 낙석과 나무가 길을 가로막고 있습니다.
-우회로를 찾는다.
-짧은 오솔길이 이어지며, 도중에 피난 흔적을 발견합니다.
-gold: 1, exp: 14, defense: 2, health: 1, level: 0, attack: 0, stage: 97, next: 19
-
-장비를 꺼내 정리한다.
-삽과 밧줄을 활용해 간신히 통로를 확보합니다.
-gold: 0, exp: 13, defense: 1, health: -1, level: 0, attack: 1, stage: 97, next: 22
-
-철수한다.
-지금은 이 구역을 건너는 것이 무리입니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 97, next: 40
-
-#98
-북동쪽 송신탑 잔해 위로 드론이 떠다니며 빛을 깜빡입니다.
-드론을 유도한다.
-신호를 강화해 근처의 송신소로 드론을 유도합니다.
-gold: 1, exp: 15, defense: 2, health: 0, level: 0, attack: 1, stage: 98, next: 33
-
-신호기를 꺼낸다.
-우연히 다른 생존자의 송신기도 감지됩니다.
-gold: 0, exp: 14, defense: 1, health: 0, level: 0, attack: 0, stage: 98, next: 51
-
-드론을 회수한다.
-배터리와 데이터 모듈을 확보합니다. 일부는 해석 중입니다.
-gold: 1, exp: 13, defense: 1, health: 1, level: 0, attack: 1, stage: 98, next: 30
-
-#99
-가장자리에 위치한 낡은 오두막. 문은 잠겨 있고, 주변은 고요합니다.
-문을 연다.
-비상약과 통조림이 있습니다. 장판 밑에 보관함도 있습니다.
-gold: 1, exp: 13, defense: 1, health: 2, level: 0, attack: 0, stage: 99, next: 40
-
-창문을 들여다본다.
-실내는 정돈되어 있으며 누군가 최근까지 머문 듯합니다.
-gold: 0, exp: 12, defense: 2, health: 1, level: 0, attack: 0, stage: 99, next: 19
-
-떠난다.
-지금은 안에 들어갈 이유가 없습니다. 다른 경로로 이동합니다.
-gold: 0, exp: 11, defense: 1, health: 1, level: 0, attack: 0, stage: 99, next: 22
+해독제를 포기하고 생화학 무기를 완성한다.  
+당신은 냉혹한 결단을 내립니다. 이건 치료가 아니라 청소다. 당신은 버튼을 눌렀습니다. 그리고 도시들은 침묵했습니다. 당신은 구원자인가, 파괴자인가. 역사는 침묵할 것입니다. 오직 결과만 남을 테니까.
+gold: 2, exp: 32, defense: 0, health: 0, level: 3, attack: 5, stage: 103, next: -1
 
 #100
-관측소 최상층. 다시 전원을 확보한 장비가 송신을 반복합니다.
-응답을 기다린다.
-반응이 오고 있습니다. 구조 신호가 전 세계로 송출됩니다.
-gold: 2, exp: 20, defense: 3, health: 2, level: 1, attack: 2, stage: 100, next: -1
+당신은 마침내 연구소의 공학 본부에 배치되었습니다. "이제 우리는 세 가지 방향 중 하나를 선택해야 합니다. 드론, 로켓, 혹은 핵. 하나는 우리를 지켜줄 것이고, 하나는 도망칠 수단이 되며, 또 하나는 최후의 수단이 될 겁니다."
+무장 전투 드론 개발을 선택한다.
+당신은 자동화 병기를 통해 좀비를 정밀하게 제거하는 기술에 집중합니다.
+gold: 1, exp: 12, defense: 1, health: 0, level: 1, attack: 2, stage: 100, next: 101
 
-장비를 강화한다.
-전력을 조정하고 무전을 증폭합니다. 다른 생존자들과의 연결 가능성이 높아집니다.
-gold: 1, exp: 18, defense: 2, health: 1, level: 1, attack: 1, stage: 100, next: -1
+탈출용 로켓 개발을 선택한다.
+당신은 지구를 벗어나 새로운 행성으로의 이주 수단을 만들려 합니다.
+gold: 0, exp: 14, defense: 0, health: 0, level: 1, attack: 0, stage: 100, next: 110
 
-즉시 철수한다.
-관측소는 더 이상 안전하지 않습니다. 당신은 새로운 거점을 향해 출발합니다.
-gold: 0, exp: 16, defense: 2, health: 0, level: 1, attack: 0, stage: 100, next: -1
+대규모 핵 미사일 무기 개발을 선택한다.
+당신은 모든 감염지를 초토화시킬 수 있는 강력한 선택지를 준비합니다.
+gold: 1, exp: 10, defense: 2, health: -1, level: 1, attack: 1, stage: 100, next: 117
 
+#101
+당신은 드론 개발 초기 단계에서 목표 분류 AI의 오류를 발견했습니다. 민간인과 감염체를 혼동할 위험이 큽니다. 첫 개선 방향을 선택하세요.
+정확도 향상 알고리즘에 집중한다.
+데이터 분석 속도가 느려지지만 민간인 피해 가능성이 줄어듭니다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 1, attack: 1, stage: 101, next: 102
 
+감염체 반응 속도를 강화한다.
+드론 반응은 빨라지지만 오작동 리스크가 남습니다.
+gold: 1, exp: 12, defense: 0, health: -1, level: 1, attack: 2, stage: 101, next: 103
+
+AI 판단을 인간 통제로 제한한다.
+운용 안정성은 오르지만 실시간 대응이 늦어집니다.
+gold: 0, exp: 11, defense: 2, health: 0, level: 1, attack: 0, stage: 101, next: 104
+
+#102
+정확도 알고리즘이 성공적으로 적용되어 민간 피해가 크게 줄었습니다. 하지만 연산 병목현상이 발생합니다.
+하드웨어를 업그레이드해 연산 속도를 높인다.
+성능은 향상되지만 자원 소모가 큽니다.
+gold: -1, exp: 15, defense: 1, health: 0, level: 2, attack: 2, stage: 102, next: 105
+
+소프트웨어를 최적화해 효율을 개선한다.
+성능 향상은 작지만 안정적입니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 2, attack: 1, stage: 102, next: 106
+
+시스템을 단순화해 정찰 위주로 용도를 변경한다.
+전투 능력은 낮아지지만 정찰 성능은 극대화됩니다.
+gold: 1, exp: 10, defense: 2, health: 0, level: 2, attack: 0, stage: 102, next: 107
+
+#103
+반응 강화를 선택한 드론은 감염체 제거 속도가 비약적으로 증가했지만, 민간인 오사 사고가 발생했습니다.
+긴급 패치를 적용해 정밀도를 높인다.
+일시적으로 오작동이 줄어들지만 신뢰성은 여전히 낮습니다.
+gold: 0, exp: 11, defense: 1, health: 0, level: 2, attack: 1, stage: 103, next: 102
+
+개발을 중단하고 드론 연구를 포기한다.
+당신은 드론의 위험성에 절망하며 프로젝트에서 손을 뗍니다.
+gold: 0, exp: 5, defense: 0, health: 0, level: 1, attack: 0, stage: 103, next: 100
+
+강행하여 무력으로 문제를 덮는다.
+드론은 감염체와 민간인을 모두 제거합니다. 당신의 이름은 두려움과 함께 기록됩니다.
+gold: 2, exp: 16, defense: 0, health: -2, level: 2, attack: 3, stage: 103, next: 108
+
+#104
+인간 통제 시스템은 안정적인 운영을 보장하지만, 현장 상황에서는 너무 느립니다.
+드론 판단과 인간 승인 시스템을 병행한다.
+효율성과 안정성 사이에서 균형을 잡습니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 2, attack: 1, stage: 104, next: 105
+
+인간 통제 시스템을 포기하고 전자동 모드로 전환한다.
+실시간 대응은 개선되지만 윤리적 논란이 발생합니다.
+gold: 1, exp: 14, defense: 0, health: -1, level: 2, attack: 2, stage: 104, next: 108
+
+기술 부담을 줄이기 위해 정찰용 소형 드론으로 재설계한다.
+전투 능력은 줄지만 탐색 범위가 증가합니다.
+gold: 1, exp: 11, defense: 1, health: 0, level: 2, attack: 0, stage: 104, next: 107
+
+#105
+드론의 연산 능력이 대폭 향상되어 현장 대응력이 강화되었습니다. 그러나 자원 소모가 커 연구소 내부 갈등이 발생합니다.
+자원 재배분을 설득하여 프로젝트를 유지한다.
+드론 부대는 감염 지역을 정밀하게 제압했고, 생존자들은 다시 땅을 밟기 시작했다. 좀비는 여전히 많았지만, 당신은 처음으로 되묻기 시작했다 — “우리는 이길 수 있을까?” 그리고 드론은, 대답처럼 날아갔다.
+gold: 0, exp: 14, defense: 1, health: 0, level: 2, attack: 2, stage: 105, next: -1
+
+반대 세력을 무시하고 독단적으로 개발을 강행한다.
+프로젝트는 완성되지만 연구소 내 내분으로 기능이 마비됩니다.
+gold: 2, exp: 15, defense: 0, health: -2, level: 2, attack: 3, stage: 105, next: -1
+
+기술을 외부 생존자 그룹에 넘긴다.
+당신의 기술은 연구소를 지켜냈고, 생존자들은 그 안에서 하루를 더 버틸 수 있었다. 그러나 드론은 벽 너머로 나아가지 못했다. 연구소는 요새가 되었지만, 감옥이기도 했다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 2, attack: 1, stage: 105, next: -1
+
+#106
+효율은 개선되었지만 반응 속도는 충분하지 않아 중규모 실험 중 드론 3기가 동시에 다운되었습니다.
+AI 학습 데이터를 전면 교체한다.
+드론 부대는 감염 지역을 정밀하게 제압했고, 생존자들은 다시 땅을 밟기 시작했다. 좀비는 여전히 많았지만, 당신은 처음으로 되묻기 시작했다 — “우리는 이길 수 있을까?” 그리고 드론은, 대답처럼 날아갔다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 2, attack: 1, stage: 106, next: -1
+
+교체를 포기하고 기존 모델로 유지한다.
+결국 성능 저하로 실전에 투입되지 못합니다.
+gold: 0, exp: 8, defense: 1, health: 0, level: 2, attack: 0, stage: 106, next: 100
+
+정찰 임무 전용으로 방향 전환한다.
+당신의 기술은 연구소를 지켜냈고, 생존자들은 그 안에서 하루를 더 버틸 수 있었다. 그러나 드론은 벽 너머로 나아가지 못했다. 연구소는 요새가 되었지만, 감옥이기도 했다.
+gold: 1, exp: 12, defense: 2, health: 0, level: 2, attack: 0, stage: 106, next: -1
+
+#107
+소형 드론이 실전에 투입되며 초기 실적은 긍정적이지만, 일부 드론이 적 감염체에게 납치당하는 사례가 발생했습니다.
+암호화 및 자폭 장치를 장착한다.
+드론 부대는 감염 지역을 정밀하게 제압했고, 생존자들은 다시 땅을 밟기 시작했다. 좀비는 여전히 많았지만, 당신은 처음으로 되묻기 시작했다 — “우리는 이길 수 있을까?” 그리고 드론은, 대답처럼 날아갔다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 2, attack: 1, stage: 107, next: -1
+
+회수팀을 구성해 정기적으로 수거 작전을 진행한다.
+드론 부대는 감염 지역을 정밀하게 제압했고, 생존자들은 다시 땅을 밟기 시작했다. 좀비는 여전히 많았지만, 당신은 처음으로 되묻기 시작했다 — “우리는 이길 수 있을까?” 그리고 드론은, 대답처럼 날아갔다.
+gold: 1, exp: 12, defense: 1, health: 0, level: 2, attack: 0, stage: 107, next: -1
+
+실패를 인정하고 소형 드론 투입을 중단한다.
+소형 드론 연구는 폐기됩니다.
+gold: 0, exp: 6, defense: 0, health: 0, level: 1, attack: 0, stage: 107, next: 100
+
+#108
+자동화 드론 시스템이 대규모 전투에서 기대 이상의 성과를 보였습니다. 하지만 실험 중 민간인 피해도 발생했습니다.
+공개 사과하고 후속 대책을 발표한다.
+드론 부대는 감염 지역을 정밀하게 제압했고, 생존자들은 다시 땅을 밟기 시작했다. 좀비는 여전히 많았지만, 당신은 처음으로 되묻기 시작했다 — “우리는 이길 수 있을까?” 그리고 드론은, 대답처럼 날아갔다.
+gold: 1, exp: 13, defense: 1, health: 0, level: 2, attack: 2, stage: 108, next: -1
+
+피해 사실을 은폐한다.
+일시적으로 혼란은 피했지만, 후에 밝혀져 당신은 연구소에서 퇴출당합니다.
+gold: 2, exp: 10, defense: 0, health: -2, level: 2, attack: 2, stage: 108, next: -1
+
+비무장 민간 구역에서는 드론 사용을 금지한다.
+당신의 기술은 연구소를 지켜냈고, 생존자들은 그 안에서 하루를 더 버틸 수 있었다. 그러나 드론은 벽 너머로 나아가지 못했다. 연구소는 요새가 되었지만, 감옥이기도 했다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 2, attack: 1, stage: 108, next: -1
+
+#109
+로켓 프로젝트의 기본 계획이 승인되었습니다. 첫 시험 발사는 임박했지만 추진체 설계에서 문제가 발견되었습니다.
+지금 당장 발사를 강행한다.
+데이터 수집이 가능하지만 로켓은 대기권을 벗어나지 못합니다.
+gold: 0, exp: 10, defense: 0, health: -1, level: 2, attack: 0, stage: 109, next: 111
+
+시험 발사를 연기하고 설계를 수정한다.
+시간은 걸리지만 안정적인 이륙이 기대됩니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 2, attack: 0, stage: 109, next: 111
+
+프로젝트를 보류하고 다른 기술을 탐색한다.
+당신은 우주로 향하는 대신 방어 시스템으로 눈을 돌립니다.
+gold: 1, exp: 8, defense: 2, health: 0, level: 2, attack: 0, stage: 109, next: 100
+
+#110
+당신은 탈출용 로켓 개발을 선택했습니다. 인류의 미래는 이 비행체에 달려 있습니다.
+플라즈마 엔진을 채택해 고속 도약을 시도한다.
+에너지는 강력하지만 열 방출 문제가 발생합니다.
+gold: 1, exp: 14, defense: 0, health: -1, level: 2, attack: 1, stage: 110, next: 109
+
+안정적인 액체 연료 기반 추진 시스템을 설계한다.
+비행 안정성은 높지만 속도가 느립니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 2, attack: 0, stage: 110, next: 109
+
+지구 내 대체 기지를 위한 고고도 체류선으로 방향을 전환한다.
+성층권 기지 구상이 시작됩니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 2, attack: 0, stage: 110, next: 111
+
+#111
+1차 엔진 시험 후, 추진체와 연료 시스템 간 연동 문제가 발생했습니다.
+신속하게 외부 자원을 동원해 재설계한다.
+비용은 크지만 안정성이 확보됩니다.
+gold: -1, exp: 15, defense: 1, health: 0, level: 2, attack: 1, stage: 111, next: 112
+
+내부 기술팀의 재조정을 통해 문제를 해결한다.
+시간은 소모되지만 독립적인 해결책입니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 2, attack: 0, stage: 111, next: 112
+
+연동 실패를 무시하고 다른 문제로 우회한다.
+하늘을 향해 올라가던 그 순간, 모든 것이 사라졌다. 지구를 뒤로한 채, 인류의 마지막 희망은 불타오르며 산산조각났다. 이주는 실패했다. 그리고 당신의 이름은 더 이상 불리지 않았다.
+gold: 0, exp: 10, defense: 0, health: -2, level: 2, attack: 0, stage: 111, next: -1
+
+#112
+연동 문제는 해결되었지만, 궤도 진입 속도 계산에 문제가 남아 있습니다.
+추가 시뮬레이션으로 정확도를 높인다.
+이륙 속도와 궤도 진입 성공률이 개선됩니다.
+gold: 1, exp: 14, defense: 1, health: 0, level: 2, attack: 1, stage: 112, next: 113
+
+경험 데이터를 기반으로 실측값을 대입한다.
+수치는 불안정하지만 시간 단축이 가능합니다.
+gold: 1, exp: 13, defense: 0, health: -1, level: 2, attack: 1, stage: 112, next: 114
+
+속도 문제를 무시하고 기내 생존 시스템을 먼저 완성한다.
+로켓은 안전하지만 궤도 진입 실패 확률이 남아 있습니다.
+gold: 0, exp: 11, defense: 2, health: 0, level: 2, attack: 0, stage: 112, next: 115
+
+#113
+당신은 시뮬레이션 기반으로 모든 수치를 조율해 완전한 궤도 진입 설계를 마쳤습니다. 이제 마지막 결단만 남았습니다.
+지금 바로 로켓을 이륙시킨다.
+수많은 계산, 끝없는 실패, 그리고 당신의 집념이 하나로 응축된 결과였다. 당신은 새로운 시작을 하늘 위에 심었다. 당신의 이름은 생존 보고서마다 기록되었고, 사람들은 기억했다.
+gold: 2, exp: 20, defense: 1, health: +3, level: 3, attack: 0, stage: 113, next: -1
+
+좀 더 기다려 발사 조건을 최적화한다.
+수많은 계산, 끝없는 실패, 그리고 당신의 집념이 하나로 응축된 결과였다. 당신은 새로운 시작을 하늘 위에 심었다. 당신의 이름은 생존 보고서마다 기록되었고, 사람들은 기억했다.
+gold: 1, exp: 18, defense: 2, health: +1, level: 3, attack: 0, stage: 113, next: -1
+
+예산 문제로 엔진 출력을 낮춰 출발한다.
+하늘을 향해 올라가던 그 순간, 모든 것이 사라졌다. 지구를 뒤로한 채, 인류의 마지막 희망은 불타오르며 산산조각났다. 이주는 실패했다. 그리고 당신의 이름은 더 이상 불리지 않았다.
+gold: 0, exp: 10, defense: 0, health: -3, level: 2, attack: 0, stage: 113, next: -1
+
+#114
+실측값 기반으로 설계된 로켓은 예상보다 빠르게 속도를 얻었지만, 궤도 계산에서 오차가 누적되고 있습니다.
+비상 수동 조종 기능을 탑재한다.
+탑승자가 직접 궤도 진입 각도를 조절할 수 있습니다.
+gold: 1, exp: 14, defense: 0, health: -1, level: 2, attack: 1, stage: 114, next: 113
+
+추가 수정을 포기하고 강행 발사한다.
+하늘을 향해 올라가던 그 순간, 모든 것이 사라졌다. 지구를 뒤로한 채, 인류의 마지막 희망은 불타오르며 산산조각났다. 이주는 실패했다. 그리고 당신의 이름은 더 이상 불리지 않았다.
+gold: 0, exp: 10, defense: 0, health: -2, level: 2, attack: 0, stage: 114, next: -1
+
+지구 주회 임무로 전환한다.
+지구 상공을 맴도는 구조물 위, 당신은 살아남았습니다. 지상은 아직 위험하지만, 하늘 위에서 이어진 이 임무는 언젠가 다시 출발할 준비를 마치게 될 것입니다. 사람들은 당신을 이렇게 부릅니다. “하늘 위의 파수꾼.”
+gold: 1, exp: 13, defense: 2, health: 0, level: 2, attack: 0, stage: 114, next: -1
+
+#115
+기내 생존 시스템은 완벽하게 구축되었지만 추진 속도 계산이 미흡합니다. 로켓은 대기권을 벗어나기 직전까지 도달하지만 진입 각도 부족으로 흔들립니다.
+로켓 구조를 경량화하여 속도를 보완한다.
+일부 생존 설비를 포기하고 궤도 진입을 강행합니다.
+gold: 1, exp: 14, defense: 0, health: -1, level: 2, attack: 1, stage: 115, next: 113
+
+2차 생존 설비를 장착해 충격 흡수를 노린다.
+진입 실패 시 인명 피해를 줄입니다.
+gold: 0, exp: 12, defense: 2, health: 0, level: 2, attack: 0, stage: 115, next: 114
+
+생존 시스템을 이용한 지구 대기권 체류용 플랫폼으로 전환한다.
+지구 상공을 맴도는 구조물 위, 당신은 살아남았습니다. 지상은 아직 위험하지만, 하늘 위에서 이어진 이 임무는 언젠가 다시 출발할 준비를 마치게 될 것입니다. 사람들은 당신을 이렇게 부릅니다. “하늘 위의 파수꾼.”
+gold: 0, exp: 13, defense: 2, health: 0, level: 2, attack: 0, stage: 115, next: -1
+
+#116
+당신은 로켓 프로젝트를 포기하고 남은 자원과 기술을 기존 생존 거점 방어에 투자하기로 결정했습니다. 기술력이 충분하다면 이 결정은 새로운 전환점이 될 수도 있습니다.
+무인 터렛 시스템을 배치해 전방 방어를 강화한다.
+좀비의 접근을 상당히 차단하지만 자원 소모가 큽니다.
+gold: -1, exp: 14, defense: 3, health: 0, level: 2, attack: 2, stage: 116, next: -1
+
+전력을 지하 벙커 건설로 집중한다.
+생존자들의 생존 확률은 올라가지만 외부와 단절됩니다.
+gold: 0, exp: 12, defense: 2, health: +1, level: 2, attack: 0, stage: 116, next: -1
+
+연구소 내부 방역과 보급 시스템을 자동화한다.
+공격은 줄지만 내부의 안전과 지속성이 크게 향상됩니다.
+gold: 1, exp: 13, defense: 2, health: 0, level: 2, attack: 0, stage: 116, next: -1
+
+#117
+당신은 핵 미사일 무기 개발을 선택했습니다. 이 기술은 좀비를 말살할 마지막 수단이 될 수 있지만, 그만큼 위험도 큽니다.
+고농축 우라늄을 활용한 대형 탄두를 개발한다.
+강력하지만 생태계 전체에 치명적 피해를 줍니다.
+gold: 2, exp: 14, defense: 0, health: -2, level: 2, attack: 4, stage: 117, next: 118
+
+소형 전술 핵무기 개발에 집중한다.
+지역 단위 제거가 가능하며 전략적 활용이 가능합니다.
+gold: 1, exp: 12, defense: 1, health: -1, level: 2, attack: 2, stage: 117, next: 118
+
+핵 기술을 에너지 자원으로 전환하여 방어 시스템에 활용한다.
+무기는 아니지만, 연구소의 생존 가능성을 극대화합니다.
+gold: 0, exp: 13, defense: 3, health: 0, level: 2, attack: 0, stage: 117, next: 118
+
+#118
+핵 개발은 빠르게 진전 중입니다. 하지만 외부 생존자 그룹에서 핵 사용을 강력히 반대하고 있습니다.
+경고를 무시하고 개발을 계속한다.
+신뢰는 무너지지만 기술은 완성됩니다.
+gold: 1, exp: 15, defense: 0, health: -1, level: 2, attack: 3, stage: 118, next: 122
+
+외부 그룹과 협상을 시도한다.
+시간이 소모되지만 상호 신뢰가 형성됩니다.
+gold: 0, exp: 13, defense: 2, health: 0, level: 2, attack: 1, stage: 118, next: 119
+
+핵 개발을 공개하고 국제 생존 협의체를 결성한다.
+연합 프로젝트로 전환되며 사용 여부는 공동 판단에 맡겨집니다.
+gold: 0, exp: 12, defense: 1, health: 0, level: 2, attack: 1, stage: 118, next: 123
+
+#119
+핵 개발은 최종 단계에 도달했습니다. 당신은 이제 실험을 거쳐 실전 배치를 결정해야 합니다.
+인근 폐허 도시를 대상으로 핵 실험을 감행한다.
+결과는 성공적이지만 방사능 낙진이 광범위하게 퍼집니다.
+gold: 2, exp: 16, defense: 0, health: -2, level: 3, attack: 4, stage: 119, next: 121
+
+실전 사용은 보류하고 안전 실험만 진행한다.
+정확한 데이터는 부족하지만 피해는 없습니다.
+gold: 1, exp: 14, defense: 2, health: 0, level: 3, attack: 2, stage: 119, next: 122
+
+기술 자체를 폐기하고 중성자 감쇠 장치로 전환한다.
+세상을 한순간에 바꿀 수 있는 힘이 손에 있었지만, 당신은 그것을 내려놓았습니다. 당신은 영웅이 아니지만, 당신 덕에 내일이 존재합니다.
+gold: 0, exp: 13, defense: 3, health: 0, level: 3, attack: 0, stage: 119, next: -1
+
+#120
+당신은 이제 선택의 끝에 도달했습니다. 드론, 로켓, 핵 루트 중 어느 것을 선택했든, 이곳에서 결과가 드러납니다.
+무장 드론이 전장을 장악하고 있습니다. 감염 확산은 통제되고 생존지대는 점차 회복됩니다.
+당신의 기술은 인간과 기계의 협력으로 남을 것입니다.
+gold: 3, exp: 30, defense: 3, health: +2, level: 3, attack: 3, stage: 120, next: -1
+
+로켓이 무사히 이륙하여 새로운 행성 탐사가 시작됩니다.
+당신은 인류 이주의 선구자로 역사에 기록됩니다.
+gold: 2, exp: 28, defense: 2, health: +3, level: 3, attack: 0, stage: 120, next: -1
+
+핵 무기로 감염지를 소멸시켰지만, 방사능에 오염된 땅 위에서 생존은 다시 불확실해졌습니다.
+당신은 파괴자도, 구원자도 아닙니다.
+gold: 2, exp: 30, defense: 1, health: -2, level: 3, attack: 5, stage: 120, next: -1
+
+#121
+실험은 폭발로 이어졌고, 연구소 지하까지 피해가 확산되었습니다. 생존율은 낮아졌고, 프로젝트는 붕괴 직전입니다.
+모든 인원을 지하 벙커로 대피시킨다.
+지상은 끝났다. 그러나 아래는 아직 살아 있다.당신은 선택했다 — 떠나는 것이 아니라, 남는 것을.지하 벙커 안에서 사람들은 숨을 쉬었고, 아이는 울었고, 조명이 깜빡였다.세상은 사라졌지만, 작은 불빛은 남았다.
+gold: 0, exp: 10, defense: 2, health: -1, level: 2, attack: 0, stage: 121, next: -1
+
+시설 내 격리 구역을 폐쇄하고 봉쇄 작전을 시작한다.
+출입은 차단되었다. 시간은 멈췄다. 감염의 확산은 막았지만, 그 안의 진실도 함께 묻혔다. 외부는 당신을 보호자라 부를지, 배신자라 부를지 모른다. 그러나 누구도 다시 열지는 않을 것이다. 그 문을.
+gold: 1, exp: 12, defense: 1, health: 0, level: 2, attack: 0, stage: 121, next: -1
+
+현장을 포기하고 남은 인원과 도주를 감행한다.
+당신은 도망쳤다. 무너진 지식, 사라진 기록, 그리고… 이름 없는 시체들. 누군가는 이를 비겁함이라 부를 것이다. 그러나 살아남은 자만이 다음을 말할 수 있다. 그게 당신이라면, 무엇을 다시 세우겠는가?
+gold: 0, exp: 8, defense: 0, health: -2, level: 2, attack: 0, stage: 121, next: -1
+
+#122
+핵탄두가 발사되었습니다. 목표 지역은 사라졌지만, 연쇄 반응으로 지각 균열이 발생합니다.
+모든 걸 감수하고 추가 발사를 승인한다.
+탄도는 궤도를 가르고, 충격은 대지를 찢었다. 당신의 손끝에서 시작된 불꽃은 적만을 삼킨 것이 아니었다.도시는 증발했고, 하늘은 붉게 물들었다. 생존자는 없었다 — 아니, 있어도 말이 없었다.
+gold: 3, exp: 30, defense: 0, health: -5, level: 3, attack: 6, stage: 122, next: -1
+
+위험을 인식하고 전면 철회한다.
+세상을 한순간에 바꿀 수 있는 힘이 손에 있었지만, 당신은 그것을 내려놓았습니다. 당신은 영웅이 아니지만, 당신 덕에 내일이 존재합니다.
+gold: 1, exp: 20, defense: 2, health: 0, level: 3, attack: 1, stage: 122, next: -1
+
+기술을 봉인하고 후세에 경고를 남긴다.
+세상을 한순간에 바꿀 수 있는 힘이 손에 있었지만, 당신은 그것을 내려놓았습니다. 당신은 영웅이 아니지만, 당신 덕에 내일이 존재합니다.
+gold: 0, exp: 18, defense: 3, health: 0, level: 3, attack: 0, stage: 122, next: -1
+
+#123
+외부 연합과의 협상이 파기되었습니다. 핵 보유를 둘러싼 갈등이 무장 충돌로 번지기 직전입니다.
+주권을 포기하고 연합에 무기를 넘긴다.
+세상을 한순간에 바꿀 수 있는 힘이 손에 있었지만, 당신은 그것을 내려놓았습니다. 당신은 영웅이 아니지만, 당신 덕에 내일이 존재합니다.
+gold: 0, exp: 15, defense: 1, health: 0, level: 3, attack: 0, stage: 123, next: -1
+
+핵 보유를 유지하고 방어 태세를 강화한다.
+세상을 한순간에 바꿀 수 있는 힘이 손에 있었지만, 당신은 그것을 내려놓았습니다. 당신은 영웅이 아니지만, 당신 덕에 내일이 존재합니다.
+gold: 1, exp: 16, defense: 2, health: -1, level: 3, attack: 2, stage: 123, next: -1
+
+상대 진영에 선제 타격을 가한다.
+탄도는 궤도를 가르고, 충격은 대지를 찢었다. 당신의 손끝에서 시작된 불꽃은 적만을 삼킨 것이 아니었다.도시는 증발했고, 하늘은 붉게 물들었다. 생존자는 없었다 — 아니, 있어도 말이 없었다.
+gold: 2, exp: 18, defense: 0, health: -3, level: 3, attack: 4, stage: 123, next: -1

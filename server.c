@@ -298,9 +298,8 @@ int main(int argc, char *argv[]) {
                                     coop_event.statuses[j].stage = next_stage;
                                 }                                               
 
-                            sleep(1);
+                            sleep(5);
                             if(next_stage != -2){
-                                
                                 for (int j = 0; j < coop_event.client_count; j++) {
                                     stocPacket pkt = { .cmd = SELECT, .status = coop_event.statuses[j] };
                                     Scenario scen = scenarios[coop_event.statuses[j].stage];
