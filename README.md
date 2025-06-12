@@ -169,11 +169,121 @@ Jack  : Bob 말이 맞는 것 같아!
 당신은 영웅이 아니지만, 당신 덕에 내일이 존재합니다.  
 ```
 
-## 프로젝트 구조
+## 프로젝트 구조  
 
-## 아키텍처 및 코드 설명
+- **client.c / server.c**  
+  단일 파일 형태로 구현된 클라이언트·서버 로직  
+- **game_scenarios.txt**  
+  `#<번호>` 형식으로 스테이지 분기를 정의하는 텍스트 파일  
+- **log.txt**  
+  서버가 플레이 기록을 남기는 로그 파일
+  
+- **Makefile**  
+  `make`, `make run-server`, `make run-client` 등의 편리한 빌드·실행 타겟 제공  
+- **client.sh / server.sh**  
+  Makefile 대신 또는 보조로 사용할 수 있는 컴파일·실행 스크립트  
+- **.vscode/**  
+  VSCode 작업 환경 설정 파일들    
+
+
+  
+## 아키텍처 및 코드 설명  
+
+### 1. 전체 시스템 구성  
+
+```
+[Client A]  ⇔  [Server]  ⇔  [Client B]
+   (ncurses)   (select 루프)   (ncurses)
+```
+
+* **서버** (`server.c`)
+
+  * TCP/IP 소켓: `socket()`, `bind()`, `listen()`, `accept()`
+  * I/O 멀티플렉싱: `select()` 기반으로 다수의 클라이언트 FD 감시
+  * 시나리오 관리: `game_scenarios.txt` 파싱 → `Scenario` 배열에 로드
+  * 이벤트 흐름: `INIT` → `SELECT` → `RESULT`/`ENDING` 패킷 교환
+  * 로그 기록: `save_log()`로 `log.txt`에 접속·선택·결과·종료 이벤트 저장
+
+* **클라이언트** (`client.c`)
+
+  * 터미널 GUI: `ncurses`를 활용한 3개 윈도우(`game_win`, `chat_win`, `input_win`)
+  * 서버 통신: `socket()`, `connect()` 후 `select()` + `wgetch()` 루프
+  * 사용자 입력: 선택지(1\~3) 또는 채팅 명령(`:chat`) 처리
+  * 화면 출력: `print_game()`, `print_chat()`으로 시나리오·결과·채팅·타이머 표시
+
+### 2. 주요 자료구조 및 프로토콜
+
+* **user\_status**
+
+  ```c
+  typedef struct {
+    int user_id, stage, health, level, exp, gold, attack, defense;
+    char user_name[100];
+  } user_status;
+  ```
+* **Choice / Scenario**
+
+  ```c
+  typedef struct { char text[256], result_text[256]; int health, exp, gold, attack, defense, level, stage, next_scenario; } Choice;
+  typedef struct { int number; char description[512]; Choice choices[3]; } Scenario;
+  ```
+* **메시지 포맷**
+
+  ```c
+  typedef struct { int cmd; int select; char buffer[BUFFER_SIZE]; user_status status; } ctosPacket;
+  typedef struct { int cmd; char buffer[BUFFER_SIZE]; user_status status; } stocPacket;
+  ```
+
+  * `cmd`: INIT(1), SELECT(2), END(3), CHAT(4), RESULT(5), ENDING(6)
+  * `select`: 클라이언트 선택(1\~3)
+  * `buffer`: 시나리오 또는 채팅·결과 텍스트
+
+### 3. 서버 주요 흐름
+
+1. **시나리오 로드**: `load_scenarios("game_scenarios.txt", &count)` → `scenarios[]`
+2. **소켓 초기화** → `bind()` → `listen()` → `select()` 루프 진입
+3. **클라이언트 연결**: `accept()` → `INIT` 대기
+4. **게임 시작**: 모든 클라이언트가 `INIT` 전송 시
+
+   * `SELECT` 패킷을 각 클라이언트에 전송(시나리오 텍스트 포함)
+5. **투표 수집**: 클라이언트의 `SELECT` 패킷 수신 → `coop_event.selected[]` 저장
+6. **결과 처리**: `calculate_majority()` → `change_status()` → `RESULT` 또는 `ENDING` 전송
+7. **반복 또는 종료**: 다음 스테이지 `SELECT` 전송하거나 종료 처리
+
+
+### 4. 클라이언트 주요 흐름
+
+1. `init_windows()` → ncurses 윈도우 생성 및 설정
+2. **서버 연결**: `socket()` → `connect()` → `INIT` 전송
+3. **준비 대기**: 서버로부터 첫 `SELECT` 수신 후 게임 진입
+4. **시나리오 출력**: `print_game(pkt.buffer)`
+5. **입력 처리**: `select()` + `wgetch()` → 투표(1\~3) 또는 채팅 → `ctosPacket` 전송
+6. **서버 응답**: `RESULT`, `CHAT`, `ENDING` 수신 시 `print_game()`, `print_chat()` 호출
+7. **게임 종료**: `ENDING` 후 아무 키 입력 시 `END` 전송 후 프로그램 종료
+
+
+### 5. 화면 구성 (ncurses)
+
+* **game\_win**: 시나리오 및 결과, 플레이어 상태 출력
+* **chat\_win**: 채팅 메시지 스크롤
+* **input\_win**: 사용자 입력창 및 남은 시간 표시
+
+---
 
 ## 저자
+
+- **김지환**  
+  - 소속: 경북대학교 컴퓨터학부
+  - 역할: 상태 변화/출력, 텍스트 시나리오 작성
+
+- **김태준**  
+  - 소속: 경북대학교 컴퓨터학부  
+  - 역할: 채팅 및 서버-클라이언트 통신 기능 구현  
+
+- **윤지민**  
+  - 소속: 경북대학교 컴퓨터학부  
+  - 역할: 텍스트 시나리오 작성, 발표 자료(PPT) 제작 
+
 
 ## 참조
 
